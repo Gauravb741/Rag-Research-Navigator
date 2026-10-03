@@ -1,0 +1,139 @@
+{
+  "method_note": "Coverage over manually specified expected useful connections; not a universal benchmark.",
+  "summary": {
+    "test_case_count": 4,
+    "average_graph_entity_recall": 0.9583,
+    "average_flat_baseline_entity_recall": 0.8334,
+    "cases_with_graph_paths": 4,
+    "cases_with_grounded_evidence": 4
+  },
+  "cases": [
+    {
+      "id": "idea_citation_graph_synthesis",
+      "expected_entity_count": 5,
+      "graph_entity_hits": [
+        "concept_citation_network",
+        "concept_entity_relation_graph",
+        "method_cg_rag",
+        "problem_citation_research_qa",
+        "problem_multihop_reasoning"
+      ],
+      "baseline_entity_hits": [
+        "concept_citation_network",
+        "concept_entity_relation_graph",
+        "method_cg_rag",
+        "problem_citation_research_qa",
+        "problem_multihop_reasoning"
+      ],
+      "graph_entity_recall": 1.0,
+      "flat_baseline_entity_recall": 1.0,
+      "path_count": 10,
+      "graph_used": true,
+      "evidence_count": 47,
+      "evidence_grounded": true,
+      "top_papers": [
+        "GRAG: Graph Retrieval-Augmented Generation",
+        "Retrieval-Augmented Generation with Knowledge Graphs for Customer Service Question Answering",
+        "CG-RAG: Research Question Answering by Citation Graph Retrieval-Augmented LLMs",
+        "Dense Passage Retrieval for Open-Domain Question Answering",
+        "Knowledge Graph-Guided Retrieval Augmented Generation"
+      ]
+    },
+    {
+      "id": "idea_dynamic_efficient_graph_retrieval",
+      "expected_entity_count": 6,
+      "graph_entity_hits": [
+        "direction_dynamic_knowledge",
+        "direction_efficient_graph_retrieval",
+        "limitation_dynamic_updates",
+        "limitation_latency",
+        "problem_long_context",
+        "problem_multihop_reasoning"
+      ],
+      "baseline_entity_hits": [
+        "direction_dynamic_knowledge",
+        "limitation_dynamic_updates",
+        "problem_long_context",
+        "problem_multihop_reasoning"
+      ],
+      "graph_entity_recall": 1.0,
+      "flat_baseline_entity_recall": 0.6667,
+      "path_count": 16,
+      "graph_used": true,
+      "evidence_count": 62,
+      "evidence_grounded": true,
+      "top_papers": [
+        "HG-RAG: Hierarchical Graph-Enhanced Retrieval-Augmented Generation for Power Systems",
+        "GRAG: Graph Retrieval-Augmented Generation",
+        "GNN-RAG: Graph Neural Retrieval for Efficient Large Language Model Reasoning on Knowledge Graphs",
+        "Dense Passage Retrieval for Open-Domain Question Answering",
+        "S-Path-RAG: Semantic-Aware Shortest-Path Retrieval Augmented Generation for Multi-Hop Knowledge Graph Question Answering"
+      ]
+    },
+    {
+      "id": "idea_conflicting_evidence_benchmark",
+      "expected_entity_count": 7,
+      "graph_entity_hits": [
+        "dataset_magic",
+        "direction_robust_graph_evaluation",
+        "metric_accuracy",
+        "metric_context_relevance",
+        "metric_faithfulness",
+        "problem_multihop_reasoning",
+        "problem_noisy_retrieval"
+      ],
+      "baseline_entity_hits": [
+        "dataset_magic",
+        "direction_robust_graph_evaluation",
+        "metric_accuracy",
+        "metric_context_relevance",
+        "metric_faithfulness",
+        "problem_multihop_reasoning",
+        "problem_noisy_retrieval"
+      ],
+      "graph_entity_recall": 1.0,
+      "flat_baseline_entity_recall": 1.0,
+      "path_count": 20,
+      "graph_used": true,
+      "evidence_count": 80,
+      "evidence_grounded": true,
+      "top_papers": [
+        "Development and validation of Retrieval Augmented Generation (RAG) and GraphRAG for complex clinical cases",
+        "Hybrid Multi-Agent GraphRAG for E-Government: Towards a Trustworthy AI Assistant",
+        "StructReason: A Multi-hop Retrieval-Augmented Generation Framework via Iterative Reasoning Chains and PCST Structural Refinement",
+        "MAGIC: A Multi-Hop and Graph-Based Benchmark for Inter-Context Conflicts in Retrieval-Augmented Generation",
+        "Document GraphRAG: Knowledge Graph Enhanced Retrieval Augmented Generation for Document Question Answering Within the Manufacturing Domain"
+      ]
+    },
+    {
+      "id": "idea_distributed_scientific_evidence",
+      "expected_entity_count": 6,
+      "graph_entity_hits": [
+        "concept_graph_indexing",
+        "direction_multihop_reasoning",
+        "problem_evidence_fragmentation",
+        "problem_long_context",
+        "problem_provenance"
+      ],
+      "baseline_entity_hits": [
+        "concept_graph_indexing",
+        "direction_multihop_reasoning",
+        "problem_long_context",
+        "problem_provenance"
+      ],
+      "graph_entity_recall": 0.8333,
+      "flat_baseline_entity_recall": 0.6667,
+      "path_count": 16,
+      "graph_used": true,
+      "evidence_count": 58,
+      "evidence_grounded": true,
+      "top_papers": [
+        "HG-RAG: Hierarchical Graph-Enhanced Retrieval-Augmented Generation for Power Systems",
+        "Knowledge Graph-Guided Retrieval Augmented Generation",
+        "GNN-RAG: Graph Neural Retrieval for Efficient Large Language Model Reasoning on Knowledge Graphs",
+        "Addressing the information silo of construction planning constraints – a graph retrieval augmented generation approach",
+        "Graph Retrieval-Augmented Generation: A Survey"
+      ]
+    }
+  ]
+}

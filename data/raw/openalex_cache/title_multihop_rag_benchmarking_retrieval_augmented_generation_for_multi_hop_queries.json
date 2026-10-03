@@ -1,0 +1,2904 @@
+{
+  "meta": {
+    "count": 1952,
+    "db_response_time_ms": 44,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where date >= (2020-01-01)\n  and full text has (MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop Queries)\n  and date <= (2026-10-02)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "from_publication_date",
+            "value": "2020-01-01"
+          },
+          {
+            "column_id": "fulltext.search",
+            "value": "MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop Queries",
+            "operator": "has"
+          },
+          {
+            "column_id": "to_publication_date",
+            "value": "2026-10-02"
+          }
+        ]
+      },
+      "url": "/works?filter=from_publication_date:2020-01-01,fulltext.search:MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop Queries,to_publication_date:2026-10-02&per_page=5&page=1"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W4391376072",
+      "doi": "https://doi.org/10.48550/arxiv.2401.15391",
+      "title": "MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop Queries",
+      "publication_year": 2024,
+      "publication_date": "2024-01-27",
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5077931422",
+            "display_name": "Yixuan Tang",
+            "orcid": "https://orcid.org/0000-0003-3766-0929",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3766-0929"
+            ]
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Tang, Yixuan",
+          "raw_affiliation_strings": [
+            "University of Science and Technology"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Science and Technology",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5005421447",
+            "display_name": "Yi Ping Yang",
+            "orcid": "https://orcid.org/0000-0002-0512-880X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0512-880X"
+            ]
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Yang, Yi",
+          "raw_affiliation_strings": [
+            "University of Science and Technology"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Science and Technology",
+              "institution_ids": []
+            }
+          ]
+        }
+      ],
+      "abstract_inverted_index": {
+        "Retrieval-augmented": [
+          0
+        ],
+        "generation": [
+          1
+        ],
+        "(RAG)": [
+          2
+        ],
+        "augments": [
+          3
+        ],
+        "large": [
+          4,
+          85
+        ],
+        "language": [
+          5
+        ],
+        "models": [
+          6,
+          134
+        ],
+        "(LLM)": [
+          7
+        ],
+        "by": [
+          8
+        ],
+        "retrieving": [
+          9,
+          47,
+          136,
+          177
+        ],
+        "relevant": [
+          10
+        ],
+        "knowledge,": [
+          11,
+          59
+        ],
+        "showing": [
+          12
+        ],
+        "promising": [
+          13
+        ],
+        "potential": [
+          14
+        ],
+        "in": [
+          15,
+          30,
+          41,
+          125,
+          158,
+          176,
+          193,
+          204
+        ],
+        "mitigating": [
+          16
+        ],
+        "LLM": [
+          17
+        ],
+        "hallucinations": [
+          18
+        ],
+        "and": [
+          19,
+          48,
+          93,
+          156,
+          160,
+          178,
+          208
+        ],
+        "enhancing": [
+          20
+        ],
+        "response": [
+          21
+        ],
+        "quality,": [
+          22
+        ],
+        "thereby": [
+          23,
+          198
+        ],
+        "facilitating": [
+          24,
+          199
+        ],
+        "the": [
+          25,
+          94,
+          100,
+          104,
+          113,
+          120,
+          142,
+          147,
+          165,
+          191
+        ],
+        "great": [
+          26
+        ],
+        "adoption": [
+          27,
+          201
+        ],
+        "of": [
+          28,
+          53,
+          80,
+          87,
+          102,
+          123,
+          149,
+          202
+        ],
+        "LLMs": [
+          29,
+          203
+        ],
+        "practice.": [
+          31,
+          205
+        ],
+        "However,": [
+          32
+        ],
+        "we": [
+          33,
+          72,
+          145
+        ],
+        "find": [
+          34
+        ],
+        "that": [
+          35,
+          170
+        ],
+        "existing": [
+          36,
+          61,
+          171
+        ],
+        "RAG": [
+          37,
+          62,
+          115,
+          172,
+          196,
+          210
+        ],
+        "systems": [
+          38
+        ],
+        "are": [
+          39
+        ],
+        "inadequate": [
+          40
+        ],
+        "answering": [
+          42,
+          161,
+          179
+        ],
+        "multi-hop": [
+          43,
+          67,
+          88,
+          139,
+          162,
+          180
+        ],
+        "queries,": [
+          44,
+          89
+        ],
+        "which": [
+          45,
+          78
+        ],
+        "require": [
+          46
+        ],
+        "reasoning": [
+          49,
+          159
+        ],
+        "over": [
+          50
+        ],
+        "multiple": [
+          51
+        ],
+        "pieces": [
+          52
+        ],
+        "supporting": [
+          54,
+          96
+        ],
+        "evidence.": [
+          55,
+          97,
+          166
+        ],
+        "Furthermore,": [
+          56
+        ],
+        "to": [
+          57
+        ],
+        "our": [
+          58
+        ],
+        "no": [
+          60
+        ],
+        "benchmarking": [
+          63,
+          121
+        ],
+        "dataset": [
+          64,
+          111
+        ],
+        "focuses": [
+          65
+        ],
+        "on": [
+          66
+        ],
+        "queries.": [
+          68,
+          140,
+          181
+        ],
+        "In": [
+          69,
+          141
+        ],
+        "this": [
+          70
+        ],
+        "paper,": [
+          71
+        ],
+        "develop": [
+          73
+        ],
+        "a": [
+          74,
+          81,
+          84,
+          187
+        ],
+        "novel": [
+          75
+        ],
+        "dataset,": [
+          76,
+          105
+        ],
+        "MultiHop-RAG,": [
+          77
+        ],
+        "consists": [
+          79
+        ],
+        "knowledge": [
+          82,
+          116
+        ],
+        "base,": [
+          83
+        ],
+        "collection": [
+          86
+        ],
+        "their": [
+          90
+        ],
+        "ground-truth": [
+          91
+        ],
+        "answers,": [
+          92
+        ],
+        "associated": [
+          95
+        ],
+        "We": [
+          98,
+          118,
+          182
+        ],
+        "detail": [
+          99
+        ],
+        "procedure": [
+          101
+        ],
+        "building": [
+          103
+        ],
+        "utilizing": [
+          106
+        ],
+        "an": [
+          107
+        ],
+        "English": [
+          108
+        ],
+        "news": [
+          109
+        ],
+        "article": [
+          110
+        ],
+        "as": [
+          112
+        ],
+        "underlying": [
+          114
+        ],
+        "base.": [
+          117
+        ],
+        "demonstrate": [
+          119
+        ],
+        "utility": [
+          122
+        ],
+        "MultiHop-RAG": [
+          124,
+          184,
+          207
+        ],
+        "two": [
+          126
+        ],
+        "experiments.": [
+          127
+        ],
+        "The": [
+          128,
+          206
+        ],
+        "first": [
+          129
+        ],
+        "experiment": [
+          130
+        ],
+        "compares": [
+          131
+        ],
+        "different": [
+          132
+        ],
+        "embedding": [
+          133
+        ],
+        "for": [
+          135,
+          138,
+          190
+        ],
+        "evidence": [
+          137
+        ],
+        "second": [
+          143
+        ],
+        "experiment,": [
+          144
+        ],
+        "examine": [
+          146
+        ],
+        "capabilities": [
+          148
+        ],
+        "various": [
+          150
+        ],
+        "state-of-the-art": [
+          151
+        ],
+        "LLMs,": [
+          152
+        ],
+        "including": [
+          153
+        ],
+        "GPT-4,": [
+          154
+        ],
+        "PaLM,": [
+          155
+        ],
+        "Llama2-70B,": [
+          157
+        ],
+        "queries": [
+          163
+        ],
+        "given": [
+          164
+        ],
+        "Both": [
+          167
+        ],
+        "experiments": [
+          168
+        ],
+        "reveal": [
+          169
+        ],
+        "methods": [
+          173
+        ],
+        "perform": [
+          174
+        ],
+        "unsatisfactorily": [
+          175
+        ],
+        "hope": [
+          183
+        ],
+        "will": [
+          185
+        ],
+        "be": [
+          186
+        ],
+        "valuable": [
+          188
+        ],
+        "resource": [
+          189
+        ],
+        "community": [
+          192
+        ],
+        "developing": [
+          194
+        ],
+        "effective": [
+          195
+        ],
+        "systems,": [
+          197
+        ],
+        "greater": [
+          200
+        ],
+        "implemented": [
+          209
+        ],
+        "system": [
+          211
+        ],
+        "is": [
+          212
+        ],
+        "publicly": [
+          213
+        ],
+        "available": [
+          214
+        ],
+        "at": [
+          215
+        ],
+        "https://github.com/yixuantt/MultiHop-RAG/.": [
+          216
+        ]
+      },
+      "primary_location": {
+        "id": "pmh:oai:arXiv.org:2401.15391",
+        "is_oa": true,
+        "landing_page_url": "http://arxiv.org/abs/2401.15391",
+        "pdf_url": "https://arxiv.org/pdf/2401.15391",
+        "source": {
+          "id": "https://openalex.org/S4306400194",
+          "display_name": "arXiv (Cornell University)",
+          "issn_l": "2331-8422",
+          "issn": [
+            "2331-8422"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [],
+          "host_organization": "https://openalex.org/I205783295",
+          "host_organization_name": "Cornell University",
+          "host_organization_lineage": [
+            "https://openalex.org/I205783295"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-sa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "text"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://arxiv.org/pdf/2401.15391",
+        "any_repository_has_fulltext": true
+      },
+      "cited_by_count": 16,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "type": "preprint",
+      "ids": {
+        "openalex": "https://openalex.org/W4391376072",
+        "doi": "https://doi.org/10.48550/arxiv.2401.15391"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4389984066",
+      "doi": "https://doi.org/10.48550/arxiv.2312.10997",
+      "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "publication_year": 2023,
+      "publication_date": "2023-12-18",
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5102001778",
+            "display_name": "Yunfan Gao",
+            "orcid": "https://orcid.org/0000-0002-7932-2752",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-7932-2752"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I116953780",
+              "display_name": "Tongji University",
+              "ror": "https://ror.org/03rc6as71",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I116953780"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Gao, Yunfan",
+          "raw_affiliation_strings": [
+            "Shanghai Research Institute for Intelligent Autonomous Systems , Tongji University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Shanghai Research Institute for Intelligent Autonomous Systems , Tongji University",
+              "institution_ids": [
+                "https://openalex.org/I116953780"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5001877137",
+            "display_name": "Yun Xiong",
+            "orcid": "https://orcid.org/0000-0002-8575-5415",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-8575-5415"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I24943067",
+              "display_name": "Fudan University",
+              "ror": "https://ror.org/013q1eq08",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I24943067"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Xiong, Yun",
+          "raw_affiliation_strings": [
+            "Shanghai Key Laboratory of Data Science , School of Computer Science , Fudan University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Shanghai Key Laboratory of Data Science , School of Computer Science , Fudan University",
+              "institution_ids": [
+                "https://openalex.org/I24943067"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5101581913",
+            "display_name": "Xinyu Gao",
+            "orcid": "https://orcid.org/0000-0001-7654-3800",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-7654-3800"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I24943067",
+              "display_name": "Fudan University",
+              "ror": "https://ror.org/013q1eq08",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I24943067"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Gao, Xinyu",
+          "raw_affiliation_strings": [
+            "Shanghai Key Laboratory of Data Science , School of Computer Science , Fudan University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Shanghai Key Laboratory of Data Science , School of Computer Science , Fudan University",
+              "institution_ids": [
+                "https://openalex.org/I24943067"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5109666673",
+            "display_name": "Kangxiang Jia",
+            "orcid": "https://orcid.org/0009-0001-0054-5049",
+            "observed_orcids": [
+              "https://orcid.org/0009-0001-0054-5049"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I24943067",
+              "display_name": "Fudan University",
+              "ror": "https://ror.org/013q1eq08",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I24943067"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jia, Kangxiang",
+          "raw_affiliation_strings": [
+            "Shanghai Key Laboratory of Data Science , School of Computer Science , Fudan University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Shanghai Key Laboratory of Data Science , School of Computer Science , Fudan University",
+              "institution_ids": [
+                "https://openalex.org/I24943067"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5104217086",
+            "display_name": "Jinliu Pan",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I24943067",
+              "display_name": "Fudan University",
+              "ror": "https://ror.org/013q1eq08",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I24943067"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Pan, Jinliu",
+          "raw_affiliation_strings": [
+            "Shanghai Key Laboratory of Data Science , School of Computer Science , Fudan University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Shanghai Key Laboratory of Data Science , School of Computer Science , Fudan University",
+              "institution_ids": [
+                "https://openalex.org/I24943067"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5104217087",
+            "display_name": "Yuxi Bi",
+            "orcid": "https://orcid.org/0009-0003-6921-6934",
+            "observed_orcids": [
+              "https://orcid.org/0009-0003-6921-6934"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I116953780",
+              "display_name": "Tongji University",
+              "ror": "https://ror.org/03rc6as71",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I116953780"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Bi, Yuxi",
+          "raw_affiliation_strings": [
+            "College of Design and Innovation , Tongji University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "College of Design and Innovation , Tongji University",
+              "institution_ids": [
+                "https://openalex.org/I116953780"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100647639",
+            "display_name": "Yi Qi Dai",
+            "orcid": "https://orcid.org/0000-0003-1219-2436",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-1219-2436"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I116953780",
+              "display_name": "Tongji University",
+              "ror": "https://ror.org/03rc6as71",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I116953780"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Dai, Yi",
+          "raw_affiliation_strings": [
+            "Shanghai Research Institute for Intelligent Autonomous Systems , Tongji University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Shanghai Research Institute for Intelligent Autonomous Systems , Tongji University",
+              "institution_ids": [
+                "https://openalex.org/I116953780"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5101598822",
+            "display_name": "Jiawei Sun",
+            "orcid": "https://orcid.org/0000-0003-1332-6758",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-1332-6758"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I116953780",
+              "display_name": "Tongji University",
+              "ror": "https://ror.org/03rc6as71",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I116953780"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Sun, Jiawei",
+          "raw_affiliation_strings": [
+            "Shanghai Research Institute for Intelligent Autonomous Systems , Tongji University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Shanghai Research Institute for Intelligent Autonomous Systems , Tongji University",
+              "institution_ids": [
+                "https://openalex.org/I116953780"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Wang, Meng",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Wang, Meng",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": null,
+            "display_name": "Wang, Haofen",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I116953780",
+              "display_name": "Tongji University",
+              "ror": "https://ror.org/03rc6as71",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I116953780"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Wang, Haofen",
+          "raw_affiliation_strings": [
+            "College of Design and Innovation , Tongji University",
+            "Shanghai Research Institute for Intelligent Autonomous Systems , Tongji University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "College of Design and Innovation , Tongji University",
+              "institution_ids": [
+                "https://openalex.org/I116953780"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Shanghai Research Institute for Intelligent Autonomous Systems , Tongji University",
+              "institution_ids": [
+                "https://openalex.org/I116953780"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstract_inverted_index": {
+        "Large": [
+          0
+        ],
+        "Language": [
+          1
+        ],
+        "Models": [
+          2
+        ],
+        "(LLMs)": [
+          3
+        ],
+        "showcase": [
+          4
+        ],
+        "impressive": [
+          5
+        ],
+        "capabilities": [
+          6
+        ],
+        "but": [
+          7
+        ],
+        "encounter": [
+          8
+        ],
+        "challenges": [
+          9,
+          155
+        ],
+        "like": [
+          10
+        ],
+        "hallucination,": [
+          11
+        ],
+        "outdated": [
+          12
+        ],
+        "knowledge,": [
+          13
+        ],
+        "and": [
+          14,
+          38,
+          47,
+          53,
+          93,
+          112,
+          146,
+          158,
+          165
+        ],
+        "non-transparent,": [
+          15
+        ],
+        "untraceable": [
+          16
+        ],
+        "reasoning": [
+          17
+        ],
+        "processes.": [
+          18
+        ],
+        "Retrieval-Augmented": [
+          19
+        ],
+        "Generation": [
+          20
+        ],
+        "(RAG)": [
+          21
+        ],
+        "has": [
+          22
+        ],
+        "emerged": [
+          23
+        ],
+        "as": [
+          24
+        ],
+        "a": [
+          25,
+          77,
+          130
+        ],
+        "promising": [
+          26
+        ],
+        "solution": [
+          27
+        ],
+        "by": [
+          28
+        ],
+        "incorporating": [
+          29
+        ],
+        "knowledge": [
+          30,
+          51,
+          63
+        ],
+        "from": [
+          31
+        ],
+        "external": [
+          32,
+          70
+        ],
+        "databases.": [
+          33,
+          71
+        ],
+        "This": [
+          34,
+          72
+        ],
+        "enhances": [
+          35
+        ],
+        "the": [
+          36,
+          41,
+          65,
+          81,
+          87,
+          90,
+          94,
+          100,
+          108,
+          110,
+          113,
+          119,
+          134,
+          149,
+          154
+        ],
+        "accuracy": [
+          37
+        ],
+        "credibility": [
+          39
+        ],
+        "of": [
+          40,
+          55,
+          69,
+          80,
+          83,
+          103,
+          125,
+          133
+        ],
+        "generation,": [
+          42
+        ],
+        "particularly": [
+          43
+        ],
+        "for": [
+          44,
+          49,
+          163
+        ],
+        "knowledge-intensive": [
+          45
+        ],
+        "tasks,": [
+          46
+        ],
+        "allows": [
+          48
+        ],
+        "continuous": [
+          50
+        ],
+        "updates": [
+          52
+        ],
+        "integration": [
+          54
+        ],
+        "domain-specific": [
+          56
+        ],
+        "information.": [
+          57
+        ],
+        "RAG": [
+          58,
+          84,
+          104,
+          137
+        ],
+        "synergistically": [
+          59
+        ],
+        "merges": [
+          60
+        ],
+        "LLMs'": [
+          61
+        ],
+        "intrinsic": [
+          62
+        ],
+        "with": [
+          64
+        ],
+        "vast,": [
+          66
+        ],
+        "dynamic": [
+          67
+        ],
+        "repositories": [
+          68
+        ],
+        "comprehensive": [
+          73
+        ],
+        "review": [
+          74
+        ],
+        "paper": [
+          75,
+          117,
+          141
+        ],
+        "offers": [
+          76
+        ],
+        "detailed": [
+          78
+        ],
+        "examination": [
+          79
+        ],
+        "progression": [
+          82
+        ],
+        "paradigms,": [
+          85
+        ],
+        "encompassing": [
+          86
+        ],
+        "Naive": [
+          88
+        ],
+        "RAG,": [
+          89,
+          92
+        ],
+        "Advanced": [
+          91
+        ],
+        "Modular": [
+          95
+        ],
+        "RAG.": [
+          96
+        ],
+        "It": [
+          97
+        ],
+        "meticulously": [
+          98
+        ],
+        "scrutinizes": [
+          99
+        ],
+        "tripartite": [
+          101
+        ],
+        "foundation": [
+          102
+        ],
+        "frameworks,": [
+          105
+        ],
+        "which": [
+          106
+        ],
+        "includes": [
+          107
+        ],
+        "retrieval,": [
+          109
+        ],
+        "generation": [
+          111
+        ],
+        "augmentation": [
+          114
+        ],
+        "techniques.": [
+          115
+        ],
+        "The": [
+          116
+        ],
+        "highlights": [
+          118
+        ],
+        "state-of-the-art": [
+          120
+        ],
+        "technologies": [
+          121
+        ],
+        "embedded": [
+          122
+        ],
+        "in": [
+          123,
+          136
+        ],
+        "each": [
+          124
+        ],
+        "these": [
+          126
+        ],
+        "critical": [
+          127
+        ],
+        "components,": [
+          128
+        ],
+        "providing": [
+          129
+        ],
+        "profound": [
+          131
+        ],
+        "understanding": [
+          132
+        ],
+        "advancements": [
+          135
+        ],
+        "systems.": [
+          138
+        ],
+        "Furthermore,": [
+          139
+        ],
+        "this": [
+          140,
+          151
+        ],
+        "introduces": [
+          142
+        ],
+        "up-to-date": [
+          143
+        ],
+        "evaluation": [
+          144
+        ],
+        "framework": [
+          145
+        ],
+        "benchmark.": [
+          147
+        ],
+        "At": [
+          148
+        ],
+        "end,": [
+          150
+        ],
+        "article": [
+          152
+        ],
+        "delineates": [
+          153
+        ],
+        "currently": [
+          156
+        ],
+        "faced": [
+          157
+        ],
+        "points": [
+          159
+        ],
+        "out": [
+          160
+        ],
+        "prospective": [
+          161
+        ],
+        "avenues": [
+          162
+        ],
+        "research": [
+          164
+        ],
+        "development.": [
+          166
+        ]
+      },
+      "primary_location": {
+        "id": "pmh:oai:arXiv.org:2312.10997",
+        "is_oa": true,
+        "landing_page_url": "http://arxiv.org/abs/2312.10997",
+        "pdf_url": "https://arxiv.org/pdf/2312.10997",
+        "source": {
+          "id": "https://openalex.org/S4306400194",
+          "display_name": "arXiv (Cornell University)",
+          "issn_l": "2331-8422",
+          "issn": [
+            "2331-8422"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [],
+          "host_organization": "https://openalex.org/I205783295",
+          "host_organization_name": "Cornell University",
+          "host_organization_lineage": [
+            "https://openalex.org/I205783295"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "text"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://arxiv.org/pdf/2312.10997",
+        "any_repository_has_fulltext": true
+      },
+      "cited_by_count": 749,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "type": "preprint",
+      "ids": {
+        "openalex": "https://openalex.org/W4389984066",
+        "doi": "https://doi.org/10.48550/arxiv.2312.10997"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4406771321",
+      "doi": "https://doi.org/10.1007/978-981-96-1024-2_8",
+      "title": "Evaluation of Retrieval-Augmented Generation: A Survey",
+      "publication_year": 2025,
+      "publication_date": "2025-01-01",
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5100695387",
+            "display_name": "Hao Yu",
+            "orcid": "https://orcid.org/0009-0007-0705-4756",
+            "observed_orcids": [
+              "https://orcid.org/0009-0007-0705-4756"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2250653659",
+              "display_name": "Tencent (China)",
+              "ror": "https://ror.org/00hhjss72",
+              "country_code": "CN",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I2250653659"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I5023651",
+              "display_name": "McGill University",
+              "ror": "https://ror.org/01pxwe438",
+              "country_code": "CA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I5023651"
+              ]
+            }
+          ],
+          "countries": [
+            "CA",
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Hao Yu",
+          "raw_affiliation_strings": [
+            "McGill University, Montreal, Canada",
+            "Tencent Company, Shenzhen, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "McGill University, Montreal, Canada",
+              "institution_ids": [
+                "https://openalex.org/I5023651"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Tencent Company, Shenzhen, China",
+              "institution_ids": [
+                "https://openalex.org/I2250653659"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5088973051",
+            "display_name": "Aoran Gan",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I126520041",
+              "display_name": "University of Science and Technology of China",
+              "ror": "https://ror.org/04c4dkn09",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I126520041",
+                "https://openalex.org/I19820366"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Aoran Gan",
+          "raw_affiliation_strings": [
+            "State Key Laboratory of Cognitive Intelligence, University of Science and Technology of China, Hefei, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "State Key Laboratory of Cognitive Intelligence, University of Science and Technology of China, Hefei, China",
+              "institution_ids": [
+                "https://openalex.org/I126520041"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100323988",
+            "display_name": "Kai Zhang",
+            "orcid": "https://orcid.org/0000-0002-6691-6762",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-6691-6762"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I126520041",
+              "display_name": "University of Science and Technology of China",
+              "ror": "https://ror.org/04c4dkn09",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I126520041",
+                "https://openalex.org/I19820366"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Kai Zhang",
+          "raw_affiliation_strings": [
+            "State Key Laboratory of Cognitive Intelligence, University of Science and Technology of China, Hefei, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "State Key Laboratory of Cognitive Intelligence, University of Science and Technology of China, Hefei, China",
+              "institution_ids": [
+                "https://openalex.org/I126520041"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5000135168",
+            "display_name": "Shiwei Tong",
+            "orcid": "https://orcid.org/0000-0002-4218-0236",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-4218-0236"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2250653659",
+              "display_name": "Tencent (China)",
+              "ror": "https://ror.org/00hhjss72",
+              "country_code": "CN",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I2250653659"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Shiwei Tong",
+          "raw_affiliation_strings": [
+            "Tencent Company, Shenzhen, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Tencent Company, Shenzhen, China",
+              "institution_ids": [
+                "https://openalex.org/I2250653659"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100453156",
+            "display_name": "Qi Liu",
+            "orcid": "https://orcid.org/0000-0001-6956-5550",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-6956-5550",
+              "https://orcid.org/0009-0001-7559-8989"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I126520041",
+              "display_name": "University of Science and Technology of China",
+              "ror": "https://ror.org/04c4dkn09",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I126520041",
+                "https://openalex.org/I19820366"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Qi Liu",
+          "raw_affiliation_strings": [
+            "State Key Laboratory of Cognitive Intelligence, University of Science and Technology of China, Hefei, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "State Key Laboratory of Cognitive Intelligence, University of Science and Technology of China, Hefei, China",
+              "institution_ids": [
+                "https://openalex.org/I126520041"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5100648865",
+            "display_name": "Zhaofeng Liu",
+            "orcid": "https://orcid.org/0000-0002-4178-3924",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-4178-3924"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2250653659",
+              "display_name": "Tencent (China)",
+              "ror": "https://ror.org/00hhjss72",
+              "country_code": "CN",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I2250653659"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zhaofeng Liu",
+          "raw_affiliation_strings": [
+            "Tencent Company, Shenzhen, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Tencent Company, Shenzhen, China",
+              "institution_ids": [
+                "https://openalex.org/I2250653659"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstract_inverted_index": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-981-96-1024-2_8",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-981-96-1024-2_8",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2764900261",
+          "display_name": "Communications in computer and information science",
+          "issn_l": "1865-0929",
+          "issn": [
+            "1865-0929",
+            "1865-0937"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "jufo-1",
+            "norway-1"
+          ],
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319900",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Science+Business Media",
+            "Springer Nature"
+          ],
+          "type": "book series"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Communications in Computer and Information Science",
+        "raw_type": "book-chapter"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://arxiv.org/pdf/2405.07437",
+        "any_repository_has_fulltext": true
+      },
+      "cited_by_count": 171,
+      "referenced_works_count": 62,
+      "referenced_works": [
+        "https://openalex.org/W2060029502",
+        "https://openalex.org/W2101105183",
+        "https://openalex.org/W2524168323",
+        "https://openalex.org/W2593864460",
+        "https://openalex.org/W2789132801",
+        "https://openalex.org/W2789566302",
+        "https://openalex.org/W2889787757",
+        "https://openalex.org/W2898662126",
+        "https://openalex.org/W2912924812",
+        "https://openalex.org/W2963341956",
+        "https://openalex.org/W2963961878",
+        "https://openalex.org/W2988346595",
+        "https://openalex.org/W2988421999",
+        "https://openalex.org/W2998702515",
+        "https://openalex.org/W3027879771",
+        "https://openalex.org/W3034439313",
+        "https://openalex.org/W3080855795",
+        "https://openalex.org/W3083182073",
+        "https://openalex.org/W3159117141",
+        "https://openalex.org/W3169283738",
+        "https://openalex.org/W4206256378",
+        "https://openalex.org/W4221143046",
+        "https://openalex.org/W4221151672",
+        "https://openalex.org/W4252076394",
+        "https://openalex.org/W4283026156",
+        "https://openalex.org/W4288725442",
+        "https://openalex.org/W4300872379",
+        "https://openalex.org/W4327810158",
+        "https://openalex.org/W4367701181",
+        "https://openalex.org/W4377130677",
+        "https://openalex.org/W4380353763",
+        "https://openalex.org/W4384652670",
+        "https://openalex.org/W4385245566",
+        "https://openalex.org/W4385572334",
+        "https://openalex.org/W4385572837",
+        "https://openalex.org/W4386080721",
+        "https://openalex.org/W4386556635",
+        "https://openalex.org/W4387156782",
+        "https://openalex.org/W4388514997",
+        "https://openalex.org/W4388585881",
+        "https://openalex.org/W4388717143",
+        "https://openalex.org/W4388787625",
+        "https://openalex.org/W4389524089",
+        "https://openalex.org/W4390833426",
+        "https://openalex.org/W4391136507",
+        "https://openalex.org/W4391376033",
+        "https://openalex.org/W4391376072",
+        "https://openalex.org/W4391421370",
+        "https://openalex.org/W4391987833",
+        "https://openalex.org/W4392019609",
+        "https://openalex.org/W4392492460",
+        "https://openalex.org/W4393160302",
+        "https://openalex.org/W4393299232",
+        "https://openalex.org/W4394947112",
+        "https://openalex.org/W4399555009",
+        "https://openalex.org/W4400530959",
+        "https://openalex.org/W4401042876",
+        "https://openalex.org/W4401065928",
+        "https://openalex.org/W6604820196",
+        "https://openalex.org/W6858633646",
+        "https://openalex.org/W6861295083",
+        "https://openalex.org/W6891813627"
+      ],
+      "type": "conference-paper",
+      "ids": {
+        "openalex": "https://openalex.org/W4406771321",
+        "doi": "https://doi.org/10.1007/978-981-96-1024-2_8"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4389518671",
+      "doi": "https://doi.org/10.18653/v1/2023.emnlp-main.322",
+      "title": "Query Rewriting in Retrieval-Augmented Large Language Models",
+      "publication_year": 2023,
+      "publication_date": "2023-01-01",
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5012003354",
+            "display_name": "Xinbei Ma",
+            "orcid": "https://orcid.org/0000-0003-1505-8603",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-1505-8603"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I183067930",
+              "display_name": "Shanghai Jiao Tong University",
+              "ror": "https://ror.org/0220qvk04",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I183067930"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Xinbei Ma",
+          "raw_affiliation_strings": [
+            "Department of Computer Science and Engineering , Shanghai Jiao Tong University",
+            "Key Laboratory of Shanghai Education Commission for Intelligent Interaction and Cognitive Engineering , Shanghai Jiao Tong University",
+            "Department of Computer Science and Engineering, Shanghai Jiao Tong University",
+            "Key Laboratory of Shanghai Education Commission for Intelligent Interaction and Cognitive Engineering, Shanghai Jiao Tong University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science and Engineering , Shanghai Jiao Tong University",
+              "institution_ids": [
+                "https://openalex.org/I183067930"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Key Laboratory of Shanghai Education Commission for Intelligent Interaction and Cognitive Engineering , Shanghai Jiao Tong University",
+              "institution_ids": [
+                "https://openalex.org/I183067930"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Computer Science and Engineering, Shanghai Jiao Tong University",
+              "institution_ids": [
+                "https://openalex.org/I183067930"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Key Laboratory of Shanghai Education Commission for Intelligent Interaction and Cognitive Engineering, Shanghai Jiao Tong University",
+              "institution_ids": [
+                "https://openalex.org/I183067930"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5041448669",
+            "display_name": "Yeyun Gong",
+            "orcid": "https://orcid.org/0000-0001-9954-9674",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-9954-9674"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210113369",
+              "display_name": "Microsoft Research Asia (China)",
+              "ror": "https://ror.org/0300m5276",
+              "country_code": "CN",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I1290206253",
+                "https://openalex.org/I4210113369"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Yeyun Gong",
+          "raw_affiliation_strings": [
+            "Microsoft Research Asia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Microsoft Research Asia",
+              "institution_ids": [
+                "https://openalex.org/I4210113369"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5019259019",
+            "display_name": "Pengcheng He",
+            "orcid": "https://orcid.org/0000-0002-7860-503X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-7860-503X"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1290206253",
+              "display_name": "Microsoft (United States)",
+              "ror": "https://ror.org/00d0nc645",
+              "country_code": "US",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I1290206253"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Pengcheng He",
+          "raw_affiliation_strings": [
+            "Microsoft Azure AI"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Microsoft Azure AI",
+              "institution_ids": [
+                "https://openalex.org/I1290206253"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5036050911",
+            "display_name": "Hai Zhao",
+            "orcid": "https://orcid.org/0000-0001-7290-0487",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-7290-0487"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I183067930",
+              "display_name": "Shanghai Jiao Tong University",
+              "ror": "https://ror.org/0220qvk04",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I183067930"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Hai Zhao",
+          "raw_affiliation_strings": [
+            "Department of Computer Science and Engineering , Shanghai Jiao Tong University",
+            "Key Laboratory of Shanghai Education Commission for Intelligent Interaction and Cognitive Engineering , Shanghai Jiao Tong University",
+            "Department of Computer Science and Engineering, Shanghai Jiao Tong University",
+            "Key Laboratory of Shanghai Education Commission for Intelligent Interaction and Cognitive Engineering, Shanghai Jiao Tong University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science and Engineering , Shanghai Jiao Tong University",
+              "institution_ids": [
+                "https://openalex.org/I183067930"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Key Laboratory of Shanghai Education Commission for Intelligent Interaction and Cognitive Engineering , Shanghai Jiao Tong University",
+              "institution_ids": [
+                "https://openalex.org/I183067930"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Computer Science and Engineering, Shanghai Jiao Tong University",
+              "institution_ids": [
+                "https://openalex.org/I183067930"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Key Laboratory of Shanghai Education Commission for Intelligent Interaction and Cognitive Engineering, Shanghai Jiao Tong University",
+              "institution_ids": [
+                "https://openalex.org/I183067930"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5042018181",
+            "display_name": "Nan Duan",
+            "orcid": "https://orcid.org/0000-0002-3387-4674",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-3387-4674"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210113369",
+              "display_name": "Microsoft Research Asia (China)",
+              "ror": "https://ror.org/0300m5276",
+              "country_code": "CN",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I1290206253",
+                "https://openalex.org/I4210113369"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Nan Duan",
+          "raw_affiliation_strings": [
+            "Microsoft Research Asia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Microsoft Research Asia",
+              "institution_ids": [
+                "https://openalex.org/I4210113369"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstract_inverted_index": {
+        "Large": [
+          0
+        ],
+        "Language": [
+          1
+        ],
+        "Models": [
+          2
+        ],
+        "(LLMs)": [
+          3
+        ],
+        "play": [
+          4
+        ],
+        "powerful,": [
+          5
+        ],
+        "black-box": [
+          6,
+          126
+        ],
+        "readers": [
+          7
+        ],
+        "in": [
+          8,
+          15,
+          77
+        ],
+        "the": [
+          9,
+          26,
+          30,
+          34,
+          37,
+          46,
+          49,
+          56,
+          59,
+          70,
+          74,
+          85,
+          99,
+          102,
+          125,
+          133,
+          136
+        ],
+        "retrieve-thenread": [
+          10
+        ],
+        "pipeline,": [
+          11
+        ],
+        "making": [
+          12
+        ],
+        "remarkable": [
+          13
+        ],
+        "progress": [
+          14
+        ],
+        "knowledge-intensive": [
+          16
+        ],
+        "tasks.This": [
+          17
+        ],
+        "work": [
+          18
+        ],
+        "introduces": [
+          19
+        ],
+        "a": [
+          20,
+          67,
+          89,
+          107,
+          119,
+          168
+        ],
+        "new": [
+          21,
+          169
+        ],
+        "framework,": [
+          22
+        ],
+        "Rewrite-Retrieve-Read": [
+          23
+        ],
+        "instead": [
+          24
+        ],
+        "of": [
+          25,
+          36,
+          58,
+          135
+        ],
+        "previous": [
+          27
+        ],
+        "retrieve-then-read": [
+          28
+        ],
+        "for": [
+          29,
+          63,
+          110,
+          171
+        ],
+        "retrieval-augmented": [
+          31,
+          172
+        ],
+        "LLMs": [
+          32
+        ],
+        "from": [
+          33
+        ],
+        "perspective": [
+          35
+        ],
+        "query": [
+          38,
+          61,
+          100
+        ],
+        "rewriting.Unlike": [
+          39
+        ],
+        "prior": [
+          40
+        ],
+        "studies": [
+          41
+        ],
+        "focusing": [
+          42
+        ],
+        "on": [
+          43,
+          144
+        ],
+        "adapting": [
+          44
+        ],
+        "either": [
+          45
+        ],
+        "retriever": [
+          47
+        ],
+        "or": [
+          48
+        ],
+        "reader,": [
+          50
+        ],
+        "our": [
+          51,
+          111,
+          159
+        ],
+        "approach": [
+          52
+        ],
+        "pays": [
+          53
+        ],
+        "attention": [
+          54
+        ],
+        "to": [
+          55,
+          83,
+          93,
+          96,
+          101,
+          122,
+          124
+        ],
+        "adaptation": [
+          57
+        ],
+        "search": [
+          60,
+          91
+        ],
+        "itself,": [
+          62
+        ],
+        "there": [
+          64
+        ],
+        "is": [
+          65,
+          116,
+          130,
+          142,
+          161
+        ],
+        "inevitably": [
+          66
+        ],
+        "gap": [
+          68
+        ],
+        "between": [
+          69
+        ],
+        "input": [
+          71
+        ],
+        "text": [
+          72
+        ],
+        "and": [
+          73,
+          149,
+          164,
+          166
+        ],
+        "needed": [
+          75
+        ],
+        "knowledge": [
+          76
+        ],
+        "retrieval.We": [
+          78
+        ],
+        "first": [
+          79
+        ],
+        "prompt": [
+          80
+        ],
+        "an": [
+          81
+        ],
+        "LLM": [
+          82,
+          127,
+          137,
+          173
+        ],
+        "generate": [
+          84
+        ],
+        "query,": [
+          86
+        ],
+        "then": [
+          87
+        ],
+        "use": [
+          88
+        ],
+        "web": [
+          90
+        ],
+        "engine": [
+          92
+        ],
+        "retrieve": [
+          94
+        ],
+        "contexts.Furthermore,": [
+          95
+        ],
+        "better": [
+          97
+        ],
+        "align": [
+          98
+        ],
+        "frozen": [
+          103
+        ],
+        "modules,": [
+          104
+        ],
+        "we": [
+          105
+        ],
+        "propose": [
+          106
+        ],
+        "trainable": [
+          108,
+          120
+        ],
+        "scheme": [
+          109
+        ],
+        "pipeline.A": [
+          112
+        ],
+        "small": [
+          113
+        ],
+        "language": [
+          114
+        ],
+        "model": [
+          115
+        ],
+        "adopted": [
+          117
+        ],
+        "as": [
+          118
+        ],
+        "rewriter": [
+          121,
+          129
+        ],
+        "cater": [
+          123
+        ],
+        "reader.The": [
+          128
+        ],
+        "trained": [
+          131
+        ],
+        "using": [
+          132
+        ],
+        "feedback": [
+          134
+        ],
+        "reader": [
+          138
+        ],
+        "by": [
+          139
+        ],
+        "reinforcement": [
+          140
+        ],
+        "learning.Evaluation": [
+          141
+        ],
+        "conducted": [
+          143
+        ],
+        "downstream": [
+          145
+        ],
+        "tasks,": [
+          146
+        ],
+        "open-domain": [
+          147
+        ],
+        "QA": [
+          148
+        ],
+        "multiple-choice": [
+          150
+        ],
+        "QA.Experiments": [
+          151
+        ],
+        "results": [
+          152
+        ],
+        "show": [
+          153
+        ],
+        "consistent": [
+          154
+        ],
+        "performance": [
+          155
+        ],
+        "improvement,": [
+          156
+        ],
+        "indicating": [
+          157
+        ],
+        "that": [
+          158
+        ],
+        "framework": [
+          160,
+          170
+        ],
+        "proven": [
+          162
+        ],
+        "effective": [
+          163
+        ],
+        "scalable,": [
+          165
+        ],
+        "brings": [
+          167
+        ],
+        "1": [
+          174
+        ],
+        ".": [
+          175
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.18653/v1/2023.emnlp-main.322",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.18653/v1/2023.emnlp-main.322",
+        "pdf_url": "https://aclanthology.org/2023.emnlp-main.322.pdf",
+        "source": null,
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+        "raw_type": "proceedings-article"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://aclanthology.org/2023.emnlp-main.322.pdf",
+        "any_repository_has_fulltext": null
+      },
+      "cited_by_count": 259,
+      "referenced_works_count": 46,
+      "referenced_works": [
+        "https://openalex.org/W1191599655",
+        "https://openalex.org/W2736601468",
+        "https://openalex.org/W2889787757",
+        "https://openalex.org/W2912924812",
+        "https://openalex.org/W2962985038",
+        "https://openalex.org/W2963341956",
+        "https://openalex.org/W2973379954",
+        "https://openalex.org/W2982399380",
+        "https://openalex.org/W3015883388",
+        "https://openalex.org/W3027879771",
+        "https://openalex.org/W3034671305",
+        "https://openalex.org/W3100292568",
+        "https://openalex.org/W3121904249",
+        "https://openalex.org/W3153269634",
+        "https://openalex.org/W3177813494",
+        "https://openalex.org/W3186138538",
+        "https://openalex.org/W3213460052",
+        "https://openalex.org/W4221143046",
+        "https://openalex.org/W4221152111",
+        "https://openalex.org/W4221161695",
+        "https://openalex.org/W4221164017",
+        "https://openalex.org/W4224308101",
+        "https://openalex.org/W4226209916",
+        "https://openalex.org/W4226278401",
+        "https://openalex.org/W4288089799",
+        "https://openalex.org/W4292779060",
+        "https://openalex.org/W4297633153",
+        "https://openalex.org/W4297899309",
+        "https://openalex.org/W4302305863",
+        "https://openalex.org/W4304194220",
+        "https://openalex.org/W4304195432",
+        "https://openalex.org/W4313304293",
+        "https://openalex.org/W4318719006",
+        "https://openalex.org/W4319793302",
+        "https://openalex.org/W4320165837",
+        "https://openalex.org/W4321650181",
+        "https://openalex.org/W4361866031",
+        "https://openalex.org/W4385474529",
+        "https://openalex.org/W4385567149",
+        "https://openalex.org/W4385571011",
+        "https://openalex.org/W4385571219",
+        "https://openalex.org/W4385572901",
+        "https://openalex.org/W4385573021",
+        "https://openalex.org/W4389520103",
+        "https://openalex.org/W4389524581",
+        "https://openalex.org/W4391876619"
+      ],
+      "type": "conference-paper",
+      "ids": {
+        "openalex": "https://openalex.org/W4389518671",
+        "doi": "https://doi.org/10.18653/v1/2023.emnlp-main.322"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4401042753",
+      "doi": "https://doi.org/10.18653/v1/2024.naacl-long.389",
+      "title": "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity",
+      "publication_year": 2024,
+      "publication_date": "2024-01-01",
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5088628107",
+            "display_name": "Soyeong Jeong",
+            "orcid": "https://orcid.org/0000-0003-3428-0365",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3428-0365"
+            ]
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Soyeong Jeong",
+          "raw_affiliation_strings": [
+            "School of Computing Graduate School of AI"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "School of Computing Graduate School of AI",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5013449404",
+            "display_name": "Jinheon Baek",
+            "orcid": "https://orcid.org/0000-0002-9367-560X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-9367-560X"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I157485424",
+              "display_name": "Korea Advanced Institute of Science and Technology",
+              "ror": "https://ror.org/05apxxy63",
+              "country_code": "KR",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I157485424"
+              ]
+            }
+          ],
+          "countries": [
+            "KR"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jinheon Baek",
+          "raw_affiliation_strings": [
+            "Korea Advanced Institute of Science and Technology 1 ,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Korea Advanced Institute of Science and Technology 1 ,",
+              "institution_ids": [
+                "https://openalex.org/I157485424"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5000595758",
+            "display_name": "Sukmin Cho",
+            "orcid": "https://orcid.org/0000-0003-1290-1570",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-1290-1570"
+            ]
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Sukmin Cho",
+          "raw_affiliation_strings": [
+            "School of Computing Graduate School of AI"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "School of Computing Graduate School of AI",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5070302452",
+            "display_name": "Sung Ju Hwang",
+            "orcid": "https://orcid.org/0000-0002-9675-2324",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-9675-2324"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I157485424",
+              "display_name": "Korea Advanced Institute of Science and Technology",
+              "ror": "https://ror.org/05apxxy63",
+              "country_code": "KR",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I157485424"
+              ]
+            }
+          ],
+          "countries": [
+            "KR"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Sung Ju Hwang",
+          "raw_affiliation_strings": [
+            "Korea Advanced Institute of Science and Technology 1 ,",
+            "School of Computing Graduate School of AI"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Korea Advanced Institute of Science and Technology 1 ,",
+              "institution_ids": [
+                "https://openalex.org/I157485424"
+              ]
+            },
+            {
+              "raw_affiliation_string": "School of Computing Graduate School of AI",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5100678933",
+            "display_name": "Jong Moon Park",
+            "orcid": "https://orcid.org/0000-0002-5852-3475",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-5852-3475"
+            ]
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Jong Park",
+          "raw_affiliation_strings": [
+            "School of Computing Graduate School of AI"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "School of Computing Graduate School of AI",
+              "institution_ids": []
+            }
+          ]
+        }
+      ],
+      "abstract_inverted_index": {
+        "Soyeong": [
+          0
+        ],
+        "Jeong,": [
+          1
+        ],
+        "Jinheon": [
+          2
+        ],
+        "Baek,": [
+          3
+        ],
+        "Sukmin": [
+          4
+        ],
+        "Cho,": [
+          5
+        ],
+        "Sung": [
+          6
+        ],
+        "Ju": [
+          7
+        ],
+        "Hwang,": [
+          8
+        ],
+        "Jong": [
+          9
+        ],
+        "Park.": [
+          10
+        ],
+        "Proceedings": [
+          11
+        ],
+        "of": [
+          12,
+          16,
+          21
+        ],
+        "the": [
+          13,
+          17,
+          22
+        ],
+        "2024": [
+          14
+        ],
+        "Conference": [
+          15
+        ],
+        "North": [
+          18
+        ],
+        "American": [
+          19
+        ],
+        "Chapter": [
+          20
+        ],
+        "Association": [
+          23
+        ],
+        "for": [
+          24
+        ],
+        "Computational": [
+          25
+        ],
+        "Linguistics:": [
+          26
+        ],
+        "Human": [
+          27
+        ],
+        "Language": [
+          28
+        ],
+        "Technologies": [
+          29
+        ],
+        "(Volume": [
+          30
+        ],
+        "1:": [
+          31
+        ],
+        "Long": [
+          32
+        ],
+        "Papers).": [
+          33
+        ],
+        "2024.": [
+          34
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.18653/v1/2024.naacl-long.389",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.18653/v1/2024.naacl-long.389",
+        "pdf_url": "https://aclanthology.org/2024.naacl-long.389.pdf",
+        "source": null,
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+        "raw_type": "proceedings-article"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://aclanthology.org/2024.naacl-long.389.pdf",
+        "any_repository_has_fulltext": null
+      },
+      "cited_by_count": 222,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "type": "conference-paper",
+      "ids": {
+        "openalex": "https://openalex.org/W4401042753",
+        "doi": "https://doi.org/10.18653/v1/2024.naacl-long.389"
+      }
+    }
+  ],
+  "group_by": []
+}

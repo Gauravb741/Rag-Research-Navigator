@@ -1,0 +1,31 @@
+{
+  "corpus_size": 72,
+  "entity_count": 537,
+  "relationship_count": 914,
+  "entity_type_counts": {
+    "Method": 19,
+    "ResearchProblem": 8,
+    "Dataset": 13,
+    "Metric": 9,
+    "Architecture": 5,
+    "Limitation": 8,
+    "ResearchDirection": 6,
+    "Concept": 8,
+    "Paper": 72,
+    "Author": 389
+  },
+  "relationship_type_counts": {
+    "AUTHORED_BY": 414,
+    "USES_METHOD": 47,
+    "INTRODUCES_METHOD": 85,
+    "EVALUATES_ON": 15,
+    "USES_METRIC": 35,
+    "HAS_LIMITATION": 49,
+    "SUGGESTS_DIRECTION": 66,
+    "RELATES_TO_CONCEPT": 97,
+    "CITES": 23,
+    "ADDRESSES_PROBLEM": 49,
+    "IMPLEMENTS_ARCHITECTURE": 17,
+    "BUILDS_ON": 17
+  }
+}

@@ -1,0 +1,3613 @@
+{
+  "meta": {
+    "count": 69,
+    "db_response_time_ms": 48,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where date >= (2020-01-01)\n  and full text has (CG-RAG: Research Question Answering by Citation Graph Retrieval-Augmented LLMs)\n  and date <= (2026-10-02)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "from_publication_date",
+            "value": "2020-01-01"
+          },
+          {
+            "column_id": "fulltext.search",
+            "value": "CG-RAG: Research Question Answering by Citation Graph Retrieval-Augmented LLMs",
+            "operator": "has"
+          },
+          {
+            "column_id": "to_publication_date",
+            "value": "2026-10-02"
+          }
+        ]
+      },
+      "url": "/works?filter=from_publication_date:2020-01-01,fulltext.search:CG-RAG: Research Question Answering by Citation Graph Retrieval-Augmented LLMs,to_publication_date:2026-10-02&per_page=5&page=1"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W4412396168",
+      "doi": "https://doi.org/10.1145/3726302.3729920",
+      "title": "CG-RAG: Research Question Answering by Citation Graph Retrieval-Augmented LLMs",
+      "publication_year": 2025,
+      "publication_date": "2025-07-13",
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5060713000",
+            "display_name": "Yuntong Hu",
+            "orcid": "https://orcid.org/0000-0003-3802-9039",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3802-9039"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Yuntong Hu",
+          "raw_affiliation_strings": [
+            "Emory University, Atlanta, GA, China"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-3802-9039",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Emory University, Atlanta, GA, China",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100315542",
+            "display_name": "Zhihan Lei",
+            "orcid": "https://orcid.org/0009-0006-2909-1489",
+            "observed_orcids": [
+              "https://orcid.org/0009-0006-2909-1489"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zhihan Lei",
+          "raw_affiliation_strings": [
+            "Emory University, Atlanta, GA, China"
+          ],
+          "raw_orcid": "https://orcid.org/0009-0006-2909-1489",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Emory University, Atlanta, GA, China",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Zhongjie Dai",
+            "orcid": "https://orcid.org/0009-0007-8433-9499",
+            "observed_orcids": [
+              "https://orcid.org/0009-0007-8433-9499"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I116953780",
+              "display_name": "Tongji University",
+              "ror": "https://ror.org/03rc6as71",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I116953780"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zhongjie Dai",
+          "raw_affiliation_strings": [
+            "Tongji University, Shanghai, China"
+          ],
+          "raw_orcid": "https://orcid.org/0009-0007-8433-9499",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Tongji University, Shanghai, China",
+              "institution_ids": [
+                "https://openalex.org/I116953780"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5111300971",
+            "display_name": "Allen Zhang",
+            "orcid": "https://orcid.org/0009-0008-5479-0622",
+            "observed_orcids": [
+              "https://orcid.org/0009-0008-5479-0622"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I130701444",
+              "display_name": "Georgia Institute of Technology",
+              "ror": "https://ror.org/01zkghx44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I130701444"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Allen Zhang",
+          "raw_affiliation_strings": [
+            "Georgia Institute of Technology, Atlanta, GA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0009-0008-5479-0622",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Georgia Institute of Technology, Atlanta, GA, USA",
+              "institution_ids": [
+                "https://openalex.org/I130701444"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5029726023",
+            "display_name": "Abhinav Angirekula",
+            "orcid": "https://orcid.org/0009-0007-0295-0527",
+            "observed_orcids": [
+              "https://orcid.org/0009-0007-0295-0527"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I157725225",
+              "display_name": "University of Illinois Urbana-Champaign",
+              "ror": "https://ror.org/047426m28",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I157725225"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Abhinav Angirekula",
+          "raw_affiliation_strings": [
+            "University of Illinois Urbana-Champaign, Champaign, IL, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0009-0007-0295-0527",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Illinois Urbana-Champaign, Champaign, IL, USA",
+              "institution_ids": [
+                "https://openalex.org/I157725225"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5102601029",
+            "display_name": "Zheng Zhang",
+            "orcid": "https://orcid.org/0009-0008-9808-6020",
+            "observed_orcids": [
+              "https://orcid.org/0009-0008-9808-6020"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zheng Zhang",
+          "raw_affiliation_strings": [
+            "Emory University, Atlanta, GA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0009-0008-9808-6020",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Emory University, Atlanta, GA, USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5048756500",
+            "display_name": "Liang Zhao",
+            "orcid": "https://orcid.org/0000-0002-2648-9989",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-2648-9989",
+              "https://orcid.org/0000-0003-0869-7896"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Liang Zhao",
+          "raw_affiliation_strings": [
+            "Emory University, Atlanta, GA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-2648-9989",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Emory University, Atlanta, GA, USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstract_inverted_index": {
+        "Research": [
+          0
+        ],
+        "question": [
+          1,
+          63,
+          157
+        ],
+        "answering": [
+          2,
+          158
+        ],
+        "requires": [
+          3
+        ],
+        "accurate": [
+          4
+        ],
+        "retrieval": [
+          5,
+          47,
+          54,
+          99,
+          123,
+          126,
+          176,
+          180
+        ],
+        "and": [
+          6,
+          45,
+          56,
+          79,
+          83,
+          97,
+          111,
+          124,
+          144,
+          182
+        ],
+        "contextual": [
+          7,
+          69
+        ],
+        "understanding": [
+          8,
+          113
+        ],
+        "of": [
+          9
+        ],
+        "scientific": [
+          10
+        ],
+        "literature.": [
+          11
+        ],
+        "However,": [
+          12
+        ],
+        "current": [
+          13
+        ],
+        "Retrieval-Augmented": [
+          14,
+          36
+        ],
+        "Generation": [
+          15,
+          37
+        ],
+        "(RAG)": [
+          16
+        ],
+        "methods": [
+          17,
+          171
+        ],
+        "often": [
+          18
+        ],
+        "struggle": [
+          19
+        ],
+        "to": [
+          20,
+          52,
+          120,
+          141
+        ],
+        "balance": [
+          21
+        ],
+        "complex": [
+          22
+        ],
+        "document": [
+          23
+        ],
+        "relationships": [
+          24
+        ],
+        "with": [
+          25,
+          101,
+          173
+        ],
+        "precise": [
+          26,
+          143
+        ],
+        "information": [
+          27,
+          140
+        ],
+        "retrieval.": [
+          28
+        ],
+        "In": [
+          29
+        ],
+        "this": [
+          30
+        ],
+        "paper,": [
+          31
+        ],
+        "we": [
+          32,
+          66,
+          87,
+          129
+        ],
+        "introduce": [
+          33,
+          88
+        ],
+        "Contextualized": [
+          34
+        ],
+        "Graph": [
+          35,
+          90
+        ],
+        "(CG-RAG),": [
+          38
+        ],
+        "a": [
+          39,
+          68,
+          131
+        ],
+        "novel": [
+          40
+        ],
+        "framework": [
+          41,
+          167
+        ],
+        "that": [
+          42,
+          135,
+          164
+        ],
+        "integrates": [
+          43,
+          95
+        ],
+        "sparse": [
+          44,
+          96
+        ],
+        "dense": [
+          46,
+          98
+        ],
+        "signals": [
+          48,
+          100
+        ],
+        "within": [
+          49,
+          82
+        ],
+        "graph": [
+          50,
+          70,
+          102,
+          116,
+          122
+        ],
+        "structures": [
+          51
+        ],
+        "enhance": [
+          53
+        ],
+        "efficiency": [
+          55
+        ],
+        "subsequently": [
+          57
+        ],
+        "improve": [
+          58
+        ],
+        "generation": [
+          59,
+          133,
+          183
+        ],
+        "quality": [
+          60
+        ],
+        "for": [
+          61,
+          72
+        ],
+        "research": [
+          62,
+          156
+        ],
+        "answering.": [
+          64
+        ],
+        "First,": [
+          65
+        ],
+        "propose": [
+          67
+        ],
+        "representation": [
+          71
+        ],
+        "citation": [
+          73,
+          115
+        ],
+        "graphs,": [
+          74
+        ],
+        "effectively": [
+          75
+        ],
+        "capturing": [
+          76
+        ],
+        "both": [
+          77
+        ],
+        "explicit": [
+          78
+        ],
+        "implicit": [
+          80
+        ],
+        "connections": [
+          81
+        ],
+        "across": [
+          84,
+          160
+        ],
+        "documents.": [
+          85
+        ],
+        "Next,": [
+          86
+        ],
+        "Lexical-Semantic": [
+          89
+        ],
+        "Retrieval": [
+          91
+        ],
+        "(LeSeGR),": [
+          92
+        ],
+        "which": [
+          93
+        ],
+        "seamlessly": [
+          94
+        ],
+        "encoding.": [
+          103
+        ],
+        "It": [
+          104
+        ],
+        "bridges": [
+          105
+        ],
+        "the": [
+          106,
+          137
+        ],
+        "gap": [
+          107
+        ],
+        "between": [
+          108
+        ],
+        "lexical": [
+          109
+        ],
+        "precision": [
+          110
+        ],
+        "semantic": [
+          112
+        ],
+        "in": [
+          114
+        ],
+        "retrieval,": [
+          117
+        ],
+        "demonstrating": [
+          118
+        ],
+        "generalizability": [
+          119
+        ],
+        "existing": [
+          121
+        ],
+        "hybrid": [
+          125
+        ],
+        "methods.": [
+          127
+        ],
+        "Finally,": [
+          128
+        ],
+        "present": [
+          130
+        ],
+        "context-aware": [
+          132
+        ],
+        "strategy": [
+          134
+        ],
+        "utilizes": [
+          136
+        ],
+        "retrieved": [
+          138
+        ],
+        "graph-structured": [
+          139
+        ],
+        "generate": [
+          142
+        ],
+        "contextually": [
+          145
+        ],
+        "enriched": [
+          146
+        ],
+        "responses": [
+          147
+        ],
+        "using": [
+          148
+        ],
+        "large": [
+          149
+        ],
+        "language": [
+          150
+        ],
+        "models": [
+          151
+        ],
+        "(LLMs).": [
+          152
+        ],
+        "Extensive": [
+          153
+        ],
+        "experiments": [
+          154
+        ],
+        "on": [
+          155
+        ],
+        "benchmarks": [
+          159
+        ],
+        "multiple": [
+          161
+        ],
+        "domains": [
+          162
+        ],
+        "demonstrate": [
+          163
+        ],
+        "our": [
+          165
+        ],
+        "CG-RAG": [
+          166
+        ],
+        "significantly": [
+          168
+        ],
+        "outperforms": [
+          169
+        ],
+        "RAG": [
+          170
+        ],
+        "combined": [
+          172
+        ],
+        "various": [
+          174
+        ],
+        "state-of-the-art": [
+          175
+        ],
+        "approaches,": [
+          177
+        ],
+        "delivering": [
+          178
+        ],
+        "superior": [
+          179
+        ],
+        "accuracy": [
+          181
+        ],
+        "quality.": [
+          184
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1145/3726302.3729920",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1145/3726302.3729920",
+        "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3726302.3729920",
+        "source": null,
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+        "raw_type": "proceedings-article"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://dl.acm.org/doi/pdf/10.1145/3726302.3729920",
+        "any_repository_has_fulltext": null
+      },
+      "cited_by_count": 9,
+      "referenced_works_count": 19,
+      "referenced_works": [
+        "https://openalex.org/W2165612380",
+        "https://openalex.org/W3008374555",
+        "https://openalex.org/W3015883388",
+        "https://openalex.org/W3021397474",
+        "https://openalex.org/W3027879771",
+        "https://openalex.org/W3099700870",
+        "https://openalex.org/W3112005222",
+        "https://openalex.org/W3145630588",
+        "https://openalex.org/W3157758108",
+        "https://openalex.org/W3208268490",
+        "https://openalex.org/W4252076394",
+        "https://openalex.org/W4316036080",
+        "https://openalex.org/W4317898419",
+        "https://openalex.org/W4389921502",
+        "https://openalex.org/W4391136507",
+        "https://openalex.org/W4391221150",
+        "https://openalex.org/W4393621491",
+        "https://openalex.org/W4400531953",
+        "https://openalex.org/W4405648826"
+      ],
+      "type": "conference-paper",
+      "ids": {
+        "openalex": "https://openalex.org/W4412396168",
+        "doi": "https://doi.org/10.1145/3726302.3729920"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4411120544",
+      "doi": "https://doi.org/10.18653/v1/2025.findings-naacl.232",
+      "title": "GRAG: Graph Retrieval-Augmented Generation",
+      "publication_year": 2025,
+      "publication_date": "2025-01-01",
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5060713000",
+            "display_name": "Yuntong Hu",
+            "orcid": "https://orcid.org/0000-0003-3802-9039",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3802-9039"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Yuntong Hu",
+          "raw_affiliation_strings": [
+            "Department of Computer Science Emory University Atlanta , GA 30322 , USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science Emory University Atlanta , GA 30322 , USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100315542",
+            "display_name": "Zhihan Lei",
+            "orcid": "https://orcid.org/0009-0006-2909-1489",
+            "observed_orcids": [
+              "https://orcid.org/0009-0006-2909-1489"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zhihan Lei",
+          "raw_affiliation_strings": [
+            "Department of Computer Science Emory University Atlanta , GA 30322 , USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science Emory University Atlanta , GA 30322 , USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100459086",
+            "display_name": "Zheng Zhang",
+            "orcid": "https://orcid.org/0000-0002-0027-172X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0027-172X"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zheng Zhang",
+          "raw_affiliation_strings": [
+            "Department of Computer Science Emory University Atlanta , GA 30322 , USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science Emory University Atlanta , GA 30322 , USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5114198055",
+            "display_name": "Bo Pan",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Bo Pan",
+          "raw_affiliation_strings": [
+            "Department of Computer Science Emory University Atlanta , GA 30322 , USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science Emory University Atlanta , GA 30322 , USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Chen Ling",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Chen Ling",
+          "raw_affiliation_strings": [
+            "Department of Computer Science Emory University Atlanta , GA 30322 , USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science Emory University Atlanta , GA 30322 , USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5033765170",
+            "display_name": "Liang Zhao",
+            "orcid": "https://orcid.org/0000-0003-3974-9206",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3974-9206"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Liang Zhao",
+          "raw_affiliation_strings": [
+            "Department of Computer Science Emory University Atlanta , GA 30322 , USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science Emory University Atlanta , GA 30322 , USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstract_inverted_index": {
+        "Naive": [
+          0
+        ],
+        "Retrieval-Augmented": [
+          1,
+          42
+        ],
+        "Generation": [
+          2,
+          43
+        ],
+        "(RAG)": [
+          3
+        ],
+        "focuses": [
+          4
+        ],
+        "on": [
+          5,
+          121,
+          132
+        ],
+        "individual": [
+          6
+        ],
+        "documents": [
+          7,
+          19
+        ],
+        "during": [
+          8
+        ],
+        "retrieval": [
+          9
+        ],
+        "and,": [
+          10
+        ],
+        "as": [
+          11,
+          28,
+          145,
+          147
+        ],
+        "a": [
+          12,
+          78
+        ],
+        "result,": [
+          13
+        ],
+        "falls": [
+          14
+        ],
+        "short": [
+          15
+        ],
+        "in": [
+          16,
+          24,
+          50,
+          88,
+          127
+        ],
+        "handling": [
+          17
+        ],
+        "networked": [
+          18
+        ],
+        "which": [
+          20,
+          45
+        ],
+        "are": [
+          21,
+          151
+        ],
+        "very": [
+          22
+        ],
+        "popular": [
+          23
+        ],
+        "many": [
+          25
+        ],
+        "applications": [
+          26
+        ],
+        "such": [
+          27
+        ],
+        "citation": [
+          29
+        ],
+        "graphs,": [
+          30,
+          134
+        ],
+        "social": [
+          31
+        ],
+        "media,": [
+          32
+        ],
+        "and": [
+          33,
+          54,
+          59,
+          106,
+          115
+        ],
+        "knowledge": [
+          34
+        ],
+        "graphs.To": [
+          35
+        ],
+        "overcome": [
+          36
+        ],
+        "this": [
+          37
+        ],
+        "limitation,": [
+          38
+        ],
+        "we": [
+          39,
+          76
+        ],
+        "introduce": [
+          40
+        ],
+        "Graph": [
+          41
+        ],
+        "(GRAG),": [
+          44
+        ],
+        "tackles": [
+          46
+        ],
+        "the": [
+          47,
+          56,
+          84,
+          107,
+          117
+        ],
+        "fundamental": [
+          48
+        ],
+        "challenges": [
+          49
+        ],
+        "retrieving": [
+          51
+        ],
+        "textual": [
+          52,
+          58,
+          73,
+          96,
+          133
+        ],
+        "subgraphs": [
+          53
+        ],
+        "integrating": [
+          55
+        ],
+        "joint": [
+          57
+        ],
+        "topological": [
+          60
+        ],
+        "information": [
+          61
+        ],
+        "into": [
+          62,
+          98
+        ],
+        "Large": [
+          63
+        ],
+        "Language": [
+          64
+        ],
+        "Models": [
+          65
+        ],
+        "(LLMs)": [
+          66
+        ],
+        "to": [
+          67,
+          111
+        ],
+        "enhance": [
+          68
+        ],
+        "its": [
+          69
+        ],
+        "generation.To": [
+          70
+        ],
+        "enable": [
+          71
+        ],
+        "efficient": [
+          72
+        ],
+        "subgraph": [
+          74,
+          86
+        ],
+        "retrieval,": [
+          75
+        ],
+        "propose": [
+          77
+        ],
+        "novel": [
+          79
+        ],
+        "divide-and-conquer": [
+          80
+        ],
+        "strategy": [
+          81
+        ],
+        "that": [
+          82,
+          126
+        ],
+        "retrieves": [
+          83
+        ],
+        "optimal": [
+          85
+        ],
+        "structure": [
+          87
+        ],
+        "linear": [
+          89
+        ],
+        "time.To": [
+          90
+        ],
+        "achieve": [
+          91
+        ],
+        "graph": [
+          92,
+          108,
+          118,
+          122
+        ],
+        "context-aware": [
+          93
+        ],
+        "generation,": [
+          94
+        ],
+        "incorporate": [
+          95
+        ],
+        "graphs": [
+          97
+        ],
+        "LLMs": [
+          99,
+          110
+        ],
+        "through": [
+          100
+        ],
+        "two": [
+          101
+        ],
+        "complementary": [
+          102
+        ],
+        "views-the": [
+          103
+        ],
+        "text": [
+          104
+        ],
+        "view": [
+          105
+        ],
+        "view-enabling": [
+          109
+        ],
+        "more": [
+          112
+        ],
+        "effectively": [
+          113
+        ],
+        "comprehend": [
+          114
+        ],
+        "utilize": [
+          116
+        ],
+        "context.Extensive": [
+          119
+        ],
+        "experiments": [
+          120
+        ],
+        "reasoning": [
+          123,
+          131
+        ],
+        "benchmarks": [
+          124
+        ],
+        "demonstrate": [
+          125
+        ],
+        "scenarios": [
+          128
+        ],
+        "requiring": [
+          129
+        ],
+        "multi-hop": [
+          130
+        ],
+        "our": [
+          135
+        ],
+        "GRAG": [
+          136,
+          150
+        ],
+        "approach": [
+          137
+        ],
+        "significantly": [
+          138
+        ],
+        "outperforms": [
+          139
+        ],
+        "current": [
+          140
+        ],
+        "state-of-the-art": [
+          141
+        ],
+        "RAG": [
+          142
+        ],
+        "methods.Our": [
+          143
+        ],
+        "datasets": [
+          144
+        ],
+        "well": [
+          146
+        ],
+        "codes": [
+          148
+        ],
+        "of": [
+          149
+        ],
+        "available": [
+          152
+        ],
+        "at": [
+          153
+        ],
+        "https://github.com/HuieL/GRAG.": [
+          154
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.18653/v1/2025.findings-naacl.232",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.18653/v1/2025.findings-naacl.232",
+        "pdf_url": "https://aclanthology.org/2025.findings-naacl.232.pdf",
+        "source": null,
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Findings of the Association for Computational Linguistics: NAACL 2025",
+        "raw_type": "proceedings-article"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://aclanthology.org/2025.findings-naacl.232.pdf",
+        "any_repository_has_fulltext": null
+      },
+      "cited_by_count": 77,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "type": "conference-paper",
+      "ids": {
+        "openalex": "https://openalex.org/W4411120544",
+        "doi": "https://doi.org/10.18653/v1/2025.findings-naacl.232"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4406880082",
+      "doi": "https://doi.org/10.48550/arxiv.2501.15067",
+      "title": "CG-RAG: Research Question Answering by Citation Graph Retrieval-Augmented LLMs",
+      "publication_year": 2025,
+      "publication_date": "2025-01-25",
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5060713000",
+            "display_name": "Yuntong Hu",
+            "orcid": "https://orcid.org/0000-0003-3802-9039",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3802-9039"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Hu, Yuntong",
+          "raw_affiliation_strings": [
+            "Emory University Atlanta , GA , USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Emory University Atlanta , GA , USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100315542",
+            "display_name": "Zhihan Lei",
+            "orcid": "https://orcid.org/0009-0006-2909-1489",
+            "observed_orcids": [
+              "https://orcid.org/0009-0006-2909-1489"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Lei, Zhihan",
+          "raw_affiliation_strings": [
+            "Emory University Atlanta , GA , USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Emory University Atlanta , GA , USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Dai, Zhongjie",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I116953780",
+              "display_name": "Tongji University",
+              "ror": "https://ror.org/03rc6as71",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I116953780"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Dai, Zhongjie",
+          "raw_affiliation_strings": [
+            "Tongji University Shanghai , China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Tongji University Shanghai , China",
+              "institution_ids": [
+                "https://openalex.org/I116953780"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5044296857",
+            "display_name": "Allen  A. Zhang",
+            "orcid": "https://orcid.org/0000-0002-2565-9894",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-2565-9894",
+              "https://orcid.org/0009-0008-6408-9450"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I130701444",
+              "display_name": "Georgia Institute of Technology",
+              "ror": "https://ror.org/01zkghx44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I130701444"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zhang, Allen",
+          "raw_affiliation_strings": [
+            "Emory University Atlanta , GA , USA",
+            "Georgia Institute of Technology Atlanta , GA , USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Emory University Atlanta , GA , USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Georgia Institute of Technology Atlanta , GA , USA",
+              "institution_ids": [
+                "https://openalex.org/I130701444"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5029726023",
+            "display_name": "Abhinav Angirekula",
+            "orcid": "https://orcid.org/0009-0007-0295-0527",
+            "observed_orcids": [
+              "https://orcid.org/0009-0007-0295-0527"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Angirekula, Abhinav",
+          "raw_affiliation_strings": [
+            "Emory University Atlanta , GA , USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Emory University Atlanta , GA , USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100459173",
+            "display_name": "Zheng Zhang",
+            "orcid": "https://orcid.org/0000-0003-1961-7070",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-1961-7070"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I116953780",
+              "display_name": "Tongji University",
+              "ror": "https://ror.org/03rc6as71",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I116953780"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "CN",
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zhang, Zheng",
+          "raw_affiliation_strings": [
+            "Emory University Atlanta , GA , USA",
+            "Tongji University Shanghai , China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Emory University Atlanta , GA , USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Tongji University Shanghai , China",
+              "institution_ids": [
+                "https://openalex.org/I116953780"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5048756500",
+            "display_name": "Liang Zhao",
+            "orcid": "https://orcid.org/0000-0002-2648-9989",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-2648-9989",
+              "https://orcid.org/0000-0003-0869-7896"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I157725225",
+              "display_name": "University of Illinois Urbana-Champaign",
+              "ror": "https://ror.org/047426m28",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I157725225"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zhao, Liang",
+          "raw_affiliation_strings": [
+            "Emory University Atlanta , GA , USA",
+            "University of Illinois Urbana-Champaign Urbana , IL , USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Emory University Atlanta , GA , USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            },
+            {
+              "raw_affiliation_string": "University of Illinois Urbana-Champaign Urbana , IL , USA",
+              "institution_ids": [
+                "https://openalex.org/I157725225"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstract_inverted_index": {
+        "Research": [
+          0
+        ],
+        "question": [
+          1,
+          63,
+          157
+        ],
+        "answering": [
+          2,
+          158
+        ],
+        "requires": [
+          3
+        ],
+        "accurate": [
+          4
+        ],
+        "retrieval": [
+          5,
+          47,
+          54,
+          99,
+          123,
+          126,
+          176,
+          180
+        ],
+        "and": [
+          6,
+          45,
+          56,
+          79,
+          83,
+          97,
+          111,
+          124,
+          144,
+          182
+        ],
+        "contextual": [
+          7,
+          69
+        ],
+        "understanding": [
+          8,
+          113
+        ],
+        "of": [
+          9
+        ],
+        "scientific": [
+          10
+        ],
+        "literature.": [
+          11
+        ],
+        "However,": [
+          12
+        ],
+        "current": [
+          13
+        ],
+        "Retrieval-Augmented": [
+          14,
+          36
+        ],
+        "Generation": [
+          15,
+          37
+        ],
+        "(RAG)": [
+          16
+        ],
+        "methods": [
+          17,
+          171
+        ],
+        "often": [
+          18
+        ],
+        "struggle": [
+          19
+        ],
+        "to": [
+          20,
+          52,
+          120,
+          141
+        ],
+        "balance": [
+          21
+        ],
+        "complex": [
+          22
+        ],
+        "document": [
+          23
+        ],
+        "relationships": [
+          24
+        ],
+        "with": [
+          25,
+          101,
+          173
+        ],
+        "precise": [
+          26,
+          143
+        ],
+        "information": [
+          27,
+          140
+        ],
+        "retrieval.": [
+          28
+        ],
+        "In": [
+          29
+        ],
+        "this": [
+          30
+        ],
+        "paper,": [
+          31
+        ],
+        "we": [
+          32,
+          66,
+          87,
+          129
+        ],
+        "introduce": [
+          33,
+          88
+        ],
+        "Contextualized": [
+          34
+        ],
+        "Graph": [
+          35,
+          90
+        ],
+        "(CG-RAG),": [
+          38
+        ],
+        "a": [
+          39,
+          68,
+          131
+        ],
+        "novel": [
+          40
+        ],
+        "framework": [
+          41,
+          167
+        ],
+        "that": [
+          42,
+          135,
+          164
+        ],
+        "integrates": [
+          43,
+          95
+        ],
+        "sparse": [
+          44,
+          96
+        ],
+        "dense": [
+          46,
+          98
+        ],
+        "signals": [
+          48,
+          100
+        ],
+        "within": [
+          49,
+          82
+        ],
+        "graph": [
+          50,
+          70,
+          102,
+          116,
+          122
+        ],
+        "structures": [
+          51
+        ],
+        "enhance": [
+          53
+        ],
+        "efficiency": [
+          55
+        ],
+        "subsequently": [
+          57
+        ],
+        "improve": [
+          58
+        ],
+        "generation": [
+          59,
+          133,
+          183
+        ],
+        "quality": [
+          60
+        ],
+        "for": [
+          61,
+          72
+        ],
+        "research": [
+          62,
+          156
+        ],
+        "answering.": [
+          64
+        ],
+        "First,": [
+          65
+        ],
+        "propose": [
+          67
+        ],
+        "representation": [
+          71
+        ],
+        "citation": [
+          73,
+          115
+        ],
+        "graphs,": [
+          74
+        ],
+        "effectively": [
+          75
+        ],
+        "capturing": [
+          76
+        ],
+        "both": [
+          77
+        ],
+        "explicit": [
+          78
+        ],
+        "implicit": [
+          80
+        ],
+        "connections": [
+          81
+        ],
+        "across": [
+          84,
+          160
+        ],
+        "documents.": [
+          85
+        ],
+        "Next,": [
+          86
+        ],
+        "Lexical-Semantic": [
+          89
+        ],
+        "Retrieval": [
+          91
+        ],
+        "(LeSeGR),": [
+          92
+        ],
+        "which": [
+          93
+        ],
+        "seamlessly": [
+          94
+        ],
+        "encoding.": [
+          103
+        ],
+        "It": [
+          104
+        ],
+        "bridges": [
+          105
+        ],
+        "the": [
+          106,
+          137
+        ],
+        "gap": [
+          107
+        ],
+        "between": [
+          108
+        ],
+        "lexical": [
+          109
+        ],
+        "precision": [
+          110
+        ],
+        "semantic": [
+          112
+        ],
+        "in": [
+          114
+        ],
+        "retrieval,": [
+          117
+        ],
+        "demonstrating": [
+          118
+        ],
+        "generalizability": [
+          119
+        ],
+        "existing": [
+          121
+        ],
+        "hybrid": [
+          125
+        ],
+        "methods.": [
+          127
+        ],
+        "Finally,": [
+          128
+        ],
+        "present": [
+          130
+        ],
+        "context-aware": [
+          132
+        ],
+        "strategy": [
+          134
+        ],
+        "utilizes": [
+          136
+        ],
+        "retrieved": [
+          138
+        ],
+        "graph-structured": [
+          139
+        ],
+        "generate": [
+          142
+        ],
+        "contextually": [
+          145
+        ],
+        "enriched": [
+          146
+        ],
+        "responses": [
+          147
+        ],
+        "using": [
+          148
+        ],
+        "large": [
+          149
+        ],
+        "language": [
+          150
+        ],
+        "models": [
+          151
+        ],
+        "(LLMs).": [
+          152
+        ],
+        "Extensive": [
+          153
+        ],
+        "experiments": [
+          154
+        ],
+        "on": [
+          155
+        ],
+        "benchmarks": [
+          159
+        ],
+        "multiple": [
+          161
+        ],
+        "domains": [
+          162
+        ],
+        "demonstrate": [
+          163
+        ],
+        "our": [
+          165
+        ],
+        "CG-RAG": [
+          166
+        ],
+        "significantly": [
+          168
+        ],
+        "outperforms": [
+          169
+        ],
+        "RAG": [
+          170
+        ],
+        "combined": [
+          172
+        ],
+        "various": [
+          174
+        ],
+        "state-of-the-art": [
+          175
+        ],
+        "approaches,": [
+          177
+        ],
+        "delivering": [
+          178
+        ],
+        "superior": [
+          179
+        ],
+        "accuracy": [
+          181
+        ],
+        "quality.": [
+          184
+        ]
+      },
+      "primary_location": {
+        "id": "pmh:oai:arXiv.org:2501.15067",
+        "is_oa": true,
+        "landing_page_url": "http://arxiv.org/abs/2501.15067",
+        "pdf_url": "https://arxiv.org/pdf/2501.15067",
+        "source": {
+          "id": "https://openalex.org/S4306400194",
+          "display_name": "arXiv (Cornell University)",
+          "issn_l": "2331-8422",
+          "issn": [
+            "2331-8422"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [],
+          "host_organization": "https://openalex.org/I205783295",
+          "host_organization_name": "Cornell University",
+          "host_organization_lineage": [
+            "https://openalex.org/I205783295"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "text"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://arxiv.org/pdf/2501.15067",
+        "any_repository_has_fulltext": true
+      },
+      "cited_by_count": 0,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "type": "preprint",
+      "ids": {
+        "openalex": "https://openalex.org/W4406880082",
+        "doi": "https://doi.org/10.48550/arxiv.2501.15067"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4399115692",
+      "doi": "https://doi.org/10.48550/arxiv.2405.16506",
+      "title": "GRAG: Graph Retrieval-Augmented Generation",
+      "publication_year": 2024,
+      "publication_date": "2024-05-26",
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5060713000",
+            "display_name": "Yuntong Hu",
+            "orcid": "https://orcid.org/0000-0003-3802-9039",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3802-9039"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Hu, Yuntong",
+          "raw_affiliation_strings": [
+            "Department of Computer Science Emory University Atlanta , GA 30322 , USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science Emory University Atlanta , GA 30322 , USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100315542",
+            "display_name": "Zhihan Lei",
+            "orcid": "https://orcid.org/0009-0006-2909-1489",
+            "observed_orcids": [
+              "https://orcid.org/0009-0006-2909-1489"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Lei, Zhihan",
+          "raw_affiliation_strings": [
+            "Department of Computer Science Emory University Atlanta , GA 30322 , USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science Emory University Atlanta , GA 30322 , USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100459086",
+            "display_name": "Zheng Zhang",
+            "orcid": "https://orcid.org/0000-0002-0027-172X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0027-172X"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zhang, Zheng",
+          "raw_affiliation_strings": [
+            "Department of Computer Science Emory University Atlanta , GA 30322 , USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science Emory University Atlanta , GA 30322 , USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5114198055",
+            "display_name": "Bo Pan",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Pan, Bo",
+          "raw_affiliation_strings": [
+            "Department of Computer Science Emory University Atlanta , GA 30322 , USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science Emory University Atlanta , GA 30322 , USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Ling, Chen",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ling, Chen",
+          "raw_affiliation_strings": [
+            "Department of Computer Science Emory University Atlanta , GA 30322 , USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science Emory University Atlanta , GA 30322 , USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5048756500",
+            "display_name": "Liang Zhao",
+            "orcid": "https://orcid.org/0000-0002-2648-9989",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-2648-9989",
+              "https://orcid.org/0000-0003-0869-7896"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zhao, Liang",
+          "raw_affiliation_strings": [
+            "Department of Computer Science Emory University Atlanta , GA 30322 , USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science Emory University Atlanta , GA 30322 , USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstract_inverted_index": {
+        "Naive": [
+          0
+        ],
+        "Retrieval-Augmented": [
+          1,
+          43
+        ],
+        "Generation": [
+          2,
+          44
+        ],
+        "(RAG)": [
+          3
+        ],
+        "focuses": [
+          4
+        ],
+        "on": [
+          5,
+          125,
+          136
+        ],
+        "individual": [
+          6
+        ],
+        "documents": [
+          7,
+          19
+        ],
+        "during": [
+          8
+        ],
+        "retrieval": [
+          9
+        ],
+        "and,": [
+          10
+        ],
+        "as": [
+          11,
+          28,
+          150,
+          152
+        ],
+        "a": [
+          12,
+          80
+        ],
+        "result,": [
+          13
+        ],
+        "falls": [
+          14
+        ],
+        "short": [
+          15
+        ],
+        "in": [
+          16,
+          24,
+          51,
+          90,
+          131
+        ],
+        "handling": [
+          17
+        ],
+        "networked": [
+          18
+        ],
+        "which": [
+          20,
+          46
+        ],
+        "are": [
+          21,
+          156
+        ],
+        "very": [
+          22
+        ],
+        "popular": [
+          23
+        ],
+        "many": [
+          25
+        ],
+        "applications": [
+          26
+        ],
+        "such": [
+          27
+        ],
+        "citation": [
+          29
+        ],
+        "graphs,": [
+          30,
+          138
+        ],
+        "social": [
+          31
+        ],
+        "media,": [
+          32
+        ],
+        "and": [
+          33,
+          55,
+          60,
+          109,
+          118
+        ],
+        "knowledge": [
+          34
+        ],
+        "graphs.": [
+          35
+        ],
+        "To": [
+          36,
+          72,
+          93
+        ],
+        "overcome": [
+          37
+        ],
+        "this": [
+          38
+        ],
+        "limitation,": [
+          39
+        ],
+        "we": [
+          40,
+          78
+        ],
+        "introduce": [
+          41
+        ],
+        "Graph": [
+          42
+        ],
+        "(GRAG),": [
+          45
+        ],
+        "tackles": [
+          47
+        ],
+        "the": [
+          48,
+          57,
+          86,
+          110,
+          120
+        ],
+        "fundamental": [
+          49
+        ],
+        "challenges": [
+          50
+        ],
+        "retrieving": [
+          52
+        ],
+        "textual": [
+          53,
+          59,
+          75,
+          99,
+          137
+        ],
+        "subgraphs": [
+          54
+        ],
+        "integrating": [
+          56
+        ],
+        "joint": [
+          58
+        ],
+        "topological": [
+          61
+        ],
+        "information": [
+          62
+        ],
+        "into": [
+          63,
+          101
+        ],
+        "Large": [
+          64
+        ],
+        "Language": [
+          65
+        ],
+        "Models": [
+          66
+        ],
+        "(LLMs)": [
+          67
+        ],
+        "to": [
+          68,
+          114
+        ],
+        "enhance": [
+          69
+        ],
+        "its": [
+          70
+        ],
+        "generation.": [
+          71
+        ],
+        "enable": [
+          73
+        ],
+        "efficient": [
+          74
+        ],
+        "subgraph": [
+          76,
+          88
+        ],
+        "retrieval,": [
+          77
+        ],
+        "propose": [
+          79
+        ],
+        "novel": [
+          81
+        ],
+        "divide-and-conquer": [
+          82
+        ],
+        "strategy": [
+          83
+        ],
+        "that": [
+          84,
+          130
+        ],
+        "retrieves": [
+          85
+        ],
+        "optimal": [
+          87
+        ],
+        "structure": [
+          89
+        ],
+        "linear": [
+          91
+        ],
+        "time.": [
+          92
+        ],
+        "achieve": [
+          94
+        ],
+        "graph": [
+          95,
+          111,
+          121,
+          126
+        ],
+        "context-aware": [
+          96
+        ],
+        "generation,": [
+          97
+        ],
+        "incorporate": [
+          98
+        ],
+        "graphs": [
+          100
+        ],
+        "LLMs": [
+          102,
+          113
+        ],
+        "through": [
+          103
+        ],
+        "two": [
+          104
+        ],
+        "complementary": [
+          105
+        ],
+        "views-the": [
+          106
+        ],
+        "text": [
+          107
+        ],
+        "view": [
+          108
+        ],
+        "view-enabling": [
+          112
+        ],
+        "more": [
+          115
+        ],
+        "effectively": [
+          116
+        ],
+        "comprehend": [
+          117
+        ],
+        "utilize": [
+          119
+        ],
+        "context.": [
+          122
+        ],
+        "Extensive": [
+          123
+        ],
+        "experiments": [
+          124
+        ],
+        "reasoning": [
+          127,
+          135
+        ],
+        "benchmarks": [
+          128
+        ],
+        "demonstrate": [
+          129
+        ],
+        "scenarios": [
+          132
+        ],
+        "requiring": [
+          133
+        ],
+        "multi-hop": [
+          134
+        ],
+        "our": [
+          139
+        ],
+        "GRAG": [
+          140,
+          155
+        ],
+        "approach": [
+          141
+        ],
+        "significantly": [
+          142
+        ],
+        "outperforms": [
+          143
+        ],
+        "current": [
+          144
+        ],
+        "state-of-the-art": [
+          145
+        ],
+        "RAG": [
+          146
+        ],
+        "methods.": [
+          147
+        ],
+        "Our": [
+          148
+        ],
+        "datasets": [
+          149
+        ],
+        "well": [
+          151
+        ],
+        "codes": [
+          153
+        ],
+        "of": [
+          154
+        ],
+        "available": [
+          157
+        ],
+        "at": [
+          158
+        ],
+        "https://github.com/HuieL/GRAG.": [
+          159
+        ]
+      },
+      "primary_location": {
+        "id": "pmh:oai:arXiv.org:2405.16506",
+        "is_oa": true,
+        "landing_page_url": "http://arxiv.org/abs/2405.16506",
+        "pdf_url": "https://arxiv.org/pdf/2405.16506",
+        "source": {
+          "id": "https://openalex.org/S4306400194",
+          "display_name": "arXiv (Cornell University)",
+          "issn_l": "2331-8422",
+          "issn": [
+            "2331-8422"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [],
+          "host_organization": "https://openalex.org/I205783295",
+          "host_organization_name": "Cornell University",
+          "host_organization_lineage": [
+            "https://openalex.org/I205783295"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "text"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://arxiv.org/pdf/2405.16506",
+        "any_repository_has_fulltext": true
+      },
+      "cited_by_count": 10,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "type": "preprint",
+      "ids": {
+        "openalex": "https://openalex.org/W4399115692",
+        "doi": "https://doi.org/10.48550/arxiv.2405.16506"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4410952162",
+      "doi": "https://doi.org/10.3390/app15116247",
+      "title": "Retrieval-Augmented Generation to Generate Knowledge Assets and Creation of Action Drivers",
+      "publication_year": 2025,
+      "publication_date": "2025-06-01",
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": null,
+            "display_name": "Antony James",
+            "orcid": "https://orcid.org/0009-0008-9525-6979",
+            "observed_orcids": [
+              "https://orcid.org/0009-0008-9525-6979"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I165525304",
+              "display_name": "Edge Hill University",
+              "ror": "https://ror.org/028ndzd53",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I165525304"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Antony James",
+          "raw_affiliation_strings": [
+            "Department of Computer Science, Edge Hill University, St Helens Road, Ormskirk L39 4QP, Lancashire, UK"
+          ],
+          "raw_orcid": "https://orcid.org/0009-0008-9525-6979",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science, Edge Hill University, St Helens Road, Ormskirk L39 4QP, Lancashire, UK",
+              "institution_ids": [
+                "https://openalex.org/I165525304"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5053739348",
+            "display_name": "Marcello Trovati",
+            "orcid": "https://orcid.org/0000-0001-6607-422X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-6607-422X"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I165525304",
+              "display_name": "Edge Hill University",
+              "ror": "https://ror.org/028ndzd53",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I165525304"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Marcello Trovati",
+          "raw_affiliation_strings": [
+            "Department of Computer Science, Edge Hill University, St Helens Road, Ormskirk L39 4QP, Lancashire, UK"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-6607-422X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science, Edge Hill University, St Helens Road, Ormskirk L39 4QP, Lancashire, UK",
+              "institution_ids": [
+                "https://openalex.org/I165525304"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5018551949",
+            "display_name": "Simon Bolton",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I165525304",
+              "display_name": "Edge Hill University",
+              "ror": "https://ror.org/028ndzd53",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I165525304"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Simon Bolton",
+          "raw_affiliation_strings": [
+            "Business School, Edge Hill University, St Helens Road, Ormskirk L39 4QP, Lancashire, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Business School, Edge Hill University, St Helens Road, Ormskirk L39 4QP, Lancashire, UK",
+              "institution_ids": [
+                "https://openalex.org/I165525304"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstract_inverted_index": {
+        "This": [
+          0,
+          61,
+          120
+        ],
+        "article": [
+          1
+        ],
+        "explores": [
+          2
+        ],
+        "the": [
+          3,
+          11,
+          27,
+          83,
+          127,
+          145
+        ],
+        "application": [
+          4
+        ],
+        "of": [
+          5,
+          13,
+          29,
+          85,
+          129,
+          147
+        ],
+        "Retrieval-Augmented": [
+          6
+        ],
+        "Generation": [
+          7
+        ],
+        "(RAG)": [
+          8
+        ],
+        "to": [
+          9,
+          55,
+          110,
+          133
+        ],
+        "enhance": [
+          10
+        ],
+        "creation": [
+          12
+        ],
+        "knowledge": [
+          14,
+          36,
+          53,
+          139
+        ],
+        "assets": [
+          15
+        ],
+        "and": [
+          16,
+          38,
+          41,
+          59,
+          69,
+          82,
+          100,
+          106,
+          117,
+          162
+        ],
+        "develop": [
+          17
+        ],
+        "actionable": [
+          18
+        ],
+        "insights": [
+          19
+        ],
+        "from": [
+          20
+        ],
+        "complex": [
+          21
+        ],
+        "datasets.": [
+          22
+        ],
+        "It": [
+          23
+        ],
+        "begins": [
+          24
+        ],
+        "by": [
+          25
+        ],
+        "contextualising": [
+          26
+        ],
+        "limitations": [
+          28
+        ],
+        "large": [
+          30
+        ],
+        "language": [
+          31
+        ],
+        "models": [
+          32
+        ],
+        "(LLMs),": [
+          33
+        ],
+        "notably": [
+          34,
+          126
+        ],
+        "their": [
+          35
+        ],
+        "cut-offs": [
+          37
+        ],
+        "hallucination": [
+          39
+        ],
+        "tendencies,": [
+          40
+        ],
+        "it": [
+          42
+        ],
+        "will": [
+          43
+        ],
+        "present": [
+          44
+        ],
+        "RAG": [
+          45,
+          65,
+          91,
+          149
+        ],
+        "as": [
+          46,
+          75,
+          103,
+          114
+        ],
+        "a": [
+          47
+        ],
+        "promising": [
+          48
+        ],
+        "solution": [
+          49
+        ],
+        "that": [
+          50
+        ],
+        "integrates": [
+          51
+        ],
+        "external": [
+          52
+        ],
+        "retrieval": [
+          54,
+          101,
+          105,
+          116
+        ],
+        "improve": [
+          56
+        ],
+        "factual": [
+          57
+        ],
+        "accuracy": [
+          58
+        ],
+        "relevance.": [
+          60
+        ],
+        "study": [
+          62,
+          143
+        ],
+        "reviews": [
+          63
+        ],
+        "current": [
+          64
+        ],
+        "architectures,": [
+          66
+        ],
+        "including": [
+          67
+        ],
+        "na\u00efve": [
+          68
+        ],
+        "advanced": [
+          70
+        ],
+        "models,": [
+          71,
+          125
+        ],
+        "emphasising": [
+          72
+        ],
+        "techniques": [
+          73
+        ],
+        "such": [
+          74,
+          113
+        ],
+        "optimised": [
+          76
+        ],
+        "indexing,": [
+          77
+        ],
+        "query": [
+          78
+        ],
+        "refinement,": [
+          79
+        ],
+        "metadata": [
+          80
+        ],
+        "utilisation,": [
+          81
+        ],
+        "incorporation": [
+          84
+        ],
+        "autonomous": [
+          86
+        ],
+        "AI": [
+          87
+        ],
+        "agents": [
+          88
+        ],
+        "in": [
+          89,
+          157
+        ],
+        "agentic": [
+          90
+        ],
+        "systems.": [
+          92
+        ],
+        "Methodologies": [
+          93
+        ],
+        "for": [
+          94,
+          151
+        ],
+        "effective": [
+          95
+        ],
+        "data": [
+          96,
+          158
+        ],
+        "preprocessing,": [
+          97
+        ],
+        "semantic-aware": [
+          98
+        ],
+        "chunking,": [
+          99
+        ],
+        "strategies\u2014such": [
+          102
+        ],
+        "multihop": [
+          104
+        ],
+        "reranking\u2014are": [
+          107
+        ],
+        "also": [
+          108
+        ],
+        "discussed": [
+          109
+        ],
+        "address": [
+          111
+        ],
+        "challenges": [
+          112,
+          156
+        ],
+        "irrelevant": [
+          115
+        ],
+        "semantic": [
+          118
+        ],
+        "fragmentation.": [
+          119
+        ],
+        "work": [
+          121
+        ],
+        "further": [
+          122
+        ],
+        "examines": [
+          123
+        ],
+        "embedding": [
+          124
+        ],
+        "use": [
+          128
+        ],
+        "state-of-the-art": [
+          130
+        ],
+        "vector": [
+          131
+        ],
+        "representations,": [
+          132
+        ],
+        "facilitate": [
+          134
+        ],
+        "precise": [
+          135
+        ],
+        "similarity": [
+          136
+        ],
+        "searches": [
+          137
+        ],
+        "within": [
+          138
+        ],
+        "bases.": [
+          140
+        ],
+        "A": [
+          141
+        ],
+        "case": [
+          142
+        ],
+        "demonstrates": [
+          144
+        ],
+        "deployment": [
+          146
+        ],
+        "an": [
+          148
+        ],
+        "pipeline": [
+          150
+        ],
+        "analysing": [
+          152
+        ],
+        "multisheet": [
+          153
+        ],
+        "datasets,": [
+          154
+        ],
+        "highlighting": [
+          155
+        ],
+        "structuring,": [
+          159
+        ],
+        "prompt": [
+          160
+        ],
+        "engineering,": [
+          161
+        ],
+        "ensuring": [
+          163
+        ],
+        "output": [
+          164
+        ],
+        "consistency.": [
+          165
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.3390/app15116247",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3390/app15116247",
+        "pdf_url": "https://www.mdpi.com/2076-3417/15/11/6247/pdf?version=1748772851",
+        "source": {
+          "id": "https://openalex.org/S4210205812",
+          "display_name": "Applied Sciences",
+          "issn_l": "2076-3417",
+          "issn": [
+            "2076-3417"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doaj",
+            "norway-1"
+          ],
+          "host_organization": "https://openalex.org/P4310310987",
+          "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310310987"
+          ],
+          "host_organization_lineage_names": [
+            "Multidisciplinary Digital Publishing Institute"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Applied Sciences",
+        "raw_type": "journal-article"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://www.mdpi.com/2076-3417/15/11/6247/pdf?version=1748772851",
+        "any_repository_has_fulltext": true
+      },
+      "cited_by_count": 22,
+      "referenced_works_count": 21,
+      "referenced_works": [
+        "https://openalex.org/W3027879771",
+        "https://openalex.org/W3030163527",
+        "https://openalex.org/W4292779060",
+        "https://openalex.org/W4304195432",
+        "https://openalex.org/W4385565351",
+        "https://openalex.org/W4386556635",
+        "https://openalex.org/W4386576685",
+        "https://openalex.org/W4386942462",
+        "https://openalex.org/W4387560733",
+        "https://openalex.org/W4389518671",
+        "https://openalex.org/W4389524176",
+        "https://openalex.org/W4393152682",
+        "https://openalex.org/W4396843633",
+        "https://openalex.org/W4400604827",
+        "https://openalex.org/W4403111891",
+        "https://openalex.org/W4404780937",
+        "https://openalex.org/W4407951442",
+        "https://openalex.org/W4408018385",
+        "https://openalex.org/W4410086438",
+        "https://openalex.org/W4410297517",
+        "https://openalex.org/W6777615688"
+      ],
+      "type": "article",
+      "ids": {
+        "openalex": "https://openalex.org/W4410952162",
+        "doi": "https://doi.org/10.3390/app15116247"
+      }
+    }
+  ],
+  "group_by": []
+}
