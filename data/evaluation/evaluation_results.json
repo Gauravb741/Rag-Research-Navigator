@@ -1,0 +1,176 @@
+{
+  "primary_leave_one_out": {
+    "n_queries": 33,
+    "mean_truth_size": 11.33,
+    "systems": {
+      "flat_tfidf_baseline": {
+        "precision@5": 0.2485,
+        "recall@10": 0.2384,
+        "mrr": 0.4492
+      },
+      "graph_full": {
+        "precision@5": 0.2121,
+        "recall@10": 0.1789,
+        "mrr": 0.4038
+      },
+      "graph_no_citation_expansion": {
+        "precision@5": 0.1818,
+        "recall@10": 0.1469,
+        "mrr": 0.3692
+      },
+      "graph_no_entity_propagation": {
+        "precision@5": 0.1636,
+        "recall@10": 0.1636,
+        "mrr": 0.3457
+      }
+    },
+    "caveats": [
+      "Ground truth is citation/coupling relatedness, a noisy proxy for topical relevance.",
+      "Only papers with OpenAlex reference lists can be queries (recent papers are excluded).",
+      "Graph nodes derived from the held-out paper's own title (e.g. its method name) still exist; the paper itself is excluded from candidates and from every traversed edge."
+    ]
+  },
+  "secondary_case_checks": {
+    "cases": [
+      {
+        "id": "idea_citation_graph_synthesis",
+        "kind": "original",
+        "matched_count": 8,
+        "entity_coverage": 0.6,
+        "novelty_signal": "partial_overlap",
+        "expected_signal": null,
+        "signal_ok": null,
+        "top_paper": "CG-RAG: Research Question Answering by Citation Graph Retrieval-Augmented LLMs"
+      },
+      {
+        "id": "idea_dynamic_efficient_graph_retrieval",
+        "kind": "original",
+        "matched_count": 8,
+        "entity_coverage": 0.833,
+        "novelty_signal": "partial_overlap",
+        "expected_signal": null,
+        "signal_ok": null,
+        "top_paper": "StructReason: A Multi-hop Retrieval-Augmented Generation Framework via Iterative Reasoning Chains and PCST Structural Refinement"
+      },
+      {
+        "id": "idea_conflicting_evidence_benchmark",
+        "kind": "original",
+        "matched_count": 8,
+        "entity_coverage": 0.714,
+        "novelty_signal": "partial_overlap",
+        "expected_signal": null,
+        "signal_ok": null,
+        "top_paper": "MAGIC: A Multi-Hop and Graph-Based Benchmark for Inter-Context Conflicts in Retrieval-Augmented Generation"
+      },
+      {
+        "id": "idea_distributed_scientific_evidence",
+        "kind": "original",
+        "matched_count": 5,
+        "entity_coverage": 0.5,
+        "novelty_signal": "close_match_found",
+        "expected_signal": null,
+        "signal_ok": null,
+        "top_paper": "HG-RAG: Hierarchical Graph-Enhanced Retrieval-Augmented Generation for Power Systems"
+      },
+      {
+        "id": "paraphrase_citation",
+        "kind": "paraphrase",
+        "matched_count": 2,
+        "entity_coverage": 0.5,
+        "novelty_signal": "insufficient_ontology_coverage",
+        "expected_signal": null,
+        "signal_ok": null,
+        "top_paper": "CG-RAG: Research Question Answering by Citation Graph Retrieval-Augmented LLMs"
+      },
+      {
+        "id": "medical_subgraph",
+        "kind": "domain",
+        "matched_count": 5,
+        "entity_coverage": 0.667,
+        "novelty_signal": "partial_overlap",
+        "expected_signal": null,
+        "signal_ok": null,
+        "top_paper": "CTI-Thinker: an LLM-driven system for CTI knowledge graph construction and attack reasoning"
+      },
+      {
+        "id": "poisoning_defense",
+        "kind": "gap_probe",
+        "matched_count": 4,
+        "entity_coverage": 1.0,
+        "novelty_signal": "close_match_found",
+        "expected_signal": null,
+        "signal_ok": null,
+        "top_paper": "CTI-Thinker: an LLM-driven system for CTI knowledge graph construction and attack reasoning"
+      },
+      {
+        "id": "pruning_efficiency",
+        "kind": "efficiency",
+        "matched_count": 8,
+        "entity_coverage": 1.0,
+        "novelty_signal": "close_match_found",
+        "expected_signal": null,
+        "signal_ok": null,
+        "top_paper": "StructReason: A Multi-hop Retrieval-Augmented Generation Framework via Iterative Reasoning Chains and PCST Structural Refinement"
+      },
+      {
+        "id": "agentic_rl",
+        "kind": "architecture",
+        "matched_count": 5,
+        "entity_coverage": 1.0,
+        "novelty_signal": "partial_overlap",
+        "expected_signal": null,
+        "signal_ok": null,
+        "top_paper": "A self-correcting Agentic Graph RAG for clinical decision support in hepatology"
+      },
+      {
+        "id": "kg_construction_updates",
+        "kind": "construction",
+        "matched_count": 5,
+        "entity_coverage": 1.0,
+        "novelty_signal": "partial_overlap",
+        "expected_signal": null,
+        "signal_ok": null,
+        "top_paper": "TagRAG: Tag-guided Hierarchical Knowledge Graph Retrieval-Augmented Generation"
+      },
+      {
+        "id": "near_duplicate_hypergraph",
+        "kind": "near_duplicate",
+        "matched_count": 4,
+        "entity_coverage": 1.0,
+        "novelty_signal": "partial_overlap",
+        "expected_signal": [
+          "close_match_found",
+          "partial_overlap"
+        ],
+        "signal_ok": true,
+        "top_paper": "HyperGraphRAG: Retrieval-Augmented Generation via Hypergraph-Structured Knowledge Representation"
+      },
+      {
+        "id": "out_of_scope",
+        "kind": "out_of_scope",
+        "matched_count": 0,
+        "entity_coverage": null,
+        "novelty_signal": "insufficient_ontology_coverage",
+        "expected_signal": [
+          "insufficient_ontology_coverage"
+        ],
+        "signal_ok": true,
+        "top_paper": null
+      },
+      {
+        "id": "outside_ontology_temporal",
+        "kind": "unfamiliar_wording",
+        "matched_count": 2,
+        "entity_coverage": null,
+        "novelty_signal": "close_match_found",
+        "expected_signal": null,
+        "signal_ok": null,
+        "top_paper": "CTI-Thinker: an LLM-driven system for CTI knowledge graph construction and attack reasoning"
+      }
+    ],
+    "mean_entity_coverage": 0.801,
+    "novelty_signal_accuracy": "2/2",
+    "note": "Secondary diagnostics only: expected entities are my own labels from the same ontology and the flat baseline cannot output entities.",
+    "manual_labels": "No relevant_paper_ids filled in yet. Run scripts/labeling.py sheet, label, then scripts/labeling.py apply."
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "_comment": "expected_entities and expected_novelty_signal are the project author's own judgement. relevant_paper_ids is to be filled by hand via scripts/labeling.py.",
+  "cases": [
+    {
+      "id": "idea_citation_graph_synthesis",
+      "input": "I want to build an explainable RAG system for research question answering that follows citation networks and entity-relation paths across papers instead of retrieving isolated chunks.",
+      "expected_entities": [
+        "problem_citation_research_qa",
+        "problem_multihop_reasoning",
+        "concept_citation_network",
+        "concept_entity_relation_graph",
+        "method_cg_rag"
+      ],
+      "evaluation_note": "Unseen idea should connect citation-aware research QA to graph and multi-hop methods.",
+      "kind": "original",
+      "relevant_paper_ids": []
+    },
+    {
+      "id": "idea_dynamic_efficient_graph_retrieval",
+      "input": "I want a graph-based RAG system that updates as new documents arrive, maintains updateable knowledge, and uses adaptive pruning to keep multi-hop retrieval efficient and low latency.",
+      "expected_entities": [
+        "problem_multihop_reasoning",
+        "problem_long_context",
+        "limitation_dynamic_updates",
+        "limitation_latency",
+        "direction_efficient_graph_retrieval",
+        "direction_dynamic_knowledge"
+      ],
+      "evaluation_note": "Unseen idea should surface graph-maintenance and efficient-retrieval concerns.",
+      "kind": "original",
+      "relevant_paper_ids": []
+    },
+    {
+      "id": "idea_conflicting_evidence_benchmark",
+      "input": "I want to evaluate GraphRAG on multi-hop questions with inter-context conflicts, where different documents contain conflicting evidence, measuring faithfulness, context relevance, and answer accuracy.",
+      "expected_entities": [
+        "problem_multihop_reasoning",
+        "problem_noisy_retrieval",
+        "metric_faithfulness",
+        "metric_context_relevance",
+        "metric_accuracy",
+        "dataset_magic",
+        "direction_robust_graph_evaluation"
+      ],
+      "evaluation_note": "Unseen benchmark idea should connect conflict handling to graph-RAG evaluation and grounding metrics.",
+      "kind": "original",
+      "relevant_paper_ids": []
+    },
+    {
+      "id": "idea_distributed_scientific_evidence",
+      "input": "A new RAG method will synthesize scientific evidence distributed across long papers and use graph-indexed concepts, datasets, and limitations to recommend the next research direction.",
+      "expected_entities": [
+        "problem_evidence_fragmentation",
+        "problem_long_context",
+        "problem_provenance",
+        "concept_graph_indexing",
+        "concept_evidence_path",
+        "direction_multihop_reasoning"
+      ],
+      "evaluation_note": "Unseen research-synthesis idea should connect document structure, provenance, and research-direction reasoning.",
+      "kind": "original",
+      "relevant_paper_ids": []
+    },
+    {
+      "id": "paraphrase_citation",
+      "kind": "paraphrase",
+      "input": "Help newcomers to a research area by following who cites whom across papers and linking facts between them, and show where each answer came from.",
+      "expected_entities": [
+        "concept_citation_network",
+        "problem_provenance"
+      ],
+      "expected_novelty_signal": null,
+      "relevant_paper_ids": [],
+      "evaluation_note": "Same intent as idea_citation_graph_synthesis in different words; tests the synonym/stem fallback."
+    },
+    {
+      "id": "medical_subgraph",
+      "kind": "domain",
+      "input": "Medical question answering with a knowledge graph built from clinical notes, retrieving subgraphs for multi-step diagnosis questions.",
+      "expected_entities": [
+        "domain_medical",
+        "arch_subgraph_retrieval",
+        "problem_multihop_reasoning"
+      ],
+      "expected_novelty_signal": null,
+      "relevant_paper_ids": [],
+      "evaluation_note": "Domain-transfer idea."
+    },
+    {
+      "id": "poisoning_defense",
+      "kind": "gap_probe",
+      "input": "Defend GraphRAG against poisoning attacks that insert malicious triples into the knowledge graph.",
+      "expected_entities": [
+        "problem_security",
+        "method_graphrag"
+      ],
+      "expected_novelty_signal": null,
+      "relevant_paper_ids": [],
+      "evaluation_note": "Security is thinly covered; expect gaps to be reported."
+    },
+    {
+      "id": "pruning_efficiency",
+      "kind": "efficiency",
+      "input": "Prune retrieved graph context to cut token cost and latency while keeping multi-hop accuracy on HotpotQA.",
+      "expected_entities": [
+        "direction_efficient_graph_retrieval",
+        "dataset_hotpotqa",
+        "problem_multihop_reasoning"
+      ],
+      "expected_novelty_signal": null,
+      "relevant_paper_ids": [],
+      "evaluation_note": "Efficiency direction."
+    },
+    {
+      "id": "agentic_rl",
+      "kind": "architecture",
+      "input": "An agentic RAG loop where an LLM agent self-corrects retrieval with reinforcement learning over a knowledge graph.",
+      "expected_entities": [
+        "arch_agentic",
+        "arch_reinforcement_learning"
+      ],
+      "expected_novelty_signal": null,
+      "relevant_paper_ids": [],
+      "evaluation_note": "Agentic + RL combination."
+    },
+    {
+      "id": "kg_construction_updates",
+      "kind": "construction",
+      "input": "Build knowledge graphs from long documents automatically and update them incrementally when new documents arrive.",
+      "expected_entities": [
+        "problem_kg_construction",
+        "direction_dynamic_knowledge"
+      ],
+      "expected_novelty_signal": null,
+      "relevant_paper_ids": [],
+      "evaluation_note": "Construction and update cost."
+    },
+    {
+      "id": "near_duplicate_hypergraph",
+      "kind": "near_duplicate",
+      "input": "A RAG system that represents knowledge as a hypergraph with n-ary relations instead of binary-relation graphs, evaluated across medicine, agriculture and law.",
+      "expected_entities": [
+        "arch_hypergraph"
+      ],
+      "expected_novelty_signal": [
+        "close_match_found",
+        "partial_overlap"
+      ],
+      "relevant_paper_ids": [],
+      "evaluation_note": "Close restatement of an indexed paper's idea; the system should not call it novel."
+    },
+    {
+      "id": "out_of_scope",
+      "kind": "out_of_scope",
+      "input": "Best hiking trails and a sourdough recipe for the weekend.",
+      "expected_entities": [],
+      "expected_novelty_signal": [
+        "insufficient_ontology_coverage"
+      ],
+      "relevant_paper_ids": [],
+      "evaluation_note": "Unrelated; must return no related papers and say so."
+    },
+    {
+      "id": "outside_ontology_temporal",
+      "kind": "unfamiliar_wording",
+      "input": "Temporal knowledge graphs for time-aware retrieval of evolving facts with validity intervals on each edge.",
+      "expected_entities": [],
+      "expected_novelty_signal": null,
+      "relevant_paper_ids": [],
+      "evaluation_note": "Wording largely outside the ontology; unmatched_terms should show it."
+    }
+  ]
+}

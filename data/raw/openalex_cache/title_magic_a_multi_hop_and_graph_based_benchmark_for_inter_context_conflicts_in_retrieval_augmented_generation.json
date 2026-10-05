@@ -1,0 +1,4399 @@
+{
+  "meta": {
+    "count": 49,
+    "db_response_time_ms": 48,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where date >= (2020-01-01)\n  and full text has (MAGIC: A Multi-Hop \"and\" Graph-Based Benchmark for Inter-Context Conflicts in Retrieval-Augmented Generation)\n  and date <= (2026-10-02)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "from_publication_date",
+            "value": "2020-01-01"
+          },
+          {
+            "column_id": "fulltext.search",
+            "value": "MAGIC: A Multi-Hop and Graph-Based Benchmark for Inter-Context Conflicts in Retrieval-Augmented Generation",
+            "operator": "has"
+          },
+          {
+            "column_id": "to_publication_date",
+            "value": "2026-10-02"
+          }
+        ]
+      },
+      "url": "/works?filter=from_publication_date:2020-01-01,fulltext.search:MAGIC: A Multi-Hop and Graph-Based Benchmark for Inter-Context Conflicts in Retrieval-Augmented Generation,to_publication_date:2026-10-02&per_page=5&page=1"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W4416034730",
+      "doi": "https://doi.org/10.18653/v1/2025.findings-emnlp.466",
+      "title": "MAGIC: A Multi-Hop and Graph-Based Benchmark for Inter-Context Conflicts in Retrieval-Augmented Generation",
+      "publication_year": 2025,
+      "publication_date": "2025-01-01",
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5110899814",
+            "display_name": "Jungyeon Lee",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4575257",
+              "display_name": "Hanyang University",
+              "ror": "https://ror.org/046865y68",
+              "country_code": "KR",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I4575257"
+              ]
+            }
+          ],
+          "countries": [
+            "KR"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jungyeon Lee",
+          "raw_affiliation_strings": [
+            "Hanyang University ,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Hanyang University ,",
+              "institution_ids": [
+                "https://openalex.org/I4575257"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5120308669",
+            "display_name": "Lee Kangmin",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Lee Kangmin",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5101523174",
+            "display_name": "Taeuk Kim",
+            "orcid": "https://orcid.org/0000-0001-6919-7727",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-6919-7727"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4575257",
+              "display_name": "Hanyang University",
+              "ror": "https://ror.org/046865y68",
+              "country_code": "KR",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I4575257"
+              ]
+            }
+          ],
+          "countries": [
+            "KR"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Taeuk Kim",
+          "raw_affiliation_strings": [
+            "Hanyang University ,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Hanyang University ,",
+              "institution_ids": [
+                "https://openalex.org/I4575257"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstract_inverted_index": {
+        "Knowledge": [
+          0
+        ],
+        "conflict": [
+          1,
+          52,
+          110
+        ],
+        "often": [
+          2,
+          117
+        ],
+        "arises": [
+          3
+        ],
+        "in": [
+          4,
+          138
+        ],
+        "retrievalaugmented": [
+          5
+        ],
+        "generation": [
+          6
+        ],
+        "(RAG)": [
+          7
+        ],
+        "systems,": [
+          8
+        ],
+        "where": [
+          9
+        ],
+        "retrieved": [
+          10
+        ],
+        "documents": [
+          11
+        ],
+        "may": [
+          12
+        ],
+        "be": [
+          13
+        ],
+        "inconsistent": [
+          14
+        ],
+        "with": [
+          15,
+          109
+        ],
+        "one": [
+          16
+        ],
+        "another": [
+          17
+        ],
+        "or": [
+          18
+        ],
+        "contradict": [
+          19
+        ],
+        "the": [
+          20,
+          27,
+          37,
+          80,
+          95,
+          121
+        ],
+        "model's": [
+          21
+        ],
+        "parametric": [
+          22
+        ],
+        "knowledge.Existing": [
+          23
+        ],
+        "benchmarks": [
+          24
+        ],
+        "for": [
+          25,
+          135
+        ],
+        "investigating": [
+          26
+        ],
+        "phenomenon": [
+          28
+        ],
+        "have": [
+          29
+        ],
+        "notable": [
+          30
+        ],
+        "limitations,": [
+          31
+        ],
+        "including": [
+          32
+        ],
+        "a": [
+          33,
+          48,
+          59,
+          133
+        ],
+        "narrow": [
+          34
+        ],
+        "focus": [
+          35
+        ],
+        "on": [
+          36,
+          43,
+          87
+        ],
+        "question": [
+          38
+        ],
+        "answering": [
+          39
+        ],
+        "setup,": [
+          40
+        ],
+        "heavy": [
+          41
+        ],
+        "reliance": [
+          42
+        ],
+        "entity": [
+          44
+        ],
+        "substitution": [
+          45
+        ],
+        "techniques,": [
+          46
+        ],
+        "and": [
+          47,
+          67,
+          105
+        ],
+        "restricted": [
+          49
+        ],
+        "range": [
+          50
+        ],
+        "of": [
+          51,
+          84,
+          98,
+          124
+        ],
+        "types.To": [
+          53
+        ],
+        "address": [
+          54
+        ],
+        "these": [
+          55
+        ],
+        "issues,": [
+          56
+        ],
+        "we": [
+          57,
+          126
+        ],
+        "propose": [
+          58
+        ],
+        "knowledge": [
+          60,
+          101
+        ],
+        "graph": [
+          61
+        ],
+        "(KG)-based": [
+          62
+        ],
+        "framework": [
+          63
+        ],
+        "that": [
+          64,
+          130
+        ],
+        "generates": [
+          65
+        ],
+        "varied": [
+          66
+        ],
+        "subtle": [
+          68
+        ],
+        "conflicts": [
+          69
+        ],
+        "between": [
+          70
+        ],
+        "two": [
+          71
+        ],
+        "similar": [
+          72
+        ],
+        "yet": [
+          73
+        ],
+        "distinct": [
+          74
+        ],
+        "contexts,": [
+          75
+        ],
+        "while": [
+          76
+        ],
+        "ensuring": [
+          77
+        ],
+        "interpretability": [
+          78
+        ],
+        "through": [
+          79
+        ],
+        "explicit": [
+          81
+        ],
+        "relational": [
+          82
+        ],
+        "structure": [
+          83
+        ],
+        "KGs.Experimental": [
+          85
+        ],
+        "results": [
+          86
+        ],
+        "our": [
+          88
+        ],
+        "benchmark,": [
+          89
+        ],
+        "MAGIC,": [
+          90
+        ],
+        "provide": [
+          91
+        ],
+        "intriguing": [
+          92
+        ],
+        "insights": [
+          93
+        ],
+        "into": [
+          94
+        ],
+        "inner": [
+          96
+        ],
+        "workings": [
+          97
+        ],
+        "LLMs": [
+          99,
+          137
+        ],
+        "regarding": [
+          100
+        ],
+        "conflict:": [
+          102
+        ],
+        "both": [
+          103
+        ],
+        "open-source": [
+          104
+        ],
+        "proprietary": [
+          106
+        ],
+        "models": [
+          107
+        ],
+        "struggle": [
+          108
+        ],
+        "detection-especially": [
+          111
+        ],
+        "when": [
+          112
+        ],
+        "multi-hop": [
+          113
+        ],
+        "reasoning": [
+          114
+        ],
+        "is": [
+          115
+        ],
+        "required-and": [
+          116
+        ],
+        "fail": [
+          118
+        ],
+        "to": [
+          119
+        ],
+        "pinpoint": [
+          120
+        ],
+        "exact": [
+          122
+        ],
+        "source": [
+          123
+        ],
+        "contradictions.Finally,": [
+          125
+        ],
+        "present": [
+          127
+        ],
+        "in-depth": [
+          128
+        ],
+        "analyses": [
+          129
+        ],
+        "serve": [
+          131
+        ],
+        "as": [
+          132
+        ],
+        "foundation": [
+          134
+        ],
+        "improving": [
+          136
+        ],
+        "integrating": [
+          139
+        ],
+        "diverse,": [
+          140
+        ],
+        "sometimes": [
+          141
+        ],
+        "even": [
+          142
+        ],
+        "conflicting,": [
+          143
+        ],
+        "information.": [
+          144
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.18653/v1/2025.findings-emnlp.466",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.18653/v1/2025.findings-emnlp.466",
+        "pdf_url": "https://aclanthology.org/2025.findings-emnlp.466.pdf",
+        "source": null,
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+        "raw_type": "proceedings-article"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://aclanthology.org/2025.findings-emnlp.466.pdf",
+        "any_repository_has_fulltext": null
+      },
+      "cited_by_count": 2,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "type": "conference-paper",
+      "ids": {
+        "openalex": "https://openalex.org/W4416034730",
+        "doi": "https://doi.org/10.18653/v1/2025.findings-emnlp.466"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4206484811",
+      "doi": "https://doi.org/10.1109/access.2021.3140175",
+      "title": "A Metaverse: Taxonomy, Components, Applications, and Open Challenges",
+      "publication_year": 2022,
+      "publication_date": "2022-01-01",
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5100671422",
+            "display_name": "Sangmin Park",
+            "orcid": "https://orcid.org/0000-0002-3484-9833",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-3484-9833"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I197347611",
+              "display_name": "Korea University",
+              "ror": "https://ror.org/047dqcg40",
+              "country_code": "KR",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I197347611"
+              ]
+            }
+          ],
+          "countries": [
+            "KR"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Sang-Min Park",
+          "raw_affiliation_strings": [
+            "Department of Computer Science and Engineering, Korea University, Seoul, South Korea"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-3484-9833",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science and Engineering, Korea University, Seoul, South Korea",
+              "institution_ids": [
+                "https://openalex.org/I197347611"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5061277148",
+            "display_name": "Young\u2010Gab Kim",
+            "orcid": "https://orcid.org/0000-0001-9585-8808",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-9585-8808"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I28777354",
+              "display_name": "Sejong University",
+              "ror": "https://ror.org/00aft1q37",
+              "country_code": "KR",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I28777354"
+              ]
+            }
+          ],
+          "countries": [
+            "KR"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Young-Gab Kim",
+          "raw_affiliation_strings": [
+            "Department of Computer and Information Security, and Convergence Engineering for Intelligent Drone, Sejong University, Seoul, South Korea"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-9585-8808",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer and Information Security, and Convergence Engineering for Intelligent Drone, Sejong University, Seoul, South Korea",
+              "institution_ids": [
+                "https://openalex.org/I28777354"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstract_inverted_index": {
+        "Unlike": [
+          0
+        ],
+        "previous": [
+          1,
+          84
+        ],
+        "studies": [
+          2
+        ],
+        "on": [
+          3,
+          7,
+          15,
+          133
+        ],
+        "the": [
+          4,
+          10,
+          16,
+          31,
+          79,
+          83,
+          89,
+          97,
+          149,
+          159,
+          165
+        ],
+        "Metaverse": [
+          5,
+          12,
+          44,
+          76,
+          98,
+          167
+        ],
+        "based": [
+          6,
+          14,
+          132
+        ],
+        "Second": [
+          8
+        ],
+        "Life,": [
+          9
+        ],
+        "current": [
+          11
+        ],
+        "is": [
+          13,
+          45
+        ],
+        "social": [
+          17,
+          66,
+          169
+        ],
+        "value": [
+          18
+        ],
+        "of": [
+          19,
+          34,
+          64,
+          75,
+          151
+        ],
+        "Generation": [
+          20
+        ],
+        "Z": [
+          21
+        ],
+        "that": [
+          22
+        ],
+        "online": [
+          23
+        ],
+        "and": [
+          24,
+          40,
+          68,
+          91,
+          105,
+          107,
+          114,
+          136,
+          145,
+          154,
+          161,
+          172
+        ],
+        "offline": [
+          25
+        ],
+        "selves": [
+          26
+        ],
+        "are": [
+          27
+        ],
+        "not": [
+          28
+        ],
+        "different.": [
+          29
+        ],
+        "With": [
+          30
+        ],
+        "technological": [
+          32
+        ],
+        "development": [
+          33
+        ],
+        "deep": [
+          35
+        ],
+        "learning-based": [
+          36
+        ],
+        "high-precision": [
+          37
+        ],
+        "recognition": [
+          38
+        ],
+        "models": [
+          39
+        ],
+        "natural": [
+          41
+        ],
+        "generation": [
+          42
+        ],
+        "models,": [
+          43
+        ],
+        "being": [
+          46
+        ],
+        "strengthened": [
+          47
+        ],
+        "with": [
+          48,
+          57
+        ],
+        "various": [
+          49
+        ],
+        "factors,": [
+          50
+        ],
+        "from": [
+          51,
+          82
+        ],
+        "mobile-based": [
+          52
+        ],
+        "always-on": [
+          53
+        ],
+        "access": [
+          54
+        ],
+        "to": [
+          55,
+          122,
+          138
+        ],
+        "connectivity": [
+          56
+        ],
+        "reality": [
+          58
+        ],
+        "using": [
+          59
+        ],
+        "virtual": [
+          60
+        ],
+        "currency.": [
+          61
+        ],
+        "The": [
+          62
+        ],
+        "integration": [
+          63
+        ],
+        "enhanced": [
+          65
+        ],
+        "activities": [
+          67
+        ],
+        "neural-net": [
+          69
+        ],
+        "methods": [
+          70,
+          131
+        ],
+        "requires": [
+          71
+        ],
+        "a": [
+          72,
+          124
+        ],
+        "new": [
+          73
+        ],
+        "definition": [
+          74
+        ],
+        "suitable": [
+          77
+        ],
+        "for": [
+          78,
+          95,
+          163
+        ],
+        "present,": [
+          80
+        ],
+        "different": [
+          81
+        ],
+        "Metaverse.": [
+          85
+        ],
+        "This": [
+          86
+        ],
+        "paper": [
+          87
+        ],
+        "divides": [
+          88
+        ],
+        "concepts": [
+          90
+        ],
+        "essential": [
+          92,
+          130
+        ],
+        "techniques": [
+          93,
+          137
+        ],
+        "necessary": [
+          94
+        ],
+        "realizing": [
+          96
+        ],
+        "into": [
+          99
+        ],
+        "three": [
+          100,
+          108,
+          134
+        ],
+        "components": [
+          101,
+          135
+        ],
+        "(i.e.,": [
+          102,
+          110
+        ],
+        "hardware,": [
+          103
+        ],
+        "software,": [
+          104
+        ],
+        "contents)": [
+          106
+        ],
+        "approaches": [
+          109
+        ],
+        "user": [
+          111
+        ],
+        "interaction,": [
+          112
+        ],
+        "implementation,": [
+          113
+        ],
+        "application)": [
+          115
+        ],
+        "rather": [
+          116
+        ],
+        "than": [
+          117
+        ],
+        "marketing": [
+          118
+        ],
+        "or": [
+          119
+        ],
+        "hardware": [
+          120
+        ],
+        "approach": [
+          121
+        ],
+        "conduct": [
+          123
+        ],
+        "comprehensive": [
+          125
+        ],
+        "analysis.": [
+          126
+        ],
+        "Furthermore,": [
+          127
+        ],
+        "we": [
+          128,
+          157
+        ],
+        "describe": [
+          129
+        ],
+        "Metaverse\u2019s": [
+          139
+        ],
+        "representative": [
+          140
+        ],
+        "Ready": [
+          141
+        ],
+        "Player": [
+          142
+        ],
+        "One,": [
+          143
+        ],
+        "Roblox,": [
+          144
+        ],
+        "Facebook": [
+          146
+        ],
+        "research": [
+          147
+        ],
+        "in": [
+          148
+        ],
+        "domain": [
+          150
+        ],
+        "films,": [
+          152
+        ],
+        "games,": [
+          153
+        ],
+        "studies.": [
+          155
+        ],
+        "Finally,": [
+          156
+        ],
+        "summarize": [
+          158
+        ],
+        "limitations": [
+          160
+        ],
+        "directions": [
+          162
+        ],
+        "implementing": [
+          164
+        ],
+        "immersive": [
+          166
+        ],
+        "as": [
+          168
+        ],
+        "influences,": [
+          170
+        ],
+        "constraints,": [
+          171
+        ],
+        "open": [
+          173
+        ],
+        "challenges.": [
+          174
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1109/access.2021.3140175",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1109/access.2021.3140175",
+        "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/9668973/09667507.pdf",
+        "source": {
+          "id": "https://openalex.org/S2485537415",
+          "display_name": "IEEE Access",
+          "issn_l": "2169-3536",
+          "issn": [
+            "2169-3536"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doaj",
+            "jufo-1",
+            "ki-jl-1",
+            "norway-1"
+          ],
+          "host_organization": "https://openalex.org/P4310319808",
+          "host_organization_name": "Institute of Electrical and Electronics Engineers",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319808"
+          ],
+          "host_organization_lineage_names": [
+            "Institute of Electrical and Electronics Engineers"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "IEEE Access",
+        "raw_type": "journal-article"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://ieeexplore.ieee.org/ielx7/6287639/9668973/09667507.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "cited_by_count": 1836,
+      "referenced_works_count": 457,
+      "referenced_works": [
+        "https://openalex.org/W250513978",
+        "https://openalex.org/W279911447",
+        "https://openalex.org/W309137398",
+        "https://openalex.org/W347247174",
+        "https://openalex.org/W614633328",
+        "https://openalex.org/W1432090866",
+        "https://openalex.org/W1502939130",
+        "https://openalex.org/W1513073847",
+        "https://openalex.org/W1562109118",
+        "https://openalex.org/W1603103058",
+        "https://openalex.org/W1646987250",
+        "https://openalex.org/W1702555102",
+        "https://openalex.org/W1843507128",
+        "https://openalex.org/W1905882502",
+        "https://openalex.org/W1967429720",
+        "https://openalex.org/W1969855327",
+        "https://openalex.org/W1995343386",
+        "https://openalex.org/W2003400195",
+        "https://openalex.org/W2004972014",
+        "https://openalex.org/W2005009917",
+        "https://openalex.org/W2044183862",
+        "https://openalex.org/W2045561067",
+        "https://openalex.org/W2047722025",
+        "https://openalex.org/W2059569900",
+        "https://openalex.org/W2066913571",
+        "https://openalex.org/W2076764417",
+        "https://openalex.org/W2081821489",
+        "https://openalex.org/W2083090567",
+        "https://openalex.org/W2088239480",
+        "https://openalex.org/W2089489912",
+        "https://openalex.org/W2091139645",
+        "https://openalex.org/W2092926777",
+        "https://openalex.org/W2099996035",
+        "https://openalex.org/W2106956101",
+        "https://openalex.org/W2108873129",
+        "https://openalex.org/W2109231497",
+        "https://openalex.org/W2116337825",
+        "https://openalex.org/W2125441287",
+        "https://openalex.org/W2150225157",
+        "https://openalex.org/W2163553491",
+        "https://openalex.org/W2166821106",
+        "https://openalex.org/W2175669209",
+        "https://openalex.org/W2205507650",
+        "https://openalex.org/W2219547760",
+        "https://openalex.org/W2219839555",
+        "https://openalex.org/W2251878275",
+        "https://openalex.org/W2254283083",
+        "https://openalex.org/W2260005461",
+        "https://openalex.org/W2288687984",
+        "https://openalex.org/W2295856739",
+        "https://openalex.org/W2296240975",
+        "https://openalex.org/W2296767692",
+        "https://openalex.org/W2329949291",
+        "https://openalex.org/W2335517918",
+        "https://openalex.org/W2345548364",
+        "https://openalex.org/W2402954262",
+        "https://openalex.org/W2461084364",
+        "https://openalex.org/W2464634328",
+        "https://openalex.org/W2471079011",
+        "https://openalex.org/W2484231675",
+        "https://openalex.org/W2507382110",
+        "https://openalex.org/W2528841789",
+        "https://openalex.org/W2546696630",
+        "https://openalex.org/W2552002300",
+        "https://openalex.org/W2558535589",
+        "https://openalex.org/W2563381099",
+        "https://openalex.org/W2574790321",
+        "https://openalex.org/W2575842049",
+        "https://openalex.org/W2584561145",
+        "https://openalex.org/W2588395895",
+        "https://openalex.org/W2591644541",
+        "https://openalex.org/W2603266952",
+        "https://openalex.org/W2605585413",
+        "https://openalex.org/W2607151106",
+        "https://openalex.org/W2607579284",
+        "https://openalex.org/W2612657552",
+        "https://openalex.org/W2612675303",
+        "https://openalex.org/W2615146352",
+        "https://openalex.org/W2617604721",
+        "https://openalex.org/W2617767802",
+        "https://openalex.org/W2619010992",
+        "https://openalex.org/W2629538667",
+        "https://openalex.org/W2630166400",
+        "https://openalex.org/W2731201207",
+        "https://openalex.org/W2734314755",
+        "https://openalex.org/W2737041661",
+        "https://openalex.org/W2738669288",
+        "https://openalex.org/W2750994527",
+        "https://openalex.org/W2757177109",
+        "https://openalex.org/W2757222607",
+        "https://openalex.org/W2757311323",
+        "https://openalex.org/W2757376154",
+        "https://openalex.org/W2757512670",
+        "https://openalex.org/W2757541972",
+        "https://openalex.org/W2758310181",
+        "https://openalex.org/W2759056771",
+        "https://openalex.org/W2760579680",
+        "https://openalex.org/W2767287441",
+        "https://openalex.org/W2769277182",
+        "https://openalex.org/W2772262724",
+        "https://openalex.org/W2786839803",
+        "https://openalex.org/W2787367201",
+        "https://openalex.org/W2789779989",
+        "https://openalex.org/W2790610986",
+        "https://openalex.org/W2795109282",
+        "https://openalex.org/W2805436235",
+        "https://openalex.org/W2806042735",
+        "https://openalex.org/W2810482788",
+        "https://openalex.org/W2886258473",
+        "https://openalex.org/W2891076394",
+        "https://openalex.org/W2891187402",
+        "https://openalex.org/W2902879517",
+        "https://openalex.org/W2932752459",
+        "https://openalex.org/W2939165775",
+        "https://openalex.org/W2945827377",
+        "https://openalex.org/W2947897713",
+        "https://openalex.org/W2949360331",
+        "https://openalex.org/W2950697717",
+        "https://openalex.org/W2950978907",
+        "https://openalex.org/W2951231735",
+        "https://openalex.org/W2951383777",
+        "https://openalex.org/W2951440501",
+        "https://openalex.org/W2951515642",
+        "https://openalex.org/W2952728748",
+        "https://openalex.org/W2954768823",
+        "https://openalex.org/W2960994197",
+        "https://openalex.org/W2961295589",
+        "https://openalex.org/W2962684798",
+        "https://openalex.org/W2962886429",
+        "https://openalex.org/W2962974452",
+        "https://openalex.org/W2963047368",
+        "https://openalex.org/W2963097937",
+        "https://openalex.org/W2963177403",
+        "https://openalex.org/W2963185998",
+        "https://openalex.org/W2963187786",
+        "https://openalex.org/W2963240617",
+        "https://openalex.org/W2963438456",
+        "https://openalex.org/W2963501608",
+        "https://openalex.org/W2963502387",
+        "https://openalex.org/W2963513598",
+        "https://openalex.org/W2963536419",
+        "https://openalex.org/W2963536423",
+        "https://openalex.org/W2963668753",
+        "https://openalex.org/W2963672599",
+        "https://openalex.org/W2963711448",
+        "https://openalex.org/W2964166731",
+        "https://openalex.org/W2964194917",
+        "https://openalex.org/W2965353350",
+        "https://openalex.org/W2965962253",
+        "https://openalex.org/W2966715458",
+        "https://openalex.org/W2967045987",
+        "https://openalex.org/W2970217405",
+        "https://openalex.org/W2970340522",
+        "https://openalex.org/W2970786335",
+        "https://openalex.org/W2971569798",
+        "https://openalex.org/W2972495969",
+        "https://openalex.org/W2972699843",
+        "https://openalex.org/W2973146910",
+        "https://openalex.org/W2973525135",
+        "https://openalex.org/W2980360687",
+        "https://openalex.org/W2980404057",
+        "https://openalex.org/W2981902456",
+        "https://openalex.org/W2982053164",
+        "https://openalex.org/W2982108874",
+        "https://openalex.org/W2988217457",
+        "https://openalex.org/W2989551888",
+        "https://openalex.org/W2990928880",
+        "https://openalex.org/W2996681978",
+        "https://openalex.org/W2997591391",
+        "https://openalex.org/W2998712570",
+        "https://openalex.org/W2999003541",
+        "https://openalex.org/W2999459596",
+        "https://openalex.org/W2999778183",
+        "https://openalex.org/W3003028571",
+        "https://openalex.org/W3003276437",
+        "https://openalex.org/W3004545174",
+        "https://openalex.org/W3004731477",
+        "https://openalex.org/W3008019394",
+        "https://openalex.org/W3011539908",
+        "https://openalex.org/W3012402619",
+        "https://openalex.org/W3013780467",
+        "https://openalex.org/W3014979066",
+        "https://openalex.org/W3015437096",
+        "https://openalex.org/W3015753224",
+        "https://openalex.org/W3020718655",
+        "https://openalex.org/W3020933450",
+        "https://openalex.org/W3023681781",
+        "https://openalex.org/W3023858355",
+        "https://openalex.org/W3033706928",
+        "https://openalex.org/W3034457371",
+        "https://openalex.org/W3034528880",
+        "https://openalex.org/W3034654962",
+        "https://openalex.org/W3036692283",
+        "https://openalex.org/W3037611961",
+        "https://openalex.org/W3042776260",
+        "https://openalex.org/W3044136778",
+        "https://openalex.org/W3044933322",
+        "https://openalex.org/W3088764576",
+        "https://openalex.org/W3089889640",
+        "https://openalex.org/W3090838224",
+        "https://openalex.org/W3091432621",
+        "https://openalex.org/W3092440493",
+        "https://openalex.org/W3092868325",
+        "https://openalex.org/W3093655582",
+        "https://openalex.org/W3093741710",
+        "https://openalex.org/W3093967600",
+        "https://openalex.org/W3095273266",
+        "https://openalex.org/W3096915137",
+        "https://openalex.org/W3097264851",
+        "https://openalex.org/W3097666214",
+        "https://openalex.org/W3098994423",
+        "https://openalex.org/W3099388488",
+        "https://openalex.org/W3101065397",
+        "https://openalex.org/W3101364353",
+        "https://openalex.org/W3101553402",
+        "https://openalex.org/W3105300457",
+        "https://openalex.org/W3106126861",
+        "https://openalex.org/W3108046734",
+        "https://openalex.org/W3109302927",
+        "https://openalex.org/W3109978116",
+        "https://openalex.org/W3110549966",
+        "https://openalex.org/W3111088921",
+        "https://openalex.org/W3113875794",
+        "https://openalex.org/W3115293622",
+        "https://openalex.org/W3116240270",
+        "https://openalex.org/W3118144431",
+        "https://openalex.org/W3119755526",
+        "https://openalex.org/W3121780787",
+        "https://openalex.org/W3122640483",
+        "https://openalex.org/W3123330491",
+        "https://openalex.org/W3124881767",
+        "https://openalex.org/W3125238517",
+        "https://openalex.org/W3125405496",
+        "https://openalex.org/W3125703745",
+        "https://openalex.org/W3125947392",
+        "https://openalex.org/W3127031155",
+        "https://openalex.org/W3127192263",
+        "https://openalex.org/W3129121609",
+        "https://openalex.org/W3129362180",
+        "https://openalex.org/W3129421260",
+        "https://openalex.org/W3129456247",
+        "https://openalex.org/W3130337320",
+        "https://openalex.org/W3130956863",
+        "https://openalex.org/W3130976481",
+        "https://openalex.org/W3131518417",
+        "https://openalex.org/W3131917500",
+        "https://openalex.org/W3132032427",
+        "https://openalex.org/W3132049316",
+        "https://openalex.org/W3132538513",
+        "https://openalex.org/W3134206242",
+        "https://openalex.org/W3134267336",
+        "https://openalex.org/W3135310653",
+        "https://openalex.org/W3135759888",
+        "https://openalex.org/W3135917893",
+        "https://openalex.org/W3137114593",
+        "https://openalex.org/W3137278571",
+        "https://openalex.org/W3137501867",
+        "https://openalex.org/W3138431583",
+        "https://openalex.org/W3138953166",
+        "https://openalex.org/W3139429868",
+        "https://openalex.org/W3140235797",
+        "https://openalex.org/W3140522369",
+        "https://openalex.org/W3144228569",
+        "https://openalex.org/W3145224227",
+        "https://openalex.org/W3147788509",
+        "https://openalex.org/W3149297951",
+        "https://openalex.org/W3152923734",
+        "https://openalex.org/W3153017061",
+        "https://openalex.org/W3153832840",
+        "https://openalex.org/W3154055679",
+        "https://openalex.org/W3154603286",
+        "https://openalex.org/W3156777363",
+        "https://openalex.org/W3157071940",
+        "https://openalex.org/W3157079704",
+        "https://openalex.org/W3157225713",
+        "https://openalex.org/W3157477139",
+        "https://openalex.org/W3158045900",
+        "https://openalex.org/W3158146252",
+        "https://openalex.org/W3158294784",
+        "https://openalex.org/W3160256095",
+        "https://openalex.org/W3160304086",
+        "https://openalex.org/W3160408143",
+        "https://openalex.org/W3160450938",
+        "https://openalex.org/W3162234211",
+        "https://openalex.org/W3162695993",
+        "https://openalex.org/W3163017484",
+        "https://openalex.org/W3163258501",
+        "https://openalex.org/W3163397000",
+        "https://openalex.org/W3163591408",
+        "https://openalex.org/W3163613080",
+        "https://openalex.org/W3164817610",
+        "https://openalex.org/W3166509360",
+        "https://openalex.org/W3166589815",
+        "https://openalex.org/W3167467035",
+        "https://openalex.org/W3167696278",
+        "https://openalex.org/W3167736108",
+        "https://openalex.org/W3168440900",
+        "https://openalex.org/W3168622113",
+        "https://openalex.org/W3169212847",
+        "https://openalex.org/W3169275890",
+        "https://openalex.org/W3169419954",
+        "https://openalex.org/W3170019900",
+        "https://openalex.org/W3171007011",
+        "https://openalex.org/W3171654528",
+        "https://openalex.org/W3173036834",
+        "https://openalex.org/W3173163365",
+        "https://openalex.org/W3173297178",
+        "https://openalex.org/W3173617232",
+        "https://openalex.org/W3174068320",
+        "https://openalex.org/W3174930619",
+        "https://openalex.org/W3175047242",
+        "https://openalex.org/W3175267611",
+        "https://openalex.org/W3175300676",
+        "https://openalex.org/W3175665448",
+        "https://openalex.org/W3176023283",
+        "https://openalex.org/W3176232375",
+        "https://openalex.org/W3176276424",
+        "https://openalex.org/W3176503495",
+        "https://openalex.org/W3176517065",
+        "https://openalex.org/W3176711365",
+        "https://openalex.org/W3176941685",
+        "https://openalex.org/W3177095946",
+        "https://openalex.org/W3177100477",
+        "https://openalex.org/W3177330184",
+        "https://openalex.org/W3177378307",
+        "https://openalex.org/W3177419066",
+        "https://openalex.org/W3177491479",
+        "https://openalex.org/W3178350420",
+        "https://openalex.org/W3179826082",
+        "https://openalex.org/W3179897446",
+        "https://openalex.org/W3180589757",
+        "https://openalex.org/W3180779391",
+        "https://openalex.org/W3182000110",
+        "https://openalex.org/W3182820356",
+        "https://openalex.org/W3183537987",
+        "https://openalex.org/W3184085787",
+        "https://openalex.org/W3184291866",
+        "https://openalex.org/W3184323441",
+        "https://openalex.org/W3184385152",
+        "https://openalex.org/W3184952021",
+        "https://openalex.org/W3185864054",
+        "https://openalex.org/W3186367166",
+        "https://openalex.org/W3189671348",
+        "https://openalex.org/W3190580390",
+        "https://openalex.org/W3194414693",
+        "https://openalex.org/W3194673245",
+        "https://openalex.org/W3197052976",
+        "https://openalex.org/W3197608410",
+        "https://openalex.org/W3198061281",
+        "https://openalex.org/W3203514471",
+        "https://openalex.org/W3207138404",
+        "https://openalex.org/W4206740369",
+        "https://openalex.org/W4238778312",
+        "https://openalex.org/W4240891705",
+        "https://openalex.org/W4252027397",
+        "https://openalex.org/W4283815751",
+        "https://openalex.org/W4287112297",
+        "https://openalex.org/W4287329474",
+        "https://openalex.org/W4287608519",
+        "https://openalex.org/W4288073028",
+        "https://openalex.org/W4288284086",
+        "https://openalex.org/W4289282367",
+        "https://openalex.org/W4292779060",
+        "https://openalex.org/W4293396018",
+        "https://openalex.org/W4295253939",
+        "https://openalex.org/W4295731579",
+        "https://openalex.org/W4295750171",
+        "https://openalex.org/W4295883599",
+        "https://openalex.org/W4297813345",
+        "https://openalex.org/W4300928827",
+        "https://openalex.org/W4301182017",
+        "https://openalex.org/W4366781814",
+        "https://openalex.org/W6633471603",
+        "https://openalex.org/W6636826180",
+        "https://openalex.org/W6682488942",
+        "https://openalex.org/W6688834988",
+        "https://openalex.org/W6691846184",
+        "https://openalex.org/W6692288267",
+        "https://openalex.org/W6713100313",
+        "https://openalex.org/W6737479944",
+        "https://openalex.org/W6738294298",
+        "https://openalex.org/W6738577479",
+        "https://openalex.org/W6739215486",
+        "https://openalex.org/W6739930931",
+        "https://openalex.org/W6740570033",
+        "https://openalex.org/W6744097617",
+        "https://openalex.org/W6745884811",
+        "https://openalex.org/W6746518932",
+        "https://openalex.org/W6748203849",
+        "https://openalex.org/W6748603076",
+        "https://openalex.org/W6748805735",
+        "https://openalex.org/W6752465046",
+        "https://openalex.org/W6754554023",
+        "https://openalex.org/W6756464479",
+        "https://openalex.org/W6763612067",
+        "https://openalex.org/W6764088478",
+        "https://openalex.org/W6764240274",
+        "https://openalex.org/W6765386044",
+        "https://openalex.org/W6765543928",
+        "https://openalex.org/W6765993807",
+        "https://openalex.org/W6766017425",
+        "https://openalex.org/W6766891640",
+        "https://openalex.org/W6766904570",
+        "https://openalex.org/W6767291801",
+        "https://openalex.org/W6767401011",
+        "https://openalex.org/W6767919266",
+        "https://openalex.org/W6769121507",
+        "https://openalex.org/W6770949304",
+        "https://openalex.org/W6771084333",
+        "https://openalex.org/W6772190580",
+        "https://openalex.org/W6772487635",
+        "https://openalex.org/W6774813213",
+        "https://openalex.org/W6777272695",
+        "https://openalex.org/W6778883912",
+        "https://openalex.org/W6779230642",
+        "https://openalex.org/W6779566397",
+        "https://openalex.org/W6779827379",
+        "https://openalex.org/W6779886600",
+        "https://openalex.org/W6780238375",
+        "https://openalex.org/W6782760920",
+        "https://openalex.org/W6783355037",
+        "https://openalex.org/W6784011863",
+        "https://openalex.org/W6784020155",
+        "https://openalex.org/W6784049536",
+        "https://openalex.org/W6784119104",
+        "https://openalex.org/W6784180246",
+        "https://openalex.org/W6784184991",
+        "https://openalex.org/W6784568508",
+        "https://openalex.org/W6785155534",
+        "https://openalex.org/W6785332027",
+        "https://openalex.org/W6786537514",
+        "https://openalex.org/W6786871991",
+        "https://openalex.org/W6787719664",
+        "https://openalex.org/W6788422526",
+        "https://openalex.org/W6789505266",
+        "https://openalex.org/W6790190981",
+        "https://openalex.org/W6790814326",
+        "https://openalex.org/W6790850890",
+        "https://openalex.org/W6790852632",
+        "https://openalex.org/W6791204390",
+        "https://openalex.org/W6791283100",
+        "https://openalex.org/W6791348793",
+        "https://openalex.org/W6791444617",
+        "https://openalex.org/W6792340124",
+        "https://openalex.org/W6792377057",
+        "https://openalex.org/W6793753718",
+        "https://openalex.org/W6793756662",
+        "https://openalex.org/W6794810853",
+        "https://openalex.org/W6795297065",
+        "https://openalex.org/W6796314857",
+        "https://openalex.org/W6797065961",
+        "https://openalex.org/W6797383051",
+        "https://openalex.org/W6798033760",
+        "https://openalex.org/W6798795650",
+        "https://openalex.org/W6839917624",
+        "https://openalex.org/W6885135008",
+        "https://openalex.org/W6922296337"
+      ],
+      "type": "article",
+      "ids": {
+        "openalex": "https://openalex.org/W4206484811",
+        "doi": "https://doi.org/10.1109/access.2021.3140175"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4386443326",
+      "doi": "https://doi.org/10.1145/3618295",
+      "title": "A Comprehensive Survey on Automatic Knowledge Graph Construction",
+      "publication_year": 2023,
+      "publication_date": "2023-09-05",
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5101737485",
+            "display_name": "Lingfeng Zhong",
+            "orcid": "https://orcid.org/0009-0006-1394-9292",
+            "observed_orcids": [
+              "https://orcid.org/0009-0006-1394-9292"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I99043593",
+              "display_name": "Macquarie University",
+              "ror": "https://ror.org/01sf06y89",
+              "country_code": "AU",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I99043593"
+              ]
+            }
+          ],
+          "countries": [
+            "AU"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Lingfeng Zhong",
+          "raw_affiliation_strings": [
+            "School of Computing, Macquarie University, Australia"
+          ],
+          "raw_orcid": "https://orcid.org/0009-0006-1394-9292",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "School of Computing, Macquarie University, Australia",
+              "institution_ids": [
+                "https://openalex.org/I99043593"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5007475662",
+            "display_name": "Jia Xin Wu",
+            "orcid": "https://orcid.org/0000-0002-1371-5801",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-1371-5801"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I99043593",
+              "display_name": "Macquarie University",
+              "ror": "https://ror.org/01sf06y89",
+              "country_code": "AU",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I99043593"
+              ]
+            }
+          ],
+          "countries": [
+            "AU"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jia Wu",
+          "raw_affiliation_strings": [
+            "School of Computing, Macquarie University, Australia"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-1371-5801",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "School of Computing, Macquarie University, Australia",
+              "institution_ids": [
+                "https://openalex.org/I99043593"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100340569",
+            "display_name": "Qian Li",
+            "orcid": "https://orcid.org/0000-0002-1612-4644",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-1612-4644"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I82880672",
+              "display_name": "Beihang University",
+              "ror": "https://ror.org/00wk2mp56",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I82880672"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Qian Li",
+          "raw_affiliation_strings": [
+            "School of Computer Science and Engineering, Beihang University, China"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-1612-4644",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "School of Computer Science and Engineering, Beihang University, China",
+              "institution_ids": [
+                "https://openalex.org/I82880672"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100740622",
+            "display_name": "Hao Peng",
+            "orcid": "https://orcid.org/0000-0003-0458-5977",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-0458-5977"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I82880672",
+              "display_name": "Beihang University",
+              "ror": "https://ror.org/00wk2mp56",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I82880672"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Hao Peng",
+          "raw_affiliation_strings": [
+            "School of Cyber Science and Technology, Beihang University, China"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-0458-5977",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "School of Cyber Science and Technology, Beihang University, China",
+              "institution_ids": [
+                "https://openalex.org/I82880672"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5080738591",
+            "display_name": "Xindong Wu",
+            "orcid": "https://orcid.org/0000-0003-2396-1704",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-2396-1704"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I16365422",
+              "display_name": "Hefei University of Technology",
+              "ror": "https://ror.org/02czkny70",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I16365422"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210123185",
+              "display_name": "Zhejiang Lab",
+              "ror": "https://ror.org/02m2h7991",
+              "country_code": "CN",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210123185"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Xindong Wu",
+          "raw_affiliation_strings": [
+            "Research Center for Knowledge Engineering, Zhejiang Lab, China and Key Laboratory of Knowledge Engineering with Big Data (the Ministry of Education of China), Hefei University of Technology, China"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-2396-1704",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Research Center for Knowledge Engineering, Zhejiang Lab, China and Key Laboratory of Knowledge Engineering with Big Data (the Ministry of Education of China), Hefei University of Technology, China",
+              "institution_ids": [
+                "https://openalex.org/I16365422",
+                "https://openalex.org/I4210123185"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstract_inverted_index": {
+        "Automatic": [
+          0
+        ],
+        "knowledge": [
+          1,
+          38,
+          72,
+          94,
+          98,
+          105,
+          107,
+          110,
+          115,
+          132,
+          148,
+          151,
+          155,
+          160,
+          168,
+          171,
+          175,
+          213
+        ],
+        "graph": [
+          2,
+          95,
+          99,
+          152,
+          172,
+          214
+        ],
+        "construction": [
+          3,
+          54
+        ],
+        "aims": [
+          4
+        ],
+        "at": [
+          5
+        ],
+        "manufacturing": [
+          6
+        ],
+        "structured": [
+          7,
+          37
+        ],
+        "human": [
+          8
+        ],
+        "knowledge.": [
+          9
+        ],
+        "To": [
+          10,
+          77
+        ],
+        "this": [
+          11,
+          79
+        ],
+        "end,": [
+          12
+        ],
+        "much": [
+          13
+        ],
+        "effort": [
+          14
+        ],
+        "has": [
+          15,
+          32
+        ],
+        "historically": [
+          16
+        ],
+        "been": [
+          17,
+          47
+        ],
+        "spent": [
+          18
+        ],
+        "extracting": [
+          19,
+          137
+        ],
+        "informative": [
+          20,
+          40
+        ],
+        "fact": [
+          21
+        ],
+        "patterns": [
+          22
+        ],
+        "from": [
+          23
+        ],
+        "different": [
+          24
+        ],
+        "data": [
+          25,
+          193
+        ],
+        "sources.": [
+          26
+        ],
+        "However,": [
+          27
+        ],
+        "more": [
+          28,
+          84
+        ],
+        "recently,": [
+          29
+        ],
+        "research": [
+          30
+        ],
+        "interest": [
+          31
+        ],
+        "shifted": [
+          33
+        ],
+        "to": [
+          34,
+          70,
+          88,
+          131,
+          158,
+          181,
+          210
+        ],
+        "acquiring": [
+          35
+        ],
+        "conceptualized": [
+          36
+        ],
+        "beyond": [
+          39,
+          74
+        ],
+        "data.": [
+          41
+        ],
+        "In": [
+          42
+        ],
+        "addition,": [
+          43
+        ],
+        "researchers": [
+          44
+        ],
+        "have": [
+          45
+        ],
+        "also": [
+          46,
+          163,
+          200
+        ],
+        "exploring": [
+          48
+        ],
+        "new": [
+          49
+        ],
+        "ways": [
+          50
+        ],
+        "of": [
+          51,
+          68,
+          114,
+          191
+        ],
+        "handling": [
+          52
+        ],
+        "sophisticated": [
+          53
+        ],
+        "tasks": [
+          55
+        ],
+        "in": [
+          56,
+          93,
+          102,
+          119,
+          140
+        ],
+        "diversified": [
+          57
+        ],
+        "scenarios.": [
+          58,
+          142
+        ],
+        "Thus,": [
+          59
+        ],
+        "there": [
+          60
+        ],
+        "is": [
+          61,
+          100
+        ],
+        "a": [
+          62,
+          65
+        ],
+        "demand": [
+          63
+        ],
+        "for": [
+          64,
+          147,
+          227
+        ],
+        "systematic": [
+          66
+        ],
+        "review": [
+          67
+        ],
+        "paradigms": [
+          69,
+          180
+        ],
+        "organize": [
+          71
+        ],
+        "structures": [
+          73
+        ],
+        "data-level": [
+          75
+        ],
+        "mentions.": [
+          76
+        ],
+        "meet": [
+          78
+        ],
+        "demand,": [
+          80
+        ],
+        "we": [
+          81,
+          199
+        ],
+        "comprehensively": [
+          82
+        ],
+        "survey": [
+          83,
+          144,
+          217
+        ],
+        "than": [
+          85
+        ],
+        "300": [
+          86
+        ],
+        "methods": [
+          87,
+          187
+        ],
+        "summarize": [
+          89
+        ],
+        "the": [
+          90,
+          179,
+          183,
+          189,
+          192,
+          222
+        ],
+        "latest": [
+          91
+        ],
+        "developments": [
+          92
+        ],
+        "construction.": [
+          96
+        ],
+        "A": [
+          97
+        ],
+        "built": [
+          101
+        ],
+        "three": [
+          103
+        ],
+        "steps:": [
+          104
+        ],
+        "acquisition,": [
+          106,
+          169
+        ],
+        "refinement,": [
+          108,
+          149
+        ],
+        "and": [
+          109,
+          127,
+          136,
+          154,
+          174,
+          196,
+          224
+        ],
+        "evolution.": [
+          111
+        ],
+        "The": [
+          112,
+          143,
+          216
+        ],
+        "processes": [
+          113
+        ],
+        "acquisition": [
+          116
+        ],
+        "are": [
+          117,
+          162
+        ],
+        "reviewed": [
+          118
+        ],
+        "detail,": [
+          120
+        ],
+        "including": [
+          121,
+          150,
+          166
+        ],
+        "obtaining": [
+          122
+        ],
+        "entities": [
+          123
+        ],
+        "with": [
+          124,
+          219
+        ],
+        "fine-grained": [
+          125
+        ],
+        "types": [
+          126
+        ],
+        "their": [
+          128
+        ],
+        "conceptual": [
+          129
+        ],
+        "linkages": [
+          130
+        ],
+        "graphs;": [
+          133
+        ],
+        "resolving": [
+          134
+        ],
+        "coreferences;": [
+          135
+        ],
+        "entity": [
+          138
+        ],
+        "relationships": [
+          139
+        ],
+        "complex": [
+          141
+        ],
+        "covers": [
+          145
+        ],
+        "models": [
+          146
+        ],
+        "completion,": [
+          153,
+          173
+        ],
+        "fusion.": [
+          156
+        ],
+        "Methods": [
+          157
+        ],
+        "handle": [
+          159
+        ],
+        "evolution": [
+          161
+        ],
+        "systematically": [
+          164
+        ],
+        "presented,": [
+          165
+        ],
+        "condition": [
+          167,
+          170
+        ],
+        "dynamic.": [
+          176
+        ],
+        "We": [
+          177
+        ],
+        "present": [
+          178
+        ],
+        "compare": [
+          182
+        ],
+        "distinction": [
+          184
+        ],
+        "among": [
+          185
+        ],
+        "these": [
+          186
+        ],
+        "along": [
+          188
+        ],
+        "axis": [
+          190
+        ],
+        "environment,": [
+          194
+        ],
+        "motivation,": [
+          195
+        ],
+        "architecture.": [
+          197
+        ],
+        "Additionally,": [
+          198
+        ],
+        "provide": [
+          201
+        ],
+        "briefs": [
+          202
+        ],
+        "on": [
+          203,
+          221
+        ],
+        "accessible": [
+          204
+        ],
+        "resources": [
+          205
+        ],
+        "that": [
+          206
+        ],
+        "can": [
+          207
+        ],
+        "help": [
+          208
+        ],
+        "readers": [
+          209
+        ],
+        "develop": [
+          211
+        ],
+        "practical": [
+          212
+        ],
+        "systems.": [
+          215
+        ],
+        "concludes": [
+          218
+        ],
+        "discussions": [
+          220
+        ],
+        "challenges": [
+          223
+        ],
+        "possible": [
+          225
+        ],
+        "directions": [
+          226
+        ],
+        "future": [
+          228
+        ],
+        "exploration.": [
+          229
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1145/3618295",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1145/3618295",
+        "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3618295",
+        "source": {
+          "id": "https://openalex.org/S157921468",
+          "display_name": "ACM Computing Surveys",
+          "issn_l": "0360-0300",
+          "issn": [
+            "0360-0300",
+            "1557-7341"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "jufo-3",
+            "ki-jl-2",
+            "norway-2"
+          ],
+          "host_organization": "https://openalex.org/P4310319798",
+          "host_organization_name": "Association for Computing Machinery",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319798"
+          ],
+          "host_organization_lineage_names": [
+            "Association for Computing Machinery"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "ACM Computing Surveys",
+        "raw_type": "journal-article"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://dl.acm.org/doi/pdf/10.1145/3618295",
+        "any_repository_has_fulltext": false
+      },
+      "cited_by_count": 368,
+      "referenced_works_count": 330,
+      "referenced_works": [
+        "https://openalex.org/W92812941",
+        "https://openalex.org/W102708294",
+        "https://openalex.org/W175897666",
+        "https://openalex.org/W192652968",
+        "https://openalex.org/W1489949474",
+        "https://openalex.org/W1515300998",
+        "https://openalex.org/W1524234997",
+        "https://openalex.org/W1566513354",
+        "https://openalex.org/W1604644367",
+        "https://openalex.org/W1604972505",
+        "https://openalex.org/W1795600436",
+        "https://openalex.org/W1888005072",
+        "https://openalex.org/W1970939142",
+        "https://openalex.org/W1973483159",
+        "https://openalex.org/W1982177147",
+        "https://openalex.org/W1988217119",
+        "https://openalex.org/W2005508116",
+        "https://openalex.org/W2007278884",
+        "https://openalex.org/W2008214196",
+        "https://openalex.org/W2016089260",
+        "https://openalex.org/W2016698607",
+        "https://openalex.org/W2019577381",
+        "https://openalex.org/W2022166150",
+        "https://openalex.org/W2026421491",
+        "https://openalex.org/W2029249040",
+        "https://openalex.org/W2038880450",
+        "https://openalex.org/W2040263621",
+        "https://openalex.org/W2043150741",
+        "https://openalex.org/W2048282669",
+        "https://openalex.org/W2052569240",
+        "https://openalex.org/W2053299703",
+        "https://openalex.org/W2065568440",
+        "https://openalex.org/W2070491211",
+        "https://openalex.org/W2072936489",
+        "https://openalex.org/W2081580037",
+        "https://openalex.org/W2083330748",
+        "https://openalex.org/W2085337304",
+        "https://openalex.org/W2088212442",
+        "https://openalex.org/W2088600132",
+        "https://openalex.org/W2096765155",
+        "https://openalex.org/W2097864578",
+        "https://openalex.org/W2100684772",
+        "https://openalex.org/W2101848544",
+        "https://openalex.org/W2103931177",
+        "https://openalex.org/W2109426455",
+        "https://openalex.org/W2111869785",
+        "https://openalex.org/W2113227740",
+        "https://openalex.org/W2115461474",
+        "https://openalex.org/W2118356770",
+        "https://openalex.org/W2123442489",
+        "https://openalex.org/W2123512824",
+        "https://openalex.org/W2128303259",
+        "https://openalex.org/W2128836931",
+        "https://openalex.org/W2129629757",
+        "https://openalex.org/W2130831177",
+        "https://openalex.org/W2134033474",
+        "https://openalex.org/W2135479443",
+        "https://openalex.org/W2138605095",
+        "https://openalex.org/W2140116426",
+        "https://openalex.org/W2140327372",
+        "https://openalex.org/W2145339207",
+        "https://openalex.org/W2151502664",
+        "https://openalex.org/W2158051716",
+        "https://openalex.org/W2158823144",
+        "https://openalex.org/W2160459668",
+        "https://openalex.org/W2162590473",
+        "https://openalex.org/W2164455818",
+        "https://openalex.org/W2170146596",
+        "https://openalex.org/W2180160918",
+        "https://openalex.org/W2197151308",
+        "https://openalex.org/W2205981794",
+        "https://openalex.org/W2250726251",
+        "https://openalex.org/W2251135946",
+        "https://openalex.org/W2251622960",
+        "https://openalex.org/W2283140239",
+        "https://openalex.org/W2290320465",
+        "https://openalex.org/W2300469216",
+        "https://openalex.org/W2310425190",
+        "https://openalex.org/W2396685499",
+        "https://openalex.org/W2397198482",
+        "https://openalex.org/W2398606196",
+        "https://openalex.org/W2433281745",
+        "https://openalex.org/W2464029548",
+        "https://openalex.org/W2466714650",
+        "https://openalex.org/W2470760166",
+        "https://openalex.org/W2471776193",
+        "https://openalex.org/W2473007590",
+        "https://openalex.org/W2508664155",
+        "https://openalex.org/W2509435444",
+        "https://openalex.org/W2513378248",
+        "https://openalex.org/W2515462165",
+        "https://openalex.org/W2517194566",
+        "https://openalex.org/W2524949478",
+        "https://openalex.org/W2526182867",
+        "https://openalex.org/W2529049456",
+        "https://openalex.org/W2539469848",
+        "https://openalex.org/W2540645427",
+        "https://openalex.org/W2551361256",
+        "https://openalex.org/W2555843821",
+        "https://openalex.org/W2563063592",
+        "https://openalex.org/W2565935264",
+        "https://openalex.org/W2587809655",
+        "https://openalex.org/W2595918108",
+        "https://openalex.org/W2598654328",
+        "https://openalex.org/W2602447579",
+        "https://openalex.org/W2603270557",
+        "https://openalex.org/W2604314403",
+        "https://openalex.org/W2604610161",
+        "https://openalex.org/W2606901057",
+        "https://openalex.org/W2612773933",
+        "https://openalex.org/W2620787630",
+        "https://openalex.org/W2624677889",
+        "https://openalex.org/W2670253439",
+        "https://openalex.org/W2738152205",
+        "https://openalex.org/W2740462959",
+        "https://openalex.org/W2740887992",
+        "https://openalex.org/W2741237963",
+        "https://openalex.org/W2741560830",
+        "https://openalex.org/W2741750617",
+        "https://openalex.org/W2751923720",
+        "https://openalex.org/W2755637027",
+        "https://openalex.org/W2759136286",
+        "https://openalex.org/W2762307198",
+        "https://openalex.org/W2767287441",
+        "https://openalex.org/W2769387903",
+        "https://openalex.org/W2798649495",
+        "https://openalex.org/W2798864014",
+        "https://openalex.org/W2798965707",
+        "https://openalex.org/W2799125718",
+        "https://openalex.org/W2806734715",
+        "https://openalex.org/W2808051209",
+        "https://openalex.org/W2808142148",
+        "https://openalex.org/W2808284704",
+        "https://openalex.org/W2887428522",
+        "https://openalex.org/W2889224519",
+        "https://openalex.org/W2889234142",
+        "https://openalex.org/W2889344053",
+        "https://openalex.org/W2889583850",
+        "https://openalex.org/W2889782235",
+        "https://openalex.org/W2890187992",
+        "https://openalex.org/W2890410208",
+        "https://openalex.org/W2890459330",
+        "https://openalex.org/W2890494294",
+        "https://openalex.org/W2890930935",
+        "https://openalex.org/W2891112820",
+        "https://openalex.org/W2891328459",
+        "https://openalex.org/W2891417293",
+        "https://openalex.org/W2892316911",
+        "https://openalex.org/W2894615000",
+        "https://openalex.org/W2894998119",
+        "https://openalex.org/W2895715183",
+        "https://openalex.org/W2896617571",
+        "https://openalex.org/W2897509371",
+        "https://openalex.org/W2897586972",
+        "https://openalex.org/W2903963001",
+        "https://openalex.org/W2904161907",
+        "https://openalex.org/W2904256628",
+        "https://openalex.org/W2905301836",
+        "https://openalex.org/W2905471643",
+        "https://openalex.org/W2905524128",
+        "https://openalex.org/W2913687407",
+        "https://openalex.org/W2914592219",
+        "https://openalex.org/W2914846572",
+        "https://openalex.org/W2919278763",
+        "https://openalex.org/W2920008855",
+        "https://openalex.org/W2929394430",
+        "https://openalex.org/W2931010691",
+        "https://openalex.org/W2935052563",
+        "https://openalex.org/W2941929666",
+        "https://openalex.org/W2948129334",
+        "https://openalex.org/W2948131150",
+        "https://openalex.org/W2949212908",
+        "https://openalex.org/W2949700412",
+        "https://openalex.org/W2949922292",
+        "https://openalex.org/W2950339735",
+        "https://openalex.org/W2950393809",
+        "https://openalex.org/W2950457956",
+        "https://openalex.org/W2951221758",
+        "https://openalex.org/W2951615109",
+        "https://openalex.org/W2951864354",
+        "https://openalex.org/W2952179106",
+        "https://openalex.org/W2952205826",
+        "https://openalex.org/W2952768212",
+        "https://openalex.org/W2953054275",
+        "https://openalex.org/W2955238243",
+        "https://openalex.org/W2962713724",
+        "https://openalex.org/W2962756421",
+        "https://openalex.org/W2962881743",
+        "https://openalex.org/W2962886429",
+        "https://openalex.org/W2962902328",
+        "https://openalex.org/W2962916648",
+        "https://openalex.org/W2962939608",
+        "https://openalex.org/W2963003781",
+        "https://openalex.org/W2963014179",
+        "https://openalex.org/W2963020213",
+        "https://openalex.org/W2963085936",
+        "https://openalex.org/W2963095307",
+        "https://openalex.org/W2963140597",
+        "https://openalex.org/W2963167649",
+        "https://openalex.org/W2963341956",
+        "https://openalex.org/W2963691861",
+        "https://openalex.org/W2963695529",
+        "https://openalex.org/W2963869731",
+        "https://openalex.org/W2963870853",
+        "https://openalex.org/W2964022985",
+        "https://openalex.org/W2964104309",
+        "https://openalex.org/W2964152081",
+        "https://openalex.org/W2964166731",
+        "https://openalex.org/W2964167098",
+        "https://openalex.org/W2964222246",
+        "https://openalex.org/W2964262329",
+        "https://openalex.org/W2964263366",
+        "https://openalex.org/W2964263523",
+        "https://openalex.org/W2964317478",
+        "https://openalex.org/W2964351784",
+        "https://openalex.org/W2964560812",
+        "https://openalex.org/W2964814686",
+        "https://openalex.org/W2964855489",
+        "https://openalex.org/W2965435509",
+        "https://openalex.org/W2970224261",
+        "https://openalex.org/W2970391844",
+        "https://openalex.org/W2970476646",
+        "https://openalex.org/W2970618565",
+        "https://openalex.org/W2970959783",
+        "https://openalex.org/W2971001654",
+        "https://openalex.org/W2971136144",
+        "https://openalex.org/W2971221499",
+        "https://openalex.org/W2971350966",
+        "https://openalex.org/W2979375935",
+        "https://openalex.org/W2980197252",
+        "https://openalex.org/W2981612821",
+        "https://openalex.org/W2984134369",
+        "https://openalex.org/W2985344461",
+        "https://openalex.org/W2997591266",
+        "https://openalex.org/W2997617958",
+        "https://openalex.org/W2997897037",
+        "https://openalex.org/W2998456279",
+        "https://openalex.org/W2998718632",
+        "https://openalex.org/W2999905431",
+        "https://openalex.org/W3002833979",
+        "https://openalex.org/W3003265726",
+        "https://openalex.org/W3003401769",
+        "https://openalex.org/W3008881932",
+        "https://openalex.org/W3011594683",
+        "https://openalex.org/W3012000912",
+        "https://openalex.org/W3014811350",
+        "https://openalex.org/W3024835274",
+        "https://openalex.org/W3032567415",
+        "https://openalex.org/W3034302623",
+        "https://openalex.org/W3034617555",
+        "https://openalex.org/W3034918576",
+        "https://openalex.org/W3035053871",
+        "https://openalex.org/W3035531911",
+        "https://openalex.org/W3035559300",
+        "https://openalex.org/W3038930935",
+        "https://openalex.org/W3038934320",
+        "https://openalex.org/W3044812626",
+        "https://openalex.org/W3047616836",
+        "https://openalex.org/W3073603798",
+        "https://openalex.org/W3082320588",
+        "https://openalex.org/W3088341007",
+        "https://openalex.org/W3088507321",
+        "https://openalex.org/W3089342625",
+        "https://openalex.org/W3090227305",
+        "https://openalex.org/W3090556797",
+        "https://openalex.org/W3091533194",
+        "https://openalex.org/W3091993229",
+        "https://openalex.org/W3093891978",
+        "https://openalex.org/W3095319910",
+        "https://openalex.org/W3098038527",
+        "https://openalex.org/W3098583774",
+        "https://openalex.org/W3099150947",
+        "https://openalex.org/W3100254008",
+        "https://openalex.org/W3100445485",
+        "https://openalex.org/W3103296573",
+        "https://openalex.org/W3103836967",
+        "https://openalex.org/W3104415840",
+        "https://openalex.org/W3109305417",
+        "https://openalex.org/W3111851097",
+        "https://openalex.org/W3113425182",
+        "https://openalex.org/W3113833844",
+        "https://openalex.org/W3114354807",
+        "https://openalex.org/W3116122129",
+        "https://openalex.org/W3116427155",
+        "https://openalex.org/W3117234969",
+        "https://openalex.org/W3118855211",
+        "https://openalex.org/W3122741928",
+        "https://openalex.org/W3122866338",
+        "https://openalex.org/W3131609000",
+        "https://openalex.org/W3133932469",
+        "https://openalex.org/W3143371164",
+        "https://openalex.org/W3144600905",
+        "https://openalex.org/W3146861984",
+        "https://openalex.org/W3160260982",
+        "https://openalex.org/W3163193754",
+        "https://openalex.org/W3169228325",
+        "https://openalex.org/W3173905097",
+        "https://openalex.org/W3174306305",
+        "https://openalex.org/W3175289776",
+        "https://openalex.org/W3176472544",
+        "https://openalex.org/W3177317072",
+        "https://openalex.org/W3183859557",
+        "https://openalex.org/W3185106195",
+        "https://openalex.org/W3186417831",
+        "https://openalex.org/W3188999884",
+        "https://openalex.org/W3190766156",
+        "https://openalex.org/W3193800853",
+        "https://openalex.org/W3194849385",
+        "https://openalex.org/W3197481512",
+        "https://openalex.org/W3198686057",
+        "https://openalex.org/W3198954224",
+        "https://openalex.org/W3200143120",
+        "https://openalex.org/W3208791567",
+        "https://openalex.org/W3210948155",
+        "https://openalex.org/W4200329746",
+        "https://openalex.org/W4205504878",
+        "https://openalex.org/W4205601573",
+        "https://openalex.org/W4206797693",
+        "https://openalex.org/W4206911143",
+        "https://openalex.org/W4207076851",
+        "https://openalex.org/W4221150131",
+        "https://openalex.org/W4224309032",
+        "https://openalex.org/W4224324601",
+        "https://openalex.org/W4224878657",
+        "https://openalex.org/W4226031465",
+        "https://openalex.org/W4251372957",
+        "https://openalex.org/W4283756115",
+        "https://openalex.org/W4293267087",
+        "https://openalex.org/W6945299337",
+        "https://openalex.org/W6949549905"
+      ],
+      "type": "article",
+      "ids": {
+        "openalex": "https://openalex.org/W4386443326",
+        "doi": "https://doi.org/10.1145/3618295"
+      }
+    },
+    {
+      "id": "https://openalex.org/W7106802800",
+      "doi": "https://doi.org/10.48448/22ma-1796",
+      "title": "MAGIC: A Multi-Hop and Graph-Based Benchmark for Inter-Context Conflicts in Retrieval-Augmented Generation",
+      "publication_year": 2025,
+      "publication_date": "2025-10-10",
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": null,
+            "display_name": "Association for Computational Linguistics 2025",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Association for Computational Linguistics 2025",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Kangmin, Lee",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Kangmin, Lee",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Kim, Taeuk",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4575257",
+              "display_name": "Hanyang University",
+              "ror": "https://ror.org/046865y68",
+              "country_code": "KR",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I4575257"
+              ]
+            }
+          ],
+          "countries": [
+            "KR"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Kim, Taeuk",
+          "raw_affiliation_strings": [
+            "Hanyang University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Hanyang University",
+              "institution_ids": [
+                "https://openalex.org/I4575257"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": null,
+            "display_name": "Lee, Jungyeon",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Lee, Jungyeon",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "abstract_inverted_index": {
+        "Knowledge": [
+          0
+        ],
+        "conflict": [
+          1,
+          53,
+          113
+        ],
+        "often": [
+          2,
+          120
+        ],
+        "arises": [
+          3
+        ],
+        "in": [
+          4,
+          142
+        ],
+        "retrieval-augmented": [
+          5
+        ],
+        "generation": [
+          6
+        ],
+        "(RAG)": [
+          7
+        ],
+        "systems,": [
+          8
+        ],
+        "where": [
+          9
+        ],
+        "retrieved": [
+          10
+        ],
+        "documents": [
+          11
+        ],
+        "may": [
+          12
+        ],
+        "be": [
+          13
+        ],
+        "inconsistent": [
+          14
+        ],
+        "with": [
+          15,
+          112
+        ],
+        "one": [
+          16
+        ],
+        "another": [
+          17
+        ],
+        "or": [
+          18
+        ],
+        "contradict": [
+          19
+        ],
+        "the": [
+          20,
+          28,
+          38,
+          82,
+          98,
+          124
+        ],
+        "model\u2019s": [
+          21
+        ],
+        "parametric": [
+          22
+        ],
+        "knowledge.": [
+          23
+        ],
+        "Existing": [
+          24
+        ],
+        "benchmarks": [
+          25
+        ],
+        "for": [
+          26,
+          139
+        ],
+        "investigating": [
+          27
+        ],
+        "phenomenon": [
+          29
+        ],
+        "have": [
+          30
+        ],
+        "notable": [
+          31
+        ],
+        "limitations,": [
+          32
+        ],
+        "including": [
+          33
+        ],
+        "a": [
+          34,
+          49,
+          61,
+          137
+        ],
+        "narrow": [
+          35
+        ],
+        "focus": [
+          36
+        ],
+        "on": [
+          37,
+          44,
+          90
+        ],
+        "question": [
+          39
+        ],
+        "answering": [
+          40
+        ],
+        "setup,": [
+          41
+        ],
+        "heavy": [
+          42
+        ],
+        "reliance": [
+          43
+        ],
+        "entity": [
+          45
+        ],
+        "substitution": [
+          46
+        ],
+        "techniques,": [
+          47
+        ],
+        "and": [
+          48,
+          69,
+          108
+        ],
+        "restricted": [
+          50
+        ],
+        "range": [
+          51
+        ],
+        "of": [
+          52,
+          86,
+          101,
+          127
+        ],
+        "types.": [
+          54
+        ],
+        "To": [
+          55
+        ],
+        "address": [
+          56
+        ],
+        "these": [
+          57
+        ],
+        "issues,": [
+          58
+        ],
+        "we": [
+          59,
+          130
+        ],
+        "propose": [
+          60
+        ],
+        "knowledge": [
+          62,
+          104
+        ],
+        "graph": [
+          63
+        ],
+        "(KG)-based": [
+          64
+        ],
+        "framework": [
+          65
+        ],
+        "that": [
+          66,
+          134
+        ],
+        "generates": [
+          67
+        ],
+        "varied": [
+          68
+        ],
+        "subtle": [
+          70
+        ],
+        "conflicts": [
+          71
+        ],
+        "between": [
+          72
+        ],
+        "two": [
+          73
+        ],
+        "similar": [
+          74
+        ],
+        "yet": [
+          75
+        ],
+        "distinct": [
+          76
+        ],
+        "contexts,": [
+          77
+        ],
+        "while": [
+          78
+        ],
+        "ensuring": [
+          79
+        ],
+        "interpretability": [
+          80
+        ],
+        "through": [
+          81
+        ],
+        "explicit": [
+          83
+        ],
+        "relational": [
+          84
+        ],
+        "structure": [
+          85
+        ],
+        "KGs.": [
+          87
+        ],
+        "Experimental": [
+          88
+        ],
+        "results": [
+          89
+        ],
+        "our": [
+          91
+        ],
+        "benchmark,": [
+          92
+        ],
+        "MAGIC,": [
+          93
+        ],
+        "provide": [
+          94
+        ],
+        "intriguing": [
+          95
+        ],
+        "insights": [
+          96
+        ],
+        "into": [
+          97
+        ],
+        "inner": [
+          99
+        ],
+        "workings": [
+          100
+        ],
+        "LLMs": [
+          102,
+          141
+        ],
+        "regarding": [
+          103
+        ],
+        "conflict:": [
+          105
+        ],
+        "both": [
+          106
+        ],
+        "open-source": [
+          107
+        ],
+        "proprietary": [
+          109
+        ],
+        "models": [
+          110
+        ],
+        "struggle": [
+          111
+        ],
+        "detection\u2014especially": [
+          114
+        ],
+        "when": [
+          115
+        ],
+        "multi-hop": [
+          116
+        ],
+        "reasoning": [
+          117
+        ],
+        "is": [
+          118
+        ],
+        "required\u2014and": [
+          119
+        ],
+        "fail": [
+          121
+        ],
+        "to": [
+          122
+        ],
+        "pinpoint": [
+          123
+        ],
+        "exact": [
+          125
+        ],
+        "source": [
+          126
+        ],
+        "contradictions.": [
+          128
+        ],
+        "Finally,": [
+          129
+        ],
+        "present": [
+          131
+        ],
+        "in-depth": [
+          132
+        ],
+        "analyses": [
+          133
+        ],
+        "serve": [
+          135
+        ],
+        "as": [
+          136
+        ],
+        "foundation": [
+          138
+        ],
+        "improving": [
+          140
+        ],
+        "integrating": [
+          143
+        ],
+        "diverse,": [
+          144
+        ],
+        "sometimes": [
+          145
+        ],
+        "even": [
+          146
+        ],
+        "conflicting,": [
+          147
+        ],
+        "information.": [
+          148
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.48448/22ma-1796",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.48448/22ma-1796",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S7407053148",
+          "display_name": "Underline Science Inc.",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [],
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Audiovisual"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://doi.org/10.48448/22ma-1796",
+        "any_repository_has_fulltext": true
+      },
+      "cited_by_count": 0,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "type": "other",
+      "ids": {
+        "openalex": "https://openalex.org/W7106802800",
+        "doi": "https://doi.org/10.48448/22ma-1796"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4406840433",
+      "doi": "https://doi.org/10.48550/arxiv.2501.13958",
+      "title": "A Survey of Graph Retrieval-Augmented Generation for Customized Large Language Models",
+      "publication_year": 2025,
+      "publication_date": "2025-01-21",
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5058417704",
+            "display_name": "Qinggang Zhang",
+            "orcid": "https://orcid.org/0000-0002-0247-4942",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0247-4942"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I14243506",
+              "display_name": "Hong Kong Polytechnic University",
+              "ror": "https://ror.org/0030zas98",
+              "country_code": "HK",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ],
+          "countries": [
+            "HK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zhang, Qinggang",
+          "raw_affiliation_strings": [
+            "The Hong Kong Polytechnic University , Hong Kong SAR , China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "The Hong Kong Polytechnic University , Hong Kong SAR , China",
+              "institution_ids": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5004805571",
+            "display_name": "Shengyuan Chen",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I14243506",
+              "display_name": "Hong Kong Polytechnic University",
+              "ror": "https://ror.org/0030zas98",
+              "country_code": "HK",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ],
+          "countries": [
+            "HK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Chen, Shengyuan",
+          "raw_affiliation_strings": [
+            "The Hong Kong Polytechnic University , Hong Kong SAR , China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "The Hong Kong Polytechnic University , Hong Kong SAR , China",
+              "institution_ids": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5035660751",
+            "display_name": "Yuanchen Bei",
+            "orcid": "https://orcid.org/0000-0003-2834-2873",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-2834-2873"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I14243506",
+              "display_name": "Hong Kong Polytechnic University",
+              "ror": "https://ror.org/0030zas98",
+              "country_code": "HK",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ],
+          "countries": [
+            "HK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Bei, Yuanchen",
+          "raw_affiliation_strings": [
+            "The Hong Kong Polytechnic University , Hong Kong SAR , China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "The Hong Kong Polytechnic University , Hong Kong SAR , China",
+              "institution_ids": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5102095560",
+            "display_name": "Zheng Yuan",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I14243506",
+              "display_name": "Hong Kong Polytechnic University",
+              "ror": "https://ror.org/0030zas98",
+              "country_code": "HK",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ],
+          "countries": [
+            "HK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Yuan, Zheng",
+          "raw_affiliation_strings": [
+            "The Hong Kong Polytechnic University , Hong Kong SAR , China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "The Hong Kong Polytechnic University , Hong Kong SAR , China",
+              "institution_ids": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5049663232",
+            "display_name": "Huachi Zhou",
+            "orcid": "https://orcid.org/0000-0002-8301-8470",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-8301-8470"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I14243506",
+              "display_name": "Hong Kong Polytechnic University",
+              "ror": "https://ror.org/0030zas98",
+              "country_code": "HK",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ],
+          "countries": [
+            "HK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zhou, Huachi",
+          "raw_affiliation_strings": [
+            "The Hong Kong Polytechnic University , Hong Kong SAR , China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "The Hong Kong Polytechnic University , Hong Kong SAR , China",
+              "institution_ids": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5101383081",
+            "display_name": "Zijin Hong",
+            "orcid": "https://orcid.org/0009-0008-2283-255X",
+            "observed_orcids": [
+              "https://orcid.org/0009-0008-2283-255X"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I14243506",
+              "display_name": "Hong Kong Polytechnic University",
+              "ror": "https://ror.org/0030zas98",
+              "country_code": "HK",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ],
+          "countries": [
+            "HK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Hong, Zijin",
+          "raw_affiliation_strings": [
+            "The Hong Kong Polytechnic University , Hong Kong SAR , China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "The Hong Kong Polytechnic University , Hong Kong SAR , China",
+              "institution_ids": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100353673",
+            "display_name": "Hao Chen",
+            "orcid": "https://orcid.org/0009-0001-6480-7976",
+            "observed_orcids": [
+              "https://orcid.org/0009-0001-6480-7976",
+              "https://orcid.org/0000-0001-6206-0277",
+              "https://orcid.org/0000-0002-8395-8526",
+              "https://orcid.org/0000-0002-2601-7471",
+              "https://orcid.org/0000-0002-1743-3561",
+              "https://orcid.org/0000-0003-4346-7746"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I14243506",
+              "display_name": "Hong Kong Polytechnic University",
+              "ror": "https://ror.org/0030zas98",
+              "country_code": "HK",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I14243506"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I194450716",
+              "display_name": "Jilin University",
+              "ror": "https://ror.org/00js3aw79",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I194450716"
+              ]
+            }
+          ],
+          "countries": [
+            "CN",
+            "HK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Chen, Hao",
+          "raw_affiliation_strings": [
+            "School of Artificial Intelligence , Jilin University , Changchun , China",
+            "The Hong Kong Polytechnic University , Hong Kong SAR , China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "School of Artificial Intelligence , Jilin University , Changchun , China",
+              "institution_ids": [
+                "https://openalex.org/I194450716"
+              ]
+            },
+            {
+              "raw_affiliation_string": "The Hong Kong Polytechnic University , Hong Kong SAR , China",
+              "institution_ids": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Xiao, Yilin",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I14243506",
+              "display_name": "Hong Kong Polytechnic University",
+              "ror": "https://ror.org/0030zas98",
+              "country_code": "HK",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ],
+          "countries": [
+            "HK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Xiao, Yilin",
+          "raw_affiliation_strings": [
+            "The Hong Kong Polytechnic University , Hong Kong SAR , China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "The Hong Kong Polytechnic University , Hong Kong SAR , China",
+              "institution_ids": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Zhou, Chuang",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I14243506",
+              "display_name": "Hong Kong Polytechnic University",
+              "ror": "https://ror.org/0030zas98",
+              "country_code": "HK",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I14243506"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I307360612",
+              "display_name": "Lake Superior College",
+              "ror": "https://ror.org/03d6j2008",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I307360612",
+                "https://openalex.org/I91221267"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I81020251",
+              "display_name": "Great Lakes Institute of Management",
+              "ror": "https://ror.org/038nxyh73",
+              "country_code": "IN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I81020251"
+              ]
+            }
+          ],
+          "countries": [
+            "HK",
+            "IN",
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zhou, Chuang",
+          "raw_affiliation_strings": [
+            "Great Lakes Canada Lake Superior United States",
+            "The Hong Kong Polytechnic University , Hong Kong SAR , China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Great Lakes Canada Lake Superior United States",
+              "institution_ids": [
+                "https://openalex.org/I307360612",
+                "https://openalex.org/I81020251"
+              ]
+            },
+            {
+              "raw_affiliation_string": "The Hong Kong Polytechnic University , Hong Kong SAR , China",
+              "institution_ids": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5038326486",
+            "display_name": "Junnan Dong",
+            "orcid": "https://orcid.org/0000-0003-2117-6083",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-2117-6083"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I14243506",
+              "display_name": "Hong Kong Polytechnic University",
+              "ror": "https://ror.org/0030zas98",
+              "country_code": "HK",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ],
+          "countries": [
+            "HK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Dong, Junnan",
+          "raw_affiliation_strings": [
+            "The Hong Kong Polytechnic University , Hong Kong SAR , China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "The Hong Kong Polytechnic University , Hong Kong SAR , China",
+              "institution_ids": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5049349192",
+            "display_name": "Yi Chang",
+            "orcid": "https://orcid.org/0000-0001-8542-5937",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-8542-5937"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I14243506",
+              "display_name": "Hong Kong Polytechnic University",
+              "ror": "https://ror.org/0030zas98",
+              "country_code": "HK",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I14243506"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I17173981",
+              "display_name": "Lake Erie College",
+              "ror": "https://ror.org/00dvjtq12",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I17173981"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210126396",
+              "display_name": "Lake Erie Research Institute",
+              "ror": "https://ror.org/02x8fdg77",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I4210126396"
+              ]
+            }
+          ],
+          "countries": [
+            "HK",
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Chang, Yi",
+          "raw_affiliation_strings": [
+            "Lake Erie USA Canada \u2026 Mexico",
+            "The Hong Kong Polytechnic University , Hong Kong SAR , China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Lake Erie USA Canada \u2026 Mexico",
+              "institution_ids": [
+                "https://openalex.org/I17173981",
+                "https://openalex.org/I4210126396"
+              ]
+            },
+            {
+              "raw_affiliation_string": "The Hong Kong Polytechnic University , Hong Kong SAR , China",
+              "institution_ids": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": null,
+            "display_name": "Huang, Xiao",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I14243506",
+              "display_name": "Hong Kong Polytechnic University",
+              "ror": "https://ror.org/0030zas98",
+              "country_code": "HK",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ],
+          "countries": [
+            "HK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Huang, Xiao",
+          "raw_affiliation_strings": [
+            "Lake Superior , Lake Huron , Lake Erie , Lake Ontario Lake Superior , Lake Huron , Lake Erie , Lake Ontario Lake Superior , Lake Huron , Lake Erie , Lake Ontario",
+            "The Hong Kong Polytechnic University , Hong Kong SAR , China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Lake Superior , Lake Huron , Lake Erie , Lake Ontario Lake Superior , Lake Huron , Lake Erie , Lake Ontario Lake Superior , Lake Huron , Lake Erie , Lake Ontario",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "The Hong Kong Polytechnic University , Hong Kong SAR , China",
+              "institution_ids": [
+                "https://openalex.org/I14243506"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstract_inverted_index": {
+        "Large": [
+          0
+        ],
+        "language": [
+          1
+        ],
+        "models": [
+          2
+        ],
+        "(LLMs)": [
+          3
+        ],
+        "have": [
+          4
+        ],
+        "demonstrated": [
+          5
+        ],
+        "remarkable": [
+          6
+        ],
+        "capabilities": [
+          7
+        ],
+        "in": [
+          8,
+          77,
+          82,
+          212
+        ],
+        "a": [
+          9,
+          35,
+          98,
+          106
+        ],
+        "wide": [
+          10
+        ],
+        "range": [
+          11
+        ],
+        "of": [
+          12,
+          101,
+          165,
+          176,
+          198
+        ],
+        "tasks,": [
+          13
+        ],
+        "yet": [
+          14
+        ],
+        "their": [
+          15
+        ],
+        "application": [
+          16
+        ],
+        "to": [
+          17,
+          23,
+          38,
+          53
+        ],
+        "specialized": [
+          18
+        ],
+        "domains": [
+          19
+        ],
+        "remains": [
+          20
+        ],
+        "challenging": [
+          21
+        ],
+        "due": [
+          22
+        ],
+        "the": [
+          24,
+          173,
+          195,
+          210
+        ],
+        "need": [
+          25
+        ],
+        "for": [
+          26,
+          41,
+          159,
+          209
+        ],
+        "deep": [
+          27
+        ],
+        "expertise.": [
+          28
+        ],
+        "Retrieval-Augmented": [
+          29,
+          103
+        ],
+        "generation": [
+          30,
+          164
+        ],
+        "(RAG)": [
+          31
+        ],
+        "has": [
+          32
+        ],
+        "emerged": [
+          33
+        ],
+        "as": [
+          34
+        ],
+        "promising": [
+          36,
+          191
+        ],
+        "solution": [
+          37
+        ],
+        "customize": [
+          39
+        ],
+        "LLMs": [
+          40
+        ],
+        "professional": [
+          42,
+          78,
+          184
+        ],
+        "fields": [
+          43
+        ],
+        "by": [
+          44
+        ],
+        "seamlessly": [
+          45
+        ],
+        "integrating": [
+          46
+        ],
+        "external": [
+          47
+        ],
+        "knowledge": [
+          48,
+          83,
+          125,
+          143,
+          152,
+          158
+        ],
+        "bases,": [
+          49
+        ],
+        "enabling": [
+          50
+        ],
+        "real-time": [
+          51
+        ],
+        "access": [
+          52
+        ],
+        "domain-specific": [
+          54,
+          111
+        ],
+        "expertise": [
+          55
+        ],
+        "during": [
+          56
+        ],
+        "inference.": [
+          57
+        ],
+        "Despite": [
+          58
+        ],
+        "its": [
+          59
+        ],
+        "potential,": [
+          60
+        ],
+        "traditional": [
+          61,
+          116
+        ],
+        "RAG": [
+          62,
+          117
+        ],
+        "systems,": [
+          63
+        ],
+        "based": [
+          64
+        ],
+        "on": [
+          65
+        ],
+        "flat": [
+          66
+        ],
+        "text": [
+          67
+        ],
+        "retrieval,": [
+          68
+        ],
+        "face": [
+          69
+        ],
+        "three": [
+          70,
+          120
+        ],
+        "critical": [
+          71
+        ],
+        "challenges:": [
+          72
+        ],
+        "(i)": [
+          73,
+          123
+        ],
+        "complex": [
+          74
+        ],
+        "query": [
+          75
+        ],
+        "understanding": [
+          76
+        ],
+        "contexts,": [
+          79
+        ],
+        "(ii)": [
+          80,
+          135
+        ],
+        "difficulties": [
+          81
+        ],
+        "integration": [
+          84,
+          153
+        ],
+        "across": [
+          85,
+          182
+        ],
+        "distributed": [
+          86
+        ],
+        "sources,": [
+          87
+        ],
+        "and": [
+          88,
+          132,
+          149,
+          161,
+          178,
+          190,
+          205
+        ],
+        "(iii)": [
+          89,
+          150
+        ],
+        "system": [
+          90
+        ],
+        "efficiency": [
+          91
+        ],
+        "bottlenecks": [
+          92
+        ],
+        "at": [
+          93
+        ],
+        "scale.": [
+          94
+        ],
+        "This": [
+          95
+        ],
+        "survey": [
+          96
+        ],
+        "presents": [
+          97
+        ],
+        "systematic": [
+          99
+        ],
+        "analysis": [
+          100
+        ],
+        "Graph-based": [
+          102
+        ],
+        "Generation": [
+          104
+        ],
+        "(GraphRAG),": [
+          105
+        ],
+        "new": [
+          107
+        ],
+        "paradigm": [
+          108
+        ],
+        "that": [
+          109,
+          127,
+          140,
+          155
+        ],
+        "revolutionizes": [
+          110
+        ],
+        "LLM": [
+          112
+        ],
+        "applications.": [
+          113
+        ],
+        "GraphRAG": [
+          114,
+          177
+        ],
+        "addresses": [
+          115
+        ],
+        "limitations": [
+          118
+        ],
+        "through": [
+          119
+        ],
+        "key": [
+          121,
+          187
+        ],
+        "innovations:": [
+          122
+        ],
+        "graph-structured": [
+          124
+        ],
+        "representation": [
+          126
+        ],
+        "explicitly": [
+          128
+        ],
+        "captures": [
+          129
+        ],
+        "entity": [
+          130
+        ],
+        "relationships": [
+          131
+        ],
+        "domain": [
+          133
+        ],
+        "hierarchies,": [
+          134
+        ],
+        "efficient": [
+          136
+        ],
+        "graph-based": [
+          137
+        ],
+        "retrieval": [
+          138,
+          144
+        ],
+        "techniques": [
+          139
+        ],
+        "enable": [
+          141
+        ],
+        "context-preserving": [
+          142
+        ],
+        "with": [
+          145
+        ],
+        "multihop": [
+          146
+        ],
+        "reasoning": [
+          147
+        ],
+        "ability,": [
+          148
+        ],
+        "structure-aware": [
+          151
+        ],
+        "algorithms": [
+          154
+        ],
+        "leverage": [
+          156
+        ],
+        "retrieved": [
+          157
+        ],
+        "accurate": [
+          160
+        ],
+        "logical": [
+          162
+        ],
+        "coherent": [
+          163
+        ],
+        "LLMs.": [
+          166
+        ],
+        "In": [
+          167
+        ],
+        "this": [
+          168
+        ],
+        "survey,": [
+          169
+        ],
+        "we": [
+          170
+        ],
+        "systematically": [
+          171
+        ],
+        "analyze": [
+          172
+        ],
+        "technical": [
+          174,
+          188
+        ],
+        "foundations": [
+          175
+        ],
+        "examine": [
+          179
+        ],
+        "current": [
+          180
+        ],
+        "implementations": [
+          181
+        ],
+        "various": [
+          183
+        ],
+        "domains,": [
+          185
+        ],
+        "identifying": [
+          186
+        ],
+        "challenges": [
+          189
+        ],
+        "research": [
+          192,
+          201
+        ],
+        "directions.": [
+          193
+        ],
+        "All": [
+          194
+        ],
+        "related": [
+          196
+        ],
+        "resources": [
+          197
+        ],
+        "GraphRAG,": [
+          199
+        ],
+        "including": [
+          200
+        ],
+        "papers,": [
+          202
+        ],
+        "open-source": [
+          203
+        ],
+        "data,": [
+          204
+        ],
+        "projects,": [
+          206
+        ],
+        "are": [
+          207
+        ],
+        "collected": [
+          208
+        ],
+        "community": [
+          211
+        ],
+        "https://github.com/DEEP-PolyU/Awesome-GraphRAG.": [
+          213
+        ]
+      },
+      "primary_location": {
+        "id": "pmh:oai:arXiv.org:2501.13958",
+        "is_oa": true,
+        "landing_page_url": "http://arxiv.org/abs/2501.13958",
+        "pdf_url": "https://arxiv.org/pdf/2501.13958",
+        "source": {
+          "id": "https://openalex.org/S4306400194",
+          "display_name": "arXiv (Cornell University)",
+          "issn_l": "2331-8422",
+          "issn": [
+            "2331-8422"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [],
+          "host_organization": "https://openalex.org/I205783295",
+          "host_organization_name": "Cornell University",
+          "host_organization_lineage": [
+            "https://openalex.org/I205783295"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "text"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://arxiv.org/pdf/2501.13958",
+        "any_repository_has_fulltext": true
+      },
+      "cited_by_count": 14,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "type": "preprint",
+      "ids": {
+        "openalex": "https://openalex.org/W4406840433",
+        "doi": "https://doi.org/10.48550/arxiv.2501.13958"
+      }
+    }
+  ],
+  "group_by": []
+}
